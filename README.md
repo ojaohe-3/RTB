@@ -2,8 +2,11 @@
 Uppkopplad Byggarbetsplats
 ## Introduktion
 
+## Mål
 
+## Utvecklare
 
+## Kontakt uppgifter
 
 ## Git
 

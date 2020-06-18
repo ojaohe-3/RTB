@@ -13,6 +13,11 @@ activites = []
 structures = []
 map = Map()
 
+
+def moveActorTo(w, bounds, vel):
+    pass
+
+
 def main():
     print ("generating senario from config file")
     conf = {}
@@ -20,41 +25,42 @@ def main():
     workers = conf["workers"]
     trucks = conf["trucks"]
     strutures = conf["structures"]
+    #todo asyncio implementation
+    while(True):
+        #main loop
+        for w in workers:
+            moveTo(w,w.bounds, w.vel)
 
-
+#todo
 def connectionSetup():
     return
+
+#todo
 def sendData():
     msg = ''
     if 'not setup' == 'setup':
         connectionSetup()
     return 'completed '+msg
 
-def collisionDetection(func):
-    @wraps(func)
-    def wrapper(boundBox,vel):
-        bounds = []
-        for point in boundBox:
-            bounds.append(point)
-        #create local copy
-        mapbound= map.shape
-        #test for map shape
-
-
-        #all placed structures
-        for structure in structures:
-            #extract shape of each indivudual structure
-            shape1 = structure.pointMap
-            #test for collision of object
-            if checkCollision(shape1,bounds):
-                #this system does only allow Convex shapes to exist for simplisity, thus no wall will be greater than 90º vel simply can bounce
-                print("collision detected")
-                #collision
-        #test for activity collision
-        boundBox = bounds
-        return func(boundBox, vel)
-    return wrapper
-
+def checkForCollisions(actor):
+    mapbound= map.shape
+    if(not checkCollision(mapbound,actor.bounds)):
+        print("out of bounds")
+        return False, None
+    #all placed structures
+    for structure in structures:
+        shape1 = structure.pointMap
+        if checkCollision(shape1,actor.bounds):
+            print("collision detected")
+            return True, structure
+    #all placed activites
+    for activity in activites:
+        if activity.isActive():
+            shape1 = activity.bounds
+            if (checkCollision(shape1, actor.bounds)):
+                print("actor arrived at ")
+                return True, activity
+    return False, None
 def checkCollision(shape1,shape2):
     s1 = shape1
     s2 = shape2
@@ -98,11 +104,11 @@ def checkCollision(shape1,shape2):
                 max2 = max(max, Q)
                 min2 = min(min, Q)
 
-            # does the maximum length of the projected bounds vs projected shape1 overlap? if so there is collision
+            # if any of the shapes orthogonal projected vector where to not intersect with the other shapes projection, then there cannot be any collision
 
             if not (max2 >= min1 and max1 >= min2):
-                return 0
-    return 1
+                return False
+    return True
 
 
 def checkCollisionDisplacment(shape1,shape2):

@@ -1,8 +1,8 @@
-from activity import Activity
-from actor import Actor
-from structure import Structure
-from timewrapper import TimeWrapper
-from map import Map
+from RTB.src.Emulator.activity import Activity
+from RTB.src.Emulator.actor import Actor
+from RTB.src.Emulator.structure import Structure
+from RTB.src.Emulator.timewrapper import TimeWrapper
+from RTB.src.Emulator.map import Map
 from functools import wraps
 
 
@@ -12,15 +12,15 @@ trucks =[]
 activites = []
 structures = []
 map = Map()
+conf = {}
 
-
-def moveActorTo(w, bounds, vel):
-    pass
+def moveActorTowards(actor, pos):
+    actor.updatePos(pos)
+    checkForCollisions(actor)
 
 
 def main():
-    print ("generating senario from config file")
-    conf = {}
+
     activites = conf["activites"]
     workers = conf["workers"]
     trucks = conf["trucks"]
@@ -28,8 +28,12 @@ def main():
     #todo asyncio implementation
     while(True):
         #main loop
+        #move workers
         for w in workers:
-            moveTo(w,w.bounds, w.vel)
+            moveActorTowards(w,(0,0))
+        for t in trucks:
+            moveActorTowards(t,(0,0))
+
 
 #todo
 def connectionSetup():
@@ -44,6 +48,7 @@ def sendData():
 
 def checkForCollisions(actor):
     mapbound= map.shape
+    #inside of map
     if(not checkCollision(mapbound,actor.bounds)):
         print("out of bounds")
         return False, None
@@ -51,7 +56,7 @@ def checkForCollisions(actor):
     for structure in structures:
         shape1 = structure.pointMap
         if checkCollision(shape1,actor.bounds):
-            print("collision detected")
+            print("collision detected, "+actor.name)
             return True, structure
     #all placed activites
     for activity in activites:
@@ -144,13 +149,11 @@ def checkCollisionDisplacment(shape1,shape2):
 
     return (dx,dy)
 
-
-
-#credit https://progr.interplanety.org/en/python-how-to-find-the-polygon-center-coordinates/
-def findCentroid(vertexes):
-    x = [vertex[0] for vertex in vertexes]
-    y = [vertex[1] for vertex in vertexes]
-    length = len(vertexes)
-    x0 = sum(x) / length
-    y0 = sum(y) / length
-    return (x0, y0)
+# credit https://progr.interplanety.org/en/python-how-to-find-the-polygon-center-coordinates/
+  def findCentroid(self,vertexes):
+        x = [vertex[0] for vertex in vertexes]
+        y = [vertex[1] for vertex in vertexes]
+        length = len(vertexes)
+        x0 = sum(x) / length
+        y0 = sum(y) / length
+        return (x0, y0)

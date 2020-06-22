@@ -1,3 +1,5 @@
+import asyncio
+import aio_pika
 from activity import Activity
 from actor import Actor
 from structure import Structure
@@ -5,16 +7,52 @@ from timewrapper import TimeWrapper
 from map import Map
 from functools import wraps
 
-
-sendData =''
+sendData = ''
 workers = []
-trucks =[]
+trucks = []
 activites = []
 structures = []
 map = Map()
 
+
+class Emulator:
+    def __init__(self, loop):
+        # self.config = config
+        self.loop = loop
+        self._connection = None
+        self._channel = None
+        self._exchange = None
+        self._simTasks = []
+        self._running = False
+
+    async def _create_connection(self):
+        return await aio_pika.connect_robust("amqp://rtb:rtb123@130.240.5.138/", loop=self.loop)
+
+    async def connect(self):
+        # creates the connection to RabbitMQ
+        self._connection = await self._create_connection()
+        # Creates the channel on RabbitMQ
+        self._channel = await self._connection.channel()
+        # Declares the exchange on the channel on RabbitMQ
+        self._exchange = await self._channel.declare_exchange('sensor_exchange', aio_pika.ExchangeType.FANOUT,
+                                                              durable=True)
+
+    async def disconnect(self):
+        await self._connection.close()
+        self._channel = None
+        self._exchange = None
+        self._running = False
+
+    async def send_message(self, msg, routing_key):
+        await self._exchange.publish(
+            aio_pika.Message(
+                body=msg.encode()
+            ),
+            routing_key=routing_key)
+
+
 def main():
-    print ("generating senario from config file")
+    print("generating senario from config file")
     conf = {}
     activites = conf["activites"]
     workers = conf["workers"]
@@ -24,43 +62,47 @@ def main():
 
 def connectionSetup():
     return
+
+
 def sendData():
     msg = ''
     if 'not setup' == 'setup':
         connectionSetup()
-    return 'completed '+msg
+    return 'completed ' + msg
+
 
 def collisionDetection(func):
     @wraps(func)
-    def wrapper(boundBox,vel):
+    def wrapper(boundBox, vel):
         bounds = []
         for point in boundBox:
             bounds.append(point)
-        #create local copy
-        mapbound= map.shape
-        #test for map shape
+        # create local copy
+        mapbound = map.shape
+        # test for map shape
 
-
-        #all placed structures
+        # all placed structures
         for structure in structures:
-            #extract shape of each indivudual structure
+            # extract shape of each indivudual structure
             shape1 = structure.pointMap
-            #test for collision of object
-            if checkCollision(shape1,bounds):
-                #this system does only allow Convex shapes to exist for simplisity, thus no wall will be greater than 90º vel simply can bounce
+            # test for collision of object
+            if checkCollision(shape1, bounds):
+                # this system does only allow Convex shapes to exist for simplisity, thus no wall will be greater than 90º vel simply can bounce
                 print("collision detected")
-                #collision
-        #test for activity collision
+                # collision
+        # test for activity collision
         boundBox = bounds
         return func(boundBox, vel)
+
     return wrapper
 
-def checkCollision(shape1,shape2):
+
+def checkCollision(shape1, shape2):
     s1 = shape1
     s2 = shape2
 
-    for shape in range(0,2):
-        #reverse the entire process to project onto the normal of the inital projection vector
+    for shape in range(0, 2):
+        # reverse the entire process to project onto the normal of the inital projection vector
         if shape == 1:
             s1 = shape2
             s2 = shape1
@@ -105,13 +147,13 @@ def checkCollision(shape1,shape2):
     return 1
 
 
-def checkCollisionDisplacment(shape1,shape2):
+def checkCollisionDisplacment(shape1, shape2):
     s1 = shape1
     s2 = shape2
     dx = 0
     dy = 0
-    for shape in range(0,2):
-        #reverse the entire process to project onto the normal of the inital projection vector
+    for shape in range(0, 2):
+        # reverse the entire process to project onto the normal of the inital projection vector
         if shape == 1:
             s1 = shape2
             s2 = shape1
@@ -120,27 +162,26 @@ def checkCollisionDisplacment(shape1,shape2):
         for p in s1:
             for i in range(0, len(s2)):
                 qs = s2[i]
-                qe = s2[(i+1)%len(s2)]
-                #i dunno man, line segment algoritm, or something
-                h = (qe[0]-qs[0])*(pos[1]-p[1])-(qe[1]-qs[1])*(pos[0]-p[0])
-                t1 = ((qs[1]-qe[1])*(pos[0]-qs[0])+(qs[0]-qe[0])*(pos[1]-qs[1]))/h
-                t2 = ((pos[1]-p[1])*(pos[0]-qs[0])+(pos[1]-p[1])*(pos[1]-qs[1]))/h
+                qe = s2[(i + 1) % len(s2)]
+                # i dunno man, line segment algoritm, or something
+                h = (qe[0] - qs[0]) * (pos[1] - p[1]) - (qe[1] - qs[1]) * (pos[0] - p[0])
+                t1 = ((qs[1] - qe[1]) * (pos[0] - qs[0]) + (qs[0] - qe[0]) * (pos[1] - qs[1])) / h
+                t2 = ((pos[1] - p[1]) * (pos[0] - qs[0]) + (pos[1] - p[1]) * (pos[1] - qs[1])) / h
 
-                #collision detected condition
+                # collision detected condition
                 if t1 >= 0 and t1 < 1 and t2 >= 0 and t2 < 1:
-                    #The second shape to our reference need to be subtracted to the final displacement
+                    # The second shape to our reference need to be subtracted to the final displacement
                     if shape == 0:
-                        dx += (1-t1)*(p[0]-pos[0])
-                        dy += (1-t1)*(p[1]-pos[1])
+                        dx += (1 - t1) * (p[0] - pos[0])
+                        dy += (1 - t1) * (p[1] - pos[1])
                     else:
                         dx -= (1 - t1) * (p[0] - pos[0])
                         dy -= (1 - t1) * (p[1] - pos[1])
 
-    return (dx,dy)
+    return (dx, dy)
 
 
-
-#credit https://progr.interplanety.org/en/python-how-to-find-the-polygon-center-coordinates/
+# credit https://progr.interplanety.org/en/python-how-to-find-the-polygon-center-coordinates/
 def findCentroid(vertexes):
     x = [vertex[0] for vertex in vertexes]
     y = [vertex[1] for vertex in vertexes]

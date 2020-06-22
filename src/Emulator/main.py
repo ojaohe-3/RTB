@@ -1,5 +1,7 @@
 import asyncio
 import aio_pika
+import datetime
+import json
 from activity import Activity
 from actor import Actor
 from structure import Structure
@@ -49,6 +51,18 @@ class Emulator:
                 body=msg.encode()
             ),
             routing_key=routing_key)
+
+    def get_sensor_data(self, actor):
+        cur_time = datetime.datetime.now().time()
+        json_msg = {
+            "time": str(cur_time),
+            "event_type": actor.type,
+            "event_activity": actor.activity,
+            "event_position": actor.pos,
+            "event_velocity": actor.vel,
+        }
+        return json.dumps(json_msg)
+
 
 
 def main():

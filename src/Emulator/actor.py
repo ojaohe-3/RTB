@@ -1,6 +1,7 @@
 import random
 import time
 from RTB.src.Emulator.activity import Activity
+import numpy as np
 class Actor:
     def __init__(self,initPos,type,vel,bounds,name):
         self.pos = initPos
@@ -10,15 +11,19 @@ class Actor:
         self.name = name
         self.activity = None
         self.bounds = bounds
+        self.radius = np.sqrt(pow(max(bounds)[0],2)+pow(max(bounds)[1],2))
     #Move towards a pos
     def updatePos(self,npos):
-        upos = (0,0)
-        upos[0] = (npos[0]-self.pos[0])
-        upos[1] = (npos[1]-self.pos[1])
+        x = (npos[0]-self.pos[0])
+        y = (npos[1]-self.pos[1])
+        theta = np.arctan(y/x)
+        #generate velocity vector
+        dx = min(self.vel*np.cos(theta),x)
+        dy = min(self.vel*np.sin(theta),y)
 
         for i in range(0,len(self.bounds)):
-            self.bounds[i][0] += upos[0]
-            self.bounds[i][1] += upos[1]
+            self.bounds[i][0] += dx
+            self.bounds[i][1] += dy
     #blink to a pos
     def setPos(self, pos):
         self.pos = pos

@@ -11,13 +11,18 @@ workers = []
 trucks =[]
 activites = []
 structures = []
+actors = []
 map = Map()
 conf = {}
 
 def moveActorTowards(actor, pos):
     actor.updatePos(pos)
-    checkForCollisions(actor)
-
+    hit, obj = checkForCollisions(actor)
+    if(hit):
+        #todo if this does return an delta vector, that is the required difference to displace the shapes, then translate to point.
+        #not to mention all the errors in the universe
+        displacement = checkCollisionDisplacment(obj,actor.bounds)
+        actor.setPos(displacement)
 
 def main():
 
@@ -25,46 +30,52 @@ def main():
     workers = conf["workers"]
     trucks = conf["trucks"]
     strutures = conf["structures"]
-    #todo asyncio implementation
+    actors = workers+trucks
+    #todo asyncio implementation, main loop should sleep every itteration to give space for connection and sending data
     while(True):
         #main loop
-        #move workers
-        for w in workers:
-            moveActorTowards(w,(0,0))
-        for t in trucks:
-            moveActorTowards(t,(0,0))
+        #move actors
+        for a in actors:
+            moveActorTowards(a, a.activity.pos)
+        #todo sample data
+        #todo send sample data
 
-
-#todo
 def connectionSetup():
+    #todo setup connection
     return
 
-#todo
-def sendData():
-    msg = ''
-    if 'not setup' == 'setup':
-        connectionSetup()
-    return 'completed '+msg
+def sendData(data):
+    #todo send data
+    return
 
 def checkForCollisions(actor):
     mapbound= map.shape
     #inside of map
     if(not checkCollision(mapbound,actor.bounds)):
         print("out of bounds")
-        return False, None
+        return False, mapbound
     #all placed structures
     for structure in structures:
         shape1 = structure.pointMap
         if checkCollision(shape1,actor.bounds):
-            print("collision detected, "+actor.name)
-            return True, structure
+            print("collision detected")
+            return True, shape1
     #all placed activites
     for activity in activites:
         if activity.isActive():
             shape1 = activity.bounds
             if (checkCollision(shape1, actor.bounds)):
-                print("actor arrived at ")
-                return True, activity
+                print("actor arrived at a activity")
+                activity.status = 'completed'
+                #todo make event
+
+                return True, shape1
+    #other actors, if we care to
+    # for a in actors:
+    #     if(a != actor):
+    #         if(checkCollision(a.bounds,actor.bounds)):
+    #             return True, a.bounds
+
     return False, None
 def checkCollision(shape1,shape2):
     s1 = shape1
@@ -150,10 +161,10 @@ def checkCollisionDisplacment(shape1,shape2):
     return (dx,dy)
 
 # credit https://progr.interplanety.org/en/python-how-to-find-the-polygon-center-coordinates/
-  def findCentroid(self,vertexes):
-        x = [vertex[0] for vertex in vertexes]
-        y = [vertex[1] for vertex in vertexes]
-        length = len(vertexes)
-        x0 = sum(x) / length
-        y0 = sum(y) / length
-        return (x0, y0)
+def findCentroid(self,vertexes):
+    x = [vertex[0] for vertex in vertexes]
+    y = [vertex[1] for vertex in vertexes]
+    length = len(vertexes)
+    x0 = sum(x) / length
+    y0 = sum(y) / length
+    return (x0, y0)

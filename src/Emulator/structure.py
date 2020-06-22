@@ -8,6 +8,8 @@ class Structure:
         else:
             self.shape = self.generateConvexStructure(random.randrange(0,8), 10*random.random())
 
+        self.radius = np.sqrt(pow(max(self.shape)[0], 2) + pow(max(self.shape)[1], 2))
+
     def generateConvexStructure(self, edges,size):
         return [[0,0]]
 

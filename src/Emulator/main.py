@@ -2,24 +2,35 @@ import asyncio
 import aio_pika
 import datetime
 import json
-from activity import Activity
-from actor import Actor
-from structure import Structure
-from timewrapper import TimeWrapper
-from map import Map
+import logging
+import sys
+import toml
+# from activity import Activity
+# from actor import Actor
+# from structure import Structure
+# from timewrapper import TimeWrapper
+# from map import Map
 from functools import wraps
+config = toml.load('config.toml')
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+logging.basicConfig(filename=config['log']['filename'])
+
+out_handler = logging.StreamHandler(sys.stdout)
+out_handler.setLevel(logging.DEBUG)
+logger.addHandler(out_handler)
 
 sendData = ''
 workers = []
 trucks = []
 activites = []
 structures = []
-map = Map()
+#map = Map()
 
 
 class Emulator:
-    def __init__(self, loop):
-        # self.config = config
+    def __init__(self, config, loop):
+        self.config = config
         self.loop = loop
         self._connection = None
         self._channel = None
@@ -28,9 +39,15 @@ class Emulator:
         self._running = False
 
     async def _create_connection(self):
-        return await aio_pika.connect_robust("amqp://rtb:rtb123@130.240.5.138/", loop=self.loop)
+        logger.info("Creating connection to RMQ")
+        return await aio_pika.connect_robust("amqp://{}:{}@{}/".format(
+            self.config['rabbitmq']['username'],
+            self.config['rabbitmq']['password'],
+            self.config['rabbitmq']['host'],
+        ), loop=self.loop)
 
     async def connect(self):
+        logger.info("Connecting to RMQ")
         # creates the connection to RabbitMQ
         self._connection = await self._create_connection()
         # Creates the channel on RabbitMQ
@@ -40,12 +57,14 @@ class Emulator:
                                                               durable=True)
 
     async def disconnect(self):
+        logger.info("Disconnecting from RMQ")
         await self._connection.close()
         self._channel = None
         self._exchange = None
         self._running = False
 
     async def send_message(self, msg, routing_key):
+        logger.info("Sending message to RMQ")
         await self._exchange.publish(
             aio_pika.Message(
                 body=msg.encode()
@@ -53,6 +72,7 @@ class Emulator:
             routing_key=routing_key)
 
     def get_sensor_data(self, actor):
+        logger.info("Creating sensor data")
         cur_time = datetime.datetime.now().time()
         json_msg = {
             "time": str(cur_time),
@@ -65,14 +85,21 @@ class Emulator:
 
 
 
-def main():
-    print("generating senario from config file")
-    conf = {}
-    activites = conf["activites"]
-    workers = conf["workers"]
-    trucks = conf["trucks"]
-    strutures = conf["structures"]
-
+async def main(loop):
+    # print("generating senario from config file")
+    # conf = {}
+    # activites = conf["activites"]
+    # workers = conf["workers"]
+    # trucks = conf["trucks"]
+    # strutures = conf["structures"]
+    config = toml.load('config.toml')
+    sim = Emulator(config,loop)
+    await sim.connect()
+    await sim.disconnect()
+if __name__=="__main__":
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(main(loop))
+    loop.close()
 
 def connectionSetup():
     return

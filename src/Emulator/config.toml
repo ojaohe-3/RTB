@@ -9,7 +9,5 @@ filename = "logfile"
 [Structures]
 
 [Actors]
-    [Workers]
-    [Trucks]
 
-[Structures]
+[Activities]

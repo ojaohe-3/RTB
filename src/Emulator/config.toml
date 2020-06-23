@@ -6,8 +6,3 @@ host = "130.240.5.138"
 [log]
 filename = "logfile"
 
-[Structures]
-
-[Actors]
-
-[Activities]

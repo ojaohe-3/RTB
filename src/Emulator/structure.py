@@ -7,18 +7,19 @@ class Structure:
         if self.convexShapeTest(pointMap):
             self.shape = pointMap
         else:
-            self.shape = [(0,0),(0,10),(10,10),(10,10)]
+            #self.shape = [[0,0],[0,10],[10,10],[10,10]]
+            self.shape = self.generateConvexStructure(int(random.randrange(3, 12)), random.random() * 10)
 
         self.radius = np.sqrt(pow(max(self.shape)[0], 2) + pow(max(self.shape)[1], 2))
-        for i in range(len(self.pointMap)):
-            self.pointMap[i][0] += self.pos[0]
-            self.pointMap[i][1] += self.pos[1]
+        for i in range(len(self.shape)):
+            self.shape[i][0] += self.pos[0]
+            self.shape[i][1] += self.pos[1]
 
     def generateConvexStructure(self, edges,size):
         #generate random sample of x and y´s
         pointmap = []
-        lx = [random.randrange(0, size, 0.5) for _ in range(edges)]
-        ly = [random.randrange(0, size, 0.5) for _ in range(edges)]
+        lx = [random.random()*size for _ in range(edges)]
+        ly = [random.random()*size for _ in range(edges)]
 
         #sort x list and y list
         lx.sort()
@@ -26,7 +27,7 @@ class Structure:
 
         #take the largest element and smallest.
         mxX = lx.pop(0)
-        miX = lx.pop(edges)
+        miX = lx.pop(len(lx)-1)
 
         #chain them, and connect them
         lastTop = miX
@@ -44,11 +45,12 @@ class Structure:
 
         #do the same for y axis
         mxY = ly.pop(0)
-        miY = ly.pop(edges)
+        miY = ly.pop(len(ly)-1)
 
         lastTop = miY
         lastBottom = miY
         vy = []
+
         for y in lx:
             if bool(random.getrandbits(1)):
                 vy.append(y - lastTop)
@@ -68,19 +70,19 @@ class Structure:
         for i in range(edges):
             x = vx[i]
             y = vy[i]
-            vec.append({"angle":np.arctan(y,x), "pos":(x,y)})
+            vec.append({"angle": np.arctan(y/x), "pos": [x, y]})
 
         #sort by angle
         vec = sorted(vec,key=lambda i: i['angle'])
 
         #append the points to point map and connect end to end
-        x, y = 0, 0
-        minP = (0,0)
+        x, y = 0.0, 0.0
+        minP = [0,0]
         for v in vec:
-            pointmap.append((x,y))
-            x += v[0]
-            y += v[1]
-            minP = min(minP,(x,y))
+            pointmap.append([x,y])
+            x += v["pos"][0]
+            y += v["pos"][1]
+            minP = min(minP,[x,y])
         # todo eventuall shift if needed
 
         return pointmap

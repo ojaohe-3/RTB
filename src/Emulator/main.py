@@ -1,8 +1,10 @@
-from RTB.src.Emulator.activity import Activity
-from RTB.src.Emulator.actor import Actor
-from RTB.src.Emulator.structure import Structure
-from RTB.src.Emulator.timewrapper import TimeWrapper
-from RTB.src.Emulator.map import Map
+import pickle
+
+from src.Emulator.activity import Activity
+from src.Emulator.actor import Actor
+from src.Emulator.structure import Structure
+from src.Emulator.timewrapper import TimeWrapper
+from src.Emulator.map import Map
 import asyncio
 import aio_pika
 import datetime
@@ -22,8 +24,6 @@ out_handler.setLevel(logging.DEBUG)
 logger.addHandler(out_handler)
 
 sendData = ''
-workers = []
-trucks = []
 activites = []
 structures = []
 actors = []
@@ -94,6 +94,11 @@ class Emulator:
 async def main(loop):
 
     config = toml.load('config.toml')
+    with open("sim.dat", "rb") as f:
+        data = pickle.load(f)
+        actors = data["actors"]
+        structures = data["structures"]
+        activites = data["activites"]
     # print("generating senario from config file")
     # activites = config["activites"]
     # workers = config["workers"]
@@ -121,20 +126,20 @@ def checkForCollisions(actor):
     mapbound= map.shape
     #inside of map
     if(not checkCollision(mapbound,actor.bounds)):
-        print("out of bounds")
+        logger.info(f"{actor.name} is out of bounds! {str(actor.pos)}")
         return False, mapbound
     #all placed structures
     for structure in structures:
         shape1 = structure.pointMap
         if checkCollision(shape1,actor.bounds):
-            print("collision detected")
+            logger.info(f"{actor.name} collided with a structure at {str(actor.pos)}")
             return True, shape1
     #all placed activites
     for activity in activites:
         if activity.isActive():
             shape1 = activity.bounds
             if (checkCollision(shape1, actor.bounds)):
-                print("actor arrived at a activity")
+                logger.info(f"{actor.name} arrived at a activity {str(activity.pos)}, completeing it")
                 activity.status = 'completed'
                 #todo make event
 
@@ -235,4 +240,4 @@ def findCentroid(vertexes):
     length = len(vertexes)
     x0 = sum(x) / length
     y0 = sum(y) / length
-    return (x0, y0)
+    return [x0, y0]

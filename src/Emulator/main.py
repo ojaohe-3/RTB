@@ -3,17 +3,110 @@ from RTB.src.Emulator.actor import Actor
 from RTB.src.Emulator.structure import Structure
 from RTB.src.Emulator.timewrapper import TimeWrapper
 from RTB.src.Emulator.map import Map
+import asyncio
+import aio_pika
+import datetime
+import json
+import logging
+import sys
+import toml
+
 from functools import wraps
+config = toml.load('config.toml')
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+logging.basicConfig(filename=config['log']['filename'])
 
+out_handler = logging.StreamHandler(sys.stdout)
+out_handler.setLevel(logging.DEBUG)
+logger.addHandler(out_handler)
 
-sendData =''
+sendData = ''
 workers = []
-trucks =[]
+trucks = []
 activites = []
 structures = []
 actors = []
 map = Map()
 conf = {}
+
+
+
+
+
+class Emulator:
+    def __init__(self, config, loop):
+        self.config = config
+        self.loop = loop
+        self._connection = None
+        self._channel = None
+        self._exchange = None
+        self._simTasks = []
+        self._running = False
+
+    async def _create_connection(self):
+        logger.info("Creating connection to RMQ")
+        return await aio_pika.connect_robust("amqp://{}:{}@{}/".format(
+            self.config['rabbitmq']['username'],
+            self.config['rabbitmq']['password'],
+            self.config['rabbitmq']['host'],
+        ), loop=self.loop)
+
+    async def connect(self):
+        logger.info("Connecting to RMQ")
+        # creates the connection to RabbitMQ
+        self._connection = await self._create_connection()
+        # Creates the channel on RabbitMQ
+        self._channel = await self._connection.channel()
+        # Declares the exchange on the channel on RabbitMQ
+        self._exchange = await self._channel.declare_exchange('sensor_exchange', aio_pika.ExchangeType.FANOUT,
+                                                              durable=True)
+
+    async def disconnect(self):
+        logger.info("Disconnecting from RMQ")
+        await self._connection.close()
+        self._channel = None
+        self._exchange = None
+        self._running = False
+
+    async def send_message(self, msg, routing_key):
+        logger.info("Sending message to RMQ")
+        await self._exchange.publish(
+            aio_pika.Message(
+                body=msg.encode()
+            ),
+            routing_key=routing_key)
+
+    def get_sensor_data(self, actor):
+        logger.info("Creating sensor data")
+        cur_time = datetime.datetime.now().time()
+        json_msg = {
+            "time": str(cur_time),
+            "event_type": actor.type,
+            "event_activity": actor.activity,
+            "event_position": actor.pos,
+            "event_velocity": actor.vel,
+        }
+        return json.dumps(json_msg)
+
+
+
+async def main(loop):
+
+    config = toml.load('config.toml')
+    # print("generating senario from config file")
+    # activites = config["activites"]
+    # workers = config["workers"]
+    # trucks = config["trucks"]
+    # strutures = config["structures"]
+    sim = Emulator(config,loop)
+    await sim.connect()
+    await sim.disconnect()
+
+if __name__=="__main__":
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(main(loop))
+    loop.close()
 
 def moveActorTowards(actor, pos):
     actor.updatePos(pos)
@@ -23,30 +116,6 @@ def moveActorTowards(actor, pos):
         #not to mention all the errors in the universe
         displacement = checkCollisionDisplacment(obj,actor.bounds)
         actor.setPos(displacement)
-
-def main():
-
-    activites = conf["activites"]
-    workers = conf["workers"]
-    trucks = conf["trucks"]
-    strutures = conf["structures"]
-    actors = workers+trucks
-    #todo asyncio implementation, main loop should sleep every itteration to give space for connection and sending data
-    while(True):
-        #main loop
-        #move actors
-        for a in actors:
-            moveActorTowards(a, a.activity.pos)
-        #todo sample data
-        #todo send sample data
-
-def connectionSetup():
-    #todo setup connection
-    return
-
-def sendData(data):
-    #todo send data
-    return
 
 def checkForCollisions(actor):
     mapbound= map.shape
@@ -76,13 +145,14 @@ def checkForCollisions(actor):
     #         if(checkCollision(a.bounds,actor.bounds)):
     #             return True, a.bounds
 
-    return False, None
-def checkCollision(shape1,shape2):
+
+
+def checkCollision(shape1, shape2):
     s1 = shape1
     s2 = shape2
 
-    for shape in range(0,2):
-        #reverse the entire process to project onto the normal of the inital projection vector
+    for shape in range(0, 2):
+        # reverse the entire process to project onto the normal of the inital projection vector
         if shape == 1:
             s1 = shape2
             s2 = shape1
@@ -127,13 +197,13 @@ def checkCollision(shape1,shape2):
     return True
 
 
-def checkCollisionDisplacment(shape1,shape2):
+def checkCollisionDisplacment(shape1, shape2):
     s1 = shape1
     s2 = shape2
     dx = 0
     dy = 0
-    for shape in range(0,2):
-        #reverse the entire process to project onto the normal of the inital projection vector
+    for shape in range(0, 2):
+        # reverse the entire process to project onto the normal of the inital projection vector
         if shape == 1:
             s1 = shape2
             s2 = shape1
@@ -142,26 +212,24 @@ def checkCollisionDisplacment(shape1,shape2):
         for p in s1:
             for i in range(0, len(s2)):
                 qs = s2[i]
-                qe = s2[(i+1)%len(s2)]
-                #i dunno man, line segment algoritm, or something
-                h = (qe[0]-qs[0])*(pos[1]-p[1])-(qe[1]-qs[1])*(pos[0]-p[0])
-                t1 = ((qs[1]-qe[1])*(pos[0]-qs[0])+(qs[0]-qe[0])*(pos[1]-qs[1]))/h
-                t2 = ((pos[1]-p[1])*(pos[0]-qs[0])+(pos[1]-p[1])*(pos[1]-qs[1]))/h
+                qe = s2[(i + 1) % len(s2)]
+                # i dunno man, line segment algoritm, or something
+                h = (qe[0] - qs[0]) * (pos[1] - p[1]) - (qe[1] - qs[1]) * (pos[0] - p[0])
+                t1 = ((qs[1] - qe[1]) * (pos[0] - qs[0]) + (qs[0] - qe[0]) * (pos[1] - qs[1])) / h
+                t2 = ((pos[1] - p[1]) * (pos[0] - qs[0]) + (pos[1] - p[1]) * (pos[1] - qs[1])) / h
 
-                #collision detected condition
+                # collision detected condition
                 if t1 >= 0 and t1 < 1 and t2 >= 0 and t2 < 1:
-                    #The second shape to our reference need to be subtracted to the final displacement
+                    # The second shape to our reference need to be subtracted to the final displacement
                     if shape == 0:
-                        dx += (1-t1)*(p[0]-pos[0])
-                        dy += (1-t1)*(p[1]-pos[1])
+                        dx += (1 - t1) * (p[0] - pos[0])
+                        dy += (1 - t1) * (p[1] - pos[1])
                     else:
                         dx -= (1 - t1) * (p[0] - pos[0])
                         dy -= (1 - t1) * (p[1] - pos[1])
 
-    return (dx,dy)
-
 # credit https://progr.interplanety.org/en/python-how-to-find-the-polygon-center-coordinates/
-def findCentroid(self,vertexes):
+def findCentroid(vertexes):
     x = [vertex[0] for vertex in vertexes]
     y = [vertex[1] for vertex in vertexes]
     length = len(vertexes)

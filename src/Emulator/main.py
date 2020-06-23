@@ -14,6 +14,7 @@ import sys
 import toml
 
 from functools import wraps
+
 config = toml.load('config.toml')
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -29,9 +30,6 @@ structures = []
 actors = []
 map = Map()
 conf = {}
-
-
-
 
 
 class Emulator:
@@ -82,74 +80,74 @@ class Emulator:
         cur_time = datetime.datetime.now().time()
         json_msg = {
             "time": str(cur_time),
-            "event_type": actor.type,
-            "event_activity": actor.activity,
-            "event_position": actor.pos,
-            "event_velocity": actor.vel,
+            "type": actor.__name__,
+            "payload": actor.toJson()
         }
         return json.dumps(json_msg)
 
 
-
 async def main(loop):
-
     config = toml.load('config.toml')
     with open("sim.dat", "rb") as f:
         data = pickle.load(f)
         actors = data["actors"]
         structures = data["structures"]
         activites = data["activites"]
-    # print("generating senario from config file")
-    # activites = config["activites"]
-    # workers = config["workers"]
-    # trucks = config["trucks"]
-    # strutures = config["structures"]
-    sim = Emulator(config,loop)
+
+    sim = Emulator(config, loop)
     await sim.connect()
+    while True:
+        for a in actors:
+            a.activity = activites[0]  # temp
+            moveActorTowards(a, a.activity.pos)
+
+        await asyncio.wait(0.04)
     await sim.disconnect()
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
     loop = asyncio.get_event_loop()
     loop.run_until_complete(main(loop))
     loop.close()
 
+
 def moveActorTowards(actor, pos):
     actor.updatePos(pos)
     hit, obj = checkForCollisions(actor)
-    if(hit):
-        #todo if this does return an delta vector, that is the required difference to displace the shapes, then translate to point.
-        #not to mention all the errors in the universe
-        displacement = checkCollisionDisplacment(obj,actor.bounds)
+    if (hit):
+        # todo if this does return an delta vector, that is the required difference to displace the shapes, then translate to point.
+        # not to mention all the errors in the universe
+        displacement = checkCollisionDisplacment(obj, actor.bounds)
         actor.setPos(displacement)
 
+
 def checkForCollisions(actor):
-    mapbound= map.shape
-    #inside of map
-    if(not checkCollision(mapbound,actor.bounds)):
+    mapbound = map.shape
+    # inside of map
+    if (not checkCollision(mapbound, actor.bounds)):
         logger.info(f"{actor.name} is out of bounds! {str(actor.pos)}")
         return False, mapbound
-    #all placed structures
+    # all placed structures
     for structure in structures:
         shape1 = structure.pointMap
-        if checkCollision(shape1,actor.bounds):
+        if checkCollision(shape1, actor.bounds):
             logger.info(f"{actor.name} collided with a structure at {str(actor.pos)}")
             return True, shape1
-    #all placed activites
+    # all placed activites
     for activity in activites:
         if activity.isActive():
             shape1 = activity.bounds
             if (checkCollision(shape1, actor.bounds)):
                 logger.info(f"{actor.name} arrived at a activity {str(activity.pos)}, completeing it")
                 activity.status = 'completed'
-                #todo make event
+                # todo make event
 
                 return True, shape1
-    #other actors, if we care to
+    # other actors, if we care to
     # for a in actors:
     #     if(a != actor):
     #         if(checkCollision(a.bounds,actor.bounds)):
     #             return True, a.bounds
-
 
 
 def checkCollision(shape1, shape2):
@@ -232,6 +230,7 @@ def checkCollisionDisplacment(shape1, shape2):
                     else:
                         dx -= (1 - t1) * (p[0] - pos[0])
                         dy -= (1 - t1) * (p[1] - pos[1])
+
 
 # credit https://progr.interplanety.org/en/python-how-to-find-the-polygon-center-coordinates/
 def findCentroid(vertexes):

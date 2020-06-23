@@ -41,3 +41,5 @@ class Actor:
         self.activity = Activity(point,"moving", "unscheduled", time.time+random.randrange(10,100))
 
 
+    def toJson(self):
+        return self.name

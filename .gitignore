@@ -2,3 +2,6 @@
 /src/Emulator/logfile
 /src/Emulator/config.toml
 /src/FlaskSite/.idea/*
+src/Consumer/config.toml
+src/Consumer/logfile
+

@@ -74,8 +74,9 @@ class Emulator:
         cur_time = datetime.datetime.now().time()
         json_msg = {
             "time": str(cur_time),
-            "type": actor.__name__,
+            "type": Actor.__name__,
             "payload": actor.toJson()
+
         }
         return json.dumps(json_msg)
 
@@ -113,7 +114,6 @@ async def actorsPos(actors):
         print(f"\033[33m{a.name} is at pos {str(a.pos)} moving towards {str(a.activity.pos)}\033[0m")
     await asyncio.sleep(5)
     return await actorsPos(actors)
-
 
 
 async def main(loop, actors, structures, activites):

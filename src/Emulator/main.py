@@ -1,4 +1,5 @@
 import pickle
+import random
 
 from src.Emulator.activity import Activity
 from src.Emulator.actor import Actor
@@ -89,43 +90,43 @@ class Emulator:
 
 def moveActorTowards(actor, pos,structures,activites):
     actor.updatePos(pos)
-    hit, obj = checkForCollisions(actor,structures,activites)
-    if (hit):
-        # todo if this does return an delta vector, that is the required difference to displace the shapes, then translate to point.
-        # not to mention all the errors in the universe
-        displacement = checkCollisionDisplacment(obj, actor.bounds)
-        actor.setPos(displacement)
+    checkForCollisions(actor,structures,activites)
 
 
 def checkForCollisions(actor,structures,activites):
     mapbound = map.shape
     # inside of map
-    if (not checkCollision(mapbound, actor.bounds)):
-        #logger.info(f"{actor.name} is out of bounds! {str(actor.pos)}")
-        return False, mapbound
+    if (not checkCollision(mapbound, actor.shape)):
+        print(f"{actor.name} is out of bounds! {str(actor.pos)}")
+        return True
     # all placed structures
-    for structure in structures:
-        shape1 = structure.shape
-        if checkCollision(shape1, actor.bounds):
-            print(f"{actor.name} collided with a structure at {str(actor.pos)}")
-            return True, shape1
+    # for structure in structures:
+    #     if(checkCollision(structure.shape,actor.shape)):
+    #         displacement = checkCollisionDisplacment(actor, structure)
+    #     return True
     # all placed activites
     for activity in activites:
         if activity.isActive():
-            shape1 = activity.bounds
-            if (checkCollision(shape1, actor.bounds)):
-                logger.info(f"{actor.name} arrived at a activity {str(activity.pos)}, completeing it")
+            shape1 = activity.shape
+            if (checkCollision(shape1, actor.shape)):
+                #logger.info(f"{actor.name} arrived at a activity {str(activity.pos)}, completeing it")
+                print(f"{actor.name} arrived at a activity {str(activity.pos)}, completeing it")
                 activity.status = 'completed'
+                activites.pop(activites.index(activity))
+                actor.activity = activites[-1]
+
                 # todo make event
 
-                return True, shape1
+                return True
     # other actors, if we care to
     # for a in actors:
     #     if(a != actor):
-    #         if(checkCollision(a.bounds,actor.bounds)):
-    #             return True, a.bounds
+    #         if(checkCollision(a.shape,actor.shape)):
+    #             return True, a.shape
     return False, None
-
+async def actorsPos(actors):
+    for a in actors:
+        print(f"{a.name} is at pos {str(a.pos)} moving towards {str(a.activity.pos)}")
 def checkCollision(shape1, shape2):
     s1 = shape1
     s2 = shape2
@@ -176,46 +177,38 @@ def checkCollision(shape1, shape2):
     return True
 
 
-def checkCollisionDisplacment(shape1, shape2):
-    s1 = shape1
-    s2 = shape2
+def checkCollisionDisplacment(act, strc):
+    s1 = act
+    s2 = strc
     dx = 0
     dy = 0
-    for shape in range(0, 2):
+    x,y=0,0
+    for shape in range(2):
         # reverse the entire process to project onto the normal of the inital projection vector
         if shape == 1:
-            s1 = shape2
-            s2 = shape1
-
-        pos = findCentroid(s2)
-        for p in s1:
-            for i in range(0, len(s2)):
-                qs = s2[i]
-                qe = s2[(i + 1) % len(s2)]
+            s1 = strc
+            s2 = act
+        pos = s2.pos
+        for p in s1.shape:
+            for i in range(len(s2.shape)):
+                qs = s2.shape[i]
+                qe = s2.shape[(i + 1) % len(s2.shape)]
                 # i dunno man, line segment algoritm, or something
                 h = (qe[0] - qs[0]) * (pos[1] - p[1]) - (qe[1] - qs[1]) * (pos[0] - p[0])
+                if(h == 0):
+                    return [0, 0]
                 t1 = ((qs[1] - qe[1]) * (pos[0] - qs[0]) + (qs[0] - qe[0]) * (pos[1] - qs[1])) / h
                 t2 = ((pos[1] - p[1]) * (pos[0] - qs[0]) + (pos[1] - p[1]) * (pos[1] - qs[1])) / h
 
                 # collision detected condition
                 if t1 >= 0 and t1 < 1 and t2 >= 0 and t2 < 1:
                     # The second shape to our reference need to be subtracted to the final displacement
-                    if shape == 0:
-                        dx += (1 - t1) * (p[0] - pos[0])
-                        dy += (1 - t1) * (p[1] - pos[1])
-                    else:
-                        dx -= (1 - t1) * (p[0] - pos[0])
-                        dy -= (1 - t1) * (p[1] - pos[1])
-    return [dx,dy]
+                    dx += (1.0 - t1) * (p[0] - pos[0])
+                    dy += (1.0 - t1) * (p[1] - pos[1])
+            x += dx * -1 if shape == 0 else 1
+            y += dy * -1 if shape == 0 else 1
+            return [x, y]
 
-# credit https://progr.interplanety.org/en/python-how-to-find-the-polygon-center-coordinates/
-def findCentroid(vertexes):
-    x = [vertex[0] for vertex in vertexes]
-    y = [vertex[1] for vertex in vertexes]
-    length = len(vertexes)
-    x0 = sum(x) / length
-    y0 = sum(y) / length
-    return [x0, y0]
 
 
 async def main(loop):
@@ -228,12 +221,16 @@ async def main(loop):
 
     sim = Emulator(config, loop)
     await sim.connect()
+    for a in actors:
+        a.activity = activites[random.randrange(len(activites)-1)]
     while True:
         for a in actors:
-            a.activity = activites[0]  # temp
             moveActorTowards(a, a.activity.pos,structures,activites)
 
         await asyncio.sleep(0.04)
+        await actorsPos(actors)
+        if len(activites) < 1:
+            break
     await sim.disconnect()
 
 

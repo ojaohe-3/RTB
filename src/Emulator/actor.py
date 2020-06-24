@@ -12,4 +12,16 @@ class Actor:
     def setActivity(self,n_activity):
         self.activity = n_activity
     def setDestination(self, point):
+<<<<<<< Updated upstream
         self.activity = Activity(point,"moving", "unschedual", time.time+random.randrange(10,100))
+=======
+        self.activity = Activity(point,"moving", "unscheduled", time.time+random.randrange(10,100))
+
+
+    def toJson(self):
+        json_msg = {
+            "name": self.name,
+            "position": self.pos
+        }
+        return json_msg
+>>>>>>> Stashed changes

@@ -76,15 +76,21 @@ class Emulator:
         cur_time = datetime.datetime.now().time()
         json_msg = {
             "time": str(cur_time),
+<<<<<<< Updated upstream
             "event_type": actor.type,
             "event_activity": actor.activity,
             "event_position": actor.pos,
             "event_velocity": actor.vel,
+=======
+            "type": Actor.__name__,
+            "payload": actor.toJson()
+>>>>>>> Stashed changes
         }
         return json.dumps(json_msg)
 
 
 
+<<<<<<< Updated upstream
 async def main(loop):
     # print("generating senario from config file")
     # conf = {}
@@ -137,6 +143,47 @@ def collisionDetection(func):
 
     return wrapper
 
+=======
+def moveActorTowards(actor, pos,structures,activites):
+    actor.updatePos(pos)
+    checkForCollisions(actor,structures,activites)
+
+
+def checkForCollisions(actor,structures,activites):
+    mapbound = map.shape
+    # inside of map
+    if (not checkCollision(mapbound, actor.shape)):
+        print(f"{actor.name} is out of bounds! {str(actor.pos)}")
+        return True
+    # all placed structures
+    # for structure in structures:
+    #     if(checkCollision(structure.shape,actor.shape)):
+    #         displacement = checkCollisionDisplacment(actor, structure)
+    #     return True
+    # all placed activites
+    for activity in activites:
+        if activity.isActive():
+            shape1 = activity.shape
+            if (checkCollision(shape1, actor.shape)):
+                #logger.info(f"{actor.name} arrived at a activity {str(activity.pos)}, completeing it")
+                print(f"{actor.name} arrived at a activity {str(activity.pos)}, completeing it")
+                activity.status = 'completed'
+                activites.pop(activites.index(activity))
+                actor.activity = activites[-1]
+
+                # todo make event
+
+                return True
+    # other actors, if we care to
+    # for a in actors:
+    #     if(a != actor):
+    #         if(checkCollision(a.shape,actor.shape)):
+    #             return True, a.shape
+    return False, None
+async def actorsPos(actors):
+    for a in actors:
+        print(f"{a.name} is at pos {str(a.pos)} moving towards {str(a.activity.pos)}")
+>>>>>>> Stashed changes
 
 def checkCollision(shape1, shape2):
     s1 = shape1
@@ -212,6 +259,7 @@ def checkCollisionDisplacment(shape1, shape2):
                 # collision detected condition
                 if t1 >= 0 and t1 < 1 and t2 >= 0 and t2 < 1:
                     # The second shape to our reference need to be subtracted to the final displacement
+<<<<<<< Updated upstream
                     if shape == 0:
                         dx += (1 - t1) * (p[0] - pos[0])
                         dy += (1 - t1) * (p[1] - pos[1])
@@ -230,3 +278,43 @@ def findCentroid(vertexes):
     x0 = sum(x) / length
     y0 = sum(y) / length
     return (x0, y0)
+=======
+                    dx += (1.0 - t1) * (p[0] - pos[0])
+                    dy += (1.0 - t1) * (p[1] - pos[1])
+            x += dx * -1 if shape == 0 else 1
+            y += dy * -1 if shape == 0 else 1
+            return [x, y]
+
+
+
+async def main(loop):
+    config = toml.load('config.toml')
+    with open("sim.dat", "rb") as f:
+        data = pickle.load(f)
+        actors = data["actors"]
+        structures = data["structures"]
+        activites = data["activites"]
+
+    sim = Emulator(config, loop)
+    await sim.connect()
+    for a in actors:
+        a.activity = activites[random.randrange(len(activites)-1)]
+    while True:
+        for a in actors:
+            moveActorTowards(a, a.activity.pos,structures,activites)
+
+        await asyncio.sleep(0.04)
+        await actorsPos(actors)
+        msg = sim.get_sensor_data(a)
+        await sim.send_message(msg, "sensor_exchange")
+        if len(activites) < 1:
+            break
+    await sim.disconnect()
+
+
+if __name__ == "__main__":
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(main(loop))
+    loop.close()
+
+>>>>>>> Stashed changes

@@ -19,12 +19,12 @@ class Actor:
     def updatePos(self,npos):
         x = npos[0] - self.pos[0]
         y = npos[1] - self.pos[1]
+        magnitude = np.sqrt(x**2 + y**2)
         if(x == 0):
             return # is at destination.
-        theta = np.arctan(y/x)
         #generate velocity vector
-        dx = self.vel*np.cos(theta)
-        dy = self.vel*np.sin(theta)
+        dx = self.vel*x/magnitude
+        dy = self.vel*y/magnitude
 
         self.pos[0] += dx
         self.pos[1] += dy

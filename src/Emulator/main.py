@@ -127,6 +127,7 @@ def checkForCollisions(actor,structures,activites):
 async def actorsPos(actors):
     for a in actors:
         print(f"{a.name} is at pos {str(a.pos)} moving towards {str(a.activity.pos)}")
+    loop.call_later(1.0, )
 def checkCollision(shape1, shape2):
     s1 = shape1
     s2 = shape2

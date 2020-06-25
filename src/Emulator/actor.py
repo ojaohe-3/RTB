@@ -45,7 +45,8 @@ class Actor:
     def toJson(self):
         json_msg = {
             "name": self.name,
-            "position": self.pos
+            "position": self.pos,
+            "shape": self.shape
         }
         return json_msg
 

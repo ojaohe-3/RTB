@@ -1,7 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29a7477a-05d3-4d39-9c42-14c16e527603" name="Default Changelist" comment="" />
+    <list default="true" id="29a7477a-05d3-4d39-9c42-14c16e527603" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/FlaskSite/static/js/ajax_datagenerator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FlaskSite/static/js/stage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FlaskSite/templates/base_canvas.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FlaskSite/templates/base_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FlaskSite/templates/konva.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RTB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RTB.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/click/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/click/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/click/termui.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/click/termui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/click/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/click/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/flask/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/flask/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/itsdangerous/signer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/itsdangerous/signer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/jinja2/ext.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/jinja2/ext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/jinja2/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/jinja2/filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_internal/configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_internal/configuration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_internal/req/req_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_internal/req/req_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/appdirs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/appdirs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/colorama/winterm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/colorama/winterm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/distlib/_backport/shutil.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/distlib/_backport/shutil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/distlib/_backport/sysconfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/distlib/_backport/sysconfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/distlib/manifest.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/distlib/manifest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/distlib/metadata.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/distlib/metadata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/distlib/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/distlib/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/html5lib/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/html5lib/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/html5lib/filters/optionaltags.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/html5lib/filters/optionaltags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/html5lib/filters/sanitizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/html5lib/filters/sanitizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/html5lib/html5parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/html5lib/html5parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/html5lib/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/html5lib/serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/ipaddress.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/ipaddress.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/pkg_resources/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/pkg_resources/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/pyparsing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/pyparsing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/requests/adapters.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/requests/adapters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/requests/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/requests/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/six.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/six.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/urllib3/fields.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/urllib3/fields.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/urllib3/packages/six.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/urllib3/packages/six.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/urllib3/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/pip-19.0.3-py3.8.egg/pip/_vendor/urllib3/response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/werkzeug/_internal.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/werkzeug/_internal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/werkzeug/datastructures.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/werkzeug/datastructures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/werkzeug/debug/tbtools.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/werkzeug/debug/tbtools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/werkzeug/testapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/werkzeug/testapp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/werkzeug/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlaskSite/venv/Lib/site-packages/werkzeug/utils.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,22 +58,40 @@
       <list>
         <option value="Python Unit Test" />
         <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1dLnxH2qZQ8LlcEciQwHEOxaQn1" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/FlaskSite" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.templateLanguages.PyTemplateLanguageModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\JohanLap\PycharmProjects\RTB\src\Emulator\Test" />
+      <recent name="C:\Users\JohanLap\PycharmProjects\RTB\src\FlaskSite\static" />
       <recent name="C:\Users\JohanLap\PycharmProjects\RTB\src\FlaskSite" />
+      <recent name="C:\Users\JohanLap\PycharmProjects\RTB\src\FlaskSite\templates" />
+      <recent name="C:\Users\JohanLap\PycharmProjects\RTB\src\Emulator\Test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -43,6 +106,21 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="RTB" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\JohanLap\PycharmProjects\untitled\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/FlaskSite" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -54,6 +132,7 @@
       <option name="presentableId" value="Default" />
       <updated>1592213488092</updated>
       <workItem from="1592213498132" duration="649000" />
+      <workItem from="1593076144475" duration="4506000" />
     </task>
     <task id="LOCAL−00001" summary="Flask Setup">
       <created>1592213574765</created>
@@ -78,7 +157,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -14,7 +14,7 @@ def postConfigs():
 
 
 @app.route('/data', methods="GET")
-def sendData():
+def sendRequesterData():
     # todo authentication
     # todo get data from socket if available
     # todo generate json and send to requester

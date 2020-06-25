@@ -1,0 +1,8 @@
+[rabbitmq]
+username = "rtb"
+password = "rtb123"
+host = "130.240.5.138"
+
+[log]
+filename = "logfile"
+

@@ -17,5 +17,10 @@ function updateData(data){
          a.shape = actor["shape"];
          actors.replace(actor["name"],a); //if this is even necessary
     }
+    update()
+}
+function update() {
+    actors.forEach((key , value)=>{
 
+    })
 }

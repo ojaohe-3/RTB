@@ -27,10 +27,16 @@ async def sendRequesterData():
     # todo get data from socket if available
     # todo generate json and send to requester
     db = DB.get_connection()
-    collection = db["rtb"].get_collection("Actors").find({"Name":"worker1"})
-    msg =collection.next()
-
+    collection = db["rtb"].get_collection("Actors").find({})
+    msg = {}
+    for obj in iter(collection):
+        temp = {}
+        for value in obj:
+            if '_id' not in value:
+                temp[value] = obj[value]
+        msg[str(obj['_id'])] = temp
     return str(msg)
+
 
 async def getData(conf, loop):
     return ''

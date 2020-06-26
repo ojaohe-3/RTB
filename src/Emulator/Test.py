@@ -22,7 +22,7 @@ def generateSim():
                     [[-2, -1], [-2, 1], [2, 1], [2, -1]], "truck" + str(i))
         t.append(obj)
     for i in range(3):
-        obj = Structure(None, [random.randrange(0, 500), random.randrange(0, 500)])
+        obj = Structure([random.randrange(0, 500), random.randrange(0, 500)])
         s.append(obj)
     for i in range(150):
         obj = Activity([random.randrange(0, 500), random.randrange(0, 500)], "do work here", "active",

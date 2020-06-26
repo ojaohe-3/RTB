@@ -1,30 +1,44 @@
 from flask import Flask
+from src.Consumer import Consumer
+import toml
+import asyncio
+import pymongo
+from pymongo import MongoClient
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def index():
-    return 'Hello World!'
+    return 'Hello World'
 
 
-@app.route('/config', methods="POST")
+@app.route('/config', methods=["POST"])
 def postConfigs():
     return ''
 
 
-@app.route('/data', methods="GET")
+@app.route('/data', methods=["GET"])
 def sendRequesterData():
 
     # todo authentication
     # todo get data from socket if available
     # todo generate json and send to requester
-    return ''
+    client = MongoClient("mongodb://{}:{}/".format(config["MongoDB"]["host"], config["MongoDB"]["port"]))
+    msg = client.rtb.Actors.find({"Name": "worker1"})
+    return msg
+
 
 
 async def getData(conf, loop):
     return ''
 
+loop = asyncio.get_event_loop()
 
 if __name__ == '__main__':
     app.run()
+    config = toml.load("config.toml")
+    consumer = Consumer(config)
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(loop)
+    loop.close()

@@ -124,6 +124,8 @@ async def main(loop, actors, structures, activites):
     while True:
         for a in actors:
             moveActorTowards(a, a.activity.pos, structures, activites)
+            msg = sim.get_sensor_data(a)
+            await sim.send_message(msg, 'sensor_exchange')
 
         await asyncio.sleep(0.04)
 

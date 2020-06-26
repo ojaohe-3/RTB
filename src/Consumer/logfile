@@ -42774,3 +42774,3817 @@ INFO:__main__:[287.663013845442, 199.48085532214355]
 INFO:__main__:mongoupdated
 INFO:__main__:POSITION
 INFO:__main__:[165.2316307141204, 232.89454714275644]
+INFO:__main__:connected to RMQ
+INFO:__main__:POSITION
+INFO:__main__:[369.1544122531251, 462.7854000793916]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[43.4882332776663, 484.93405680405544]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[306.4032229916769, 266.60214866111795]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[94.6721737901892, 74.1183025870733]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[51.42750778179345, 113.344764340156]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[488.7965095767647, 291.94771426625204]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[362.5728728748655, 102.32533514671464]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.95890616289296, 251.84487076492098]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[30.128807125821385, 40.945993317507885]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[12.791578923984927, 342.84168421520303]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[253.68975448593173, 389.6534920232484]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[330.102384792596, 375.3194974961919]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[470.68853601058765, 65.29485257664368]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[269.5495943838421, 42.215238331149]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[198.55449121095506, 54.934558224887645]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[368.3088245062502, 462.5708001587832]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[43.97646655533261, 484.8681136081109]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[305.8064459833538, 266.2042973222359]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[95.34434758037841, 74.2366051741466]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[51.8550155635869, 113.68952868031201]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[488.59301915352944, 291.89542853250407]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[362.14574574973096, 102.65067029342927]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.91781232578592, 251.68974152984197]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[30.25761425164277, 41.89198663501577]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[13.583157847969854, 342.68336843040606]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[253.37950897186346, 389.30698404649684]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[329.204769585192, 374.6389949923838]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[470.3770720211753, 65.58970515328735]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[267.09918876768415, 42.430476662298005]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[199.10898242191013, 56.86911644977529]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[367.46323675937526, 462.3562002381748]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[44.46469983299891, 484.80217041216633]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[305.2096689750307, 265.80644598335385]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[96.01652137056762, 74.3549077612199]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[52.282523345380355, 114.03429302046801]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[488.38952873029416, 291.8431427987561]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[361.71861862459644, 102.97600544014391]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.87671848867888, 251.53461229476295]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[30.386421377464156, 42.83797995252365]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[14.374736771954781, 342.5250526456091]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[253.0692634577952, 388.96047606974525]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[328.30715437778804, 373.9584924885757]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[470.06560803176296, 65.88455772993103]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[264.64878315152623, 42.64571499344701]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[199.6634736328652, 58.803674674662936]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[366.61764901250035, 462.1416003175664]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[44.952933110665214, 484.7362272162218]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[304.6128919667076, 265.4085946444718]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[96.68869516075682, 74.47321034829321]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[52.71003112717381, 114.37905736062402]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[488.1860383070589, 291.79085706500814]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[361.2914914994619, 103.30134058685854]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.83562465157183, 251.37948305968393]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[30.51522850328554, 43.78397327003154]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[15.166315695939709, 342.3667368608121]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[252.75901794372692, 388.6139680929937]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[327.40953917038405, 373.2779899847676]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[469.7541440423506, 66.17941030657471]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[262.1983775353683, 42.86095332459601]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[200.21796484382025, 60.73823289955058]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[365.77206126562544, 461.92700039695796]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[45.44116638833152, 484.6702840202772]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[304.0161149583845, 265.01074330558976]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[97.36086895094603, 74.59151293536651]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[53.13753890896726, 114.72382170078002]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[487.9825478838236, 291.7385713312602]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[360.8643643743274, 103.62667573357318]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.7945308144648, 251.22435382460492]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[30.644035629106927, 44.72996658753942]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[15.957894619924636, 342.20842107601516]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[252.44877242965865, 388.2674601162421]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[326.51192396298006, 372.5974874809595]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[469.4426800529383, 66.47426288321839]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[259.7479719192104, 43.07619165574501]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[200.77245605477532, 62.67279112443823]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[364.9264735187505, 461.71240047634956]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[45.92939966599782, 484.60434082433267]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[303.4193379500614, 264.6128919667077]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[98.03304274113523, 74.70981552243981]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[53.56504669076071, 115.06858604093603]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[487.7790574605883, 291.6862855975122]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[360.4372372491929, 103.95201088028782]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.75343697735775, 251.0692245895259]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[30.772842754928313, 45.67595990504731]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[16.749473543909563, 342.0501052912182]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[252.13852691559038, 387.9209521394905]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[325.6143087555761, 371.9169849771514]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[469.1312160635259, 66.76911545986206]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[257.29756630305246, 43.291429986894016]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[201.32694726573038, 64.60734934932587]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[364.0808857718756, 461.49780055574115]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[46.417632943664124, 484.5383976283881]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[302.8225609417383, 264.21504062782566]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[98.70521653132444, 74.82811810951311]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[53.99255447255416, 115.41335038109203]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[487.57556703735304, 291.63399986376425]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[360.0101101240584, 104.27734602700245]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.7123431402507, 250.91409535444689]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[30.901649880749698, 46.62195322255519]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[17.54105246789449, 341.8917895064212]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[251.8282814015221, 387.5744441627389]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[324.7166935481721, 371.2364824733433]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[468.8197520741136, 67.06396803650574]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[254.84716068689457, 43.50666831804302]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[201.88143847668545, 66.54190757421351]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[363.2352980250007, 461.28320063513274]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[46.90586622133043, 484.47245443244356]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[302.2257839334152, 263.8171892889436]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[99.37739032151364, 74.94642069658642]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[54.42006225434761, 115.75811472124803]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[487.37207661411776, 291.5817141300163]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[359.58298299892385, 104.60268117371709]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.67124930314367, 250.75896611936787]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[31.030457006571083, 47.567946540063076]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[18.33263139187942, 341.73347372162425]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[251.51803588745383, 387.22793618598735]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[323.8190783407681, 370.5559799695352]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[468.50828808470123, 67.35882061314942]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[252.39675507073667, 43.72190664919202]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[202.4359296876405, 68.47646579910115]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[362.3897102781258, 461.06860071452434]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[47.39409949899673, 484.406511236499]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[301.6290069250921, 263.41933795006156]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[100.04956411170285, 75.06472328365972]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[54.847570036141065, 116.10287906140404]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[487.1685861908825, 291.5294283962683]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[359.15585587378933, 104.92801632043172]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.63015546603663, 250.60383688428885]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[31.15926413239247, 48.51393985757096]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[19.12421031586435, 341.5751579368273]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[251.20779037338556, 386.88142820923576]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[322.9214631333641, 369.8754774657271]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[468.1968240952889, 67.6536731897931]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[249.94634945457878, 43.937144980341024]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[202.99042089859557, 70.41102402398879]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[361.5441225312509, 460.85400079391593]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[47.882332776663034, 484.34056804055444]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[301.032229916769, 263.0214866111795]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[100.72173790189206, 75.18302587073302]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[55.275077817934516, 116.44764340156004]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[486.9650957676472, 291.47714266252035]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[358.7287287486548, 105.25335146714636]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.58906162892958, 250.44870764920984]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[31.288071258213854, 49.459933175078845]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[19.915789239849275, 341.4168421520303]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[250.8975448593173, 386.5349202324842]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[322.0238479259601, 369.194974961919]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[467.88536010587654, 67.94852576643677]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[247.49594383842089, 44.15238331149003]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[203.54491210955064, 72.34558224887643]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[360.69853478437597, 460.6394008733075]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[48.37056605432934, 484.2746248446099]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[300.4354529084459, 262.62363527229746]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[101.39391169208126, 75.30132845780632]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[55.70258559972797, 116.79240774171605]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[486.7616053444119, 291.4248569287724]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[358.3016016235203, 105.578686613861]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.54796779182254, 250.29357841413082]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[31.41687838403524, 50.40592649258673]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[20.707368163834204, 341.25852636723334]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[250.58729934524902, 386.1884122557326]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[321.12623271855614, 368.5144724581109]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[467.5738961164642, 68.24337834308045]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[245.045538222263, 44.36762164263903]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[204.0994033205057, 74.28014047376406]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[359.85294703750105, 460.4248009526991]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[48.85879933199564, 484.20868164866533]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[299.8386759001228, 262.2257839334154]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[102.06608548227047, 75.41963104487962]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[56.13009338152142, 117.13717208187205]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[486.55811492117664, 291.3725711950244]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[357.8744744983858, 105.90402176057563]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.5068739547155, 250.1384491790518]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[31.545685509856625, 51.351919810094614]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[21.498947087819133, 341.1002105824364]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[250.27705383118075, 385.841904278981]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[320.22861751115215, 367.8339699543028]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[467.26243212705185, 68.53823091972413]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[242.5951326061051, 44.58285997378803]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[204.65389453146076, 76.2146986986517]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[359.00735929062614, 460.2102010320907]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[49.347032609661944, 484.1427384527208]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[299.2418988917997, 261.82793259453337]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[102.73825927245967, 75.53793363195292]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[56.55760116331487, 117.48193642202806]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[486.35462449794136, 291.32028546127646]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[357.44734737325126, 106.22935690729027]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.46578011760846, 249.9833199439728]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[31.67449263567801, 52.2979131276025]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[22.29052601180406, 340.9418947976394]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[249.96680831711248, 385.49539630222944]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[319.33100230374816, 367.1534674504947]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[466.9509681376395, 68.8330834963678]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[240.1447269899472, 44.798098304937035]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[205.20838574241583, 78.14925692353934]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[358.16177154375123, 459.9956011114823]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[49.83526588732825, 484.0767952567762]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[298.6451218834766, 261.4300812556513]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[103.41043306264888, 75.65623621902623]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[56.98510894510832, 117.82670076218406]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[486.1511340747061, 291.2679997275285]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[357.02022024811674, 106.5546920540049]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.42468628050142, 249.82819070889377]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[31.803299761499396, 53.24390644511038]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[23.08210493578899, 340.78357901284244]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[249.6565628030442, 385.14888832547786]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[318.4333870963442, 366.4729649466866]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[466.63950414822716, 69.12793607301148]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[237.6943213737893, 45.01333663608604]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[205.7628769533709, 80.08381514842698]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[357.3161837968763, 459.7810011908739]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[50.32349916499455, 484.01085206083167]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[298.0483448751535, 261.03222991676927]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[104.08260685283808, 75.77453880609953]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[57.412616726901774, 118.17146510234006]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[485.9476436514708, 291.2157139937805]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[356.5930931229822, 106.88002720071954]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.38359244339438, 249.67306147381476]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[31.93210688732078, 54.18989976261827]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[23.87368385977392, 340.62526322804547]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[249.34631728897594, 384.8023803487263]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[317.5357718889402, 365.7924624428785]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[466.3280401588148, 69.42278864965516]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[235.2439157576314, 45.22857496723504]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[206.31736816432596, 82.01837337331462]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[356.4705960500014, 459.5664012702655]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[50.811732442660855, 483.9449088648871]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[297.4515678668304, 260.6343785778872]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[104.75478064302729, 75.89284139317283]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[57.840124508695226, 118.51622944249607]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[485.7441532282355, 291.16342826003256]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[356.1659659978477, 107.20536234743417]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.34249860628734, 249.51793223873574]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[32.06091401314217, 55.13589308012615]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[24.665262783758845, 340.4669474432485]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[249.03607177490767, 384.4558723719747]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[316.6381566815362, 365.1119599390704]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[466.01657616940247, 69.71764122629884]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[232.79351014147352, 45.44381329838404]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[206.87185937528102, 83.95293159820226]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[355.6250083031265, 459.3518013496571]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[51.29996572032716, 483.87896566894256]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[296.8547908585073, 260.23652723900517]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[105.4269544332165, 76.01114398024613]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[58.26763229048868, 118.86099378265207]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[485.54066280500024, 291.1111425262846]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[355.7388388727132, 107.53069749414881]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.3014047691803, 249.36280300365672]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[32.189721138963556, 56.08188639763404]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[25.45684170774377, 340.30863165845153]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[248.7258262608394, 384.1093643952231]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[315.7405414741322, 364.4314574352623]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[465.7051121799901, 70.01249380294252]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[230.34310452531562, 45.659051629533046]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[207.42635058623608, 85.8874898230899]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[354.7794205562516, 459.1372014290487]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[51.78819899799346, 483.813022472998]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[296.25801385018417, 259.8386759001231]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[106.0991282234057, 76.12944656731943]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[58.69514007228213, 119.20575812280808]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[485.33717238176496, 291.05885679253663]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[355.31171174757867, 107.85603264086345]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.26031093207325, 249.2076737685777]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[32.318528264784945, 57.02787971514192]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[26.2484206317287, 340.15031587365456]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[248.41558074677113, 383.76285641847153]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[314.8429262667282, 363.7509549314542]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[465.3936481905778, 70.30734637958619]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[227.89269890915773, 45.87428996068205]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[207.98084179719115, 87.82204804797753]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[353.93383280937667, 458.92260150844027]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[52.276432275659765, 483.74707927705344]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[295.66123684186107, 259.4408245612411]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[106.7713020135949, 76.24774915439274]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[59.12264785407558, 119.55052246296408]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[485.1336819585297, 291.00657105878867]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[354.88458462244415, 108.18136778757808]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.2192170949662, 249.0525445334987]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[32.447335390606334, 57.973873032649806]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[27.039999555713624, 339.9920000888576]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[248.10533523270286, 383.41634844171995]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[313.94531105932424, 363.0704524276461]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[465.08218420116543, 70.60219895622987]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[225.44229329299984, 46.08952829183105]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[208.5353330081462, 89.75660627286517]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[353.08824506250176, 458.70800158783186]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[52.76466555332607, 483.6811360811089]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[295.06445983353797, 259.042973222359]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[107.44347580378411, 76.36605174146604]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[59.55015563586903, 119.89528680312009]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[484.9301915352944, 290.9542853250407]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[354.45745749730963, 108.50670293429272]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.17812325785917, 248.89741529841967]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[32.57614251642772, 58.91986635015769]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[27.83157847969855, 339.8336843040606]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[247.79508971863459, 383.06984046496837]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[313.04769585192025, 362.389949923838]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[464.7707202117531, 70.89705153287355]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[222.99188767684194, 46.304766622980054]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[209.08982421910127, 91.69116449775281]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[352.24265731562684, 458.49340166722345]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[53.25289883099237, 483.61519288516433]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[294.46768282521487, 258.645121883477]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[108.11564959397332, 76.48435432853934]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[59.977663417662484, 120.24005114327609]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[484.7267011120591, 290.90199959129274]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[354.0303303721751, 108.83203808100735]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.13702942075213, 248.74228606334066]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[32.70494964224911, 59.865859667665575]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[28.623157403683475, 339.67536851926366]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[247.48484420456631, 382.7233324882168]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[312.15008064451627, 361.7094474200299]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[464.45925622234074, 71.19190410951722]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[220.54148206068405, 46.52000495412906]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[209.64431543005634, 93.62572272264045]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[351.39706956875193, 458.27880174661504]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[53.741132108658675, 483.5492496892198]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[293.87090581689176, 258.2472705445949]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[108.78782338416252, 76.60265691561264]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[60.405171199455935, 120.5848154834321]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[484.52321068882384, 290.84971385754477]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[353.6032032470406, 109.15737322772199]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.0959355836451, 248.58715682826164]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[32.8337567680705, 60.81185298517346]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[29.4147363276684, 339.5170527344667]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[247.17459869049804, 382.3768245114652]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[311.2524654371123, 361.0289449162218]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[464.1477922329284, 71.4867566861609]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[218.09107644452615, 46.73524328527806]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[210.1988066410114, 95.56028094752808]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[350.551481821877, 458.06420182600664]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[54.22936538632498, 483.4833064932752]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[293.27412880856866, 257.8494192057129]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[109.45999717435173, 76.72095950268594]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[60.83267898124939, 120.9295798235881]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[484.31972026558856, 290.7974281237968]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[353.1760761219061, 109.48270837443663]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.05484174653807, 248.43202759318262]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[32.96256389389189, 61.757846302681344]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[30.206315251653326, 339.3587369496697]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[246.86435317642977, 382.0303165347136]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[310.3548502297083, 360.3484424124137]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[463.83632824351605, 71.78160926280458]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[215.64067082836826, 46.95048161642706]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[210.75329785196647, 97.49483917241572]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[349.7058940750021, 457.84960190539823]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[54.71759866399128, 483.41736329733067]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[292.67735180024556, 257.4515678668308]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[110.13217096454093, 76.83926208975925]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[61.26018676304284, 121.2743441637441]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[484.1162298423533, 290.74514239004884]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[352.74894899677156, 109.80804352115126]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.01374790943103, 248.2768983581036]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[33.09137101971328, 62.70383962018923]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[30.99789417563825, 339.20042116487275]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[246.5541076623615, 381.68380855796204]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[309.4572350223043, 359.6679399086056]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[463.5248642541037, 72.07646183944826]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[213.19026521221036, 47.165719947576065]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[211.30778906292153, 99.42939739730336]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[348.8603063281272, 457.6350019847898]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[55.205831941657586, 483.3514201013861]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[292.08057479192246, 257.0537165279488]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[110.80434475473014, 76.95756467683255]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[61.68769454483629, 121.61910850390011]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[483.912739419118, 290.6928566563009]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[352.32182187163704, 110.1333786678659]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.97265407232402, 248.1217691230246]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[33.22017814553467, 63.64983293769711]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[31.789473099623176, 339.0421053800758]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[246.24386214829323, 381.33730058121046]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[308.5596198149003, 358.9874374047975]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[463.21340026469136, 72.37131441609193]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[210.73985959605247, 47.38095827872507]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[211.8622802738766, 101.363955622191]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[348.0147185812523, 457.4204020641814]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[55.69406521932389, 483.28547690544156]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[291.48379778359936, 256.65586518906673]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[111.47651854491934, 77.07586726390585]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[62.11520232662974, 121.96387284405611]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[483.7092489958827, 290.6405709225529]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[351.8946947465025, 110.45871381458053]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.93156023521698, 247.96663988794558]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[33.34898527135606, 64.595826255205]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[32.5810520236081, 338.8837895952788]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[245.93361663422496, 380.9907926044589]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[307.6620046074963, 358.3069349009894]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[462.901936275279, 72.66616699273561]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[208.28945397989457, 47.59619660987407]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[212.41677148483166, 103.29851384707864]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[347.16913083437737, 457.205802143573]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[56.18229849699019, 483.219533709497]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[290.88702077527626, 256.2580138501847]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[112.14869233510855, 77.19416985097915]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[62.542710108423194, 122.30863718421212]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[483.50575857264744, 290.58828518880495]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[351.467567621368, 110.78404896129517]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.89046639810996, 247.81151065286656]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[33.477792397177446, 65.54181957271288]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[33.37263094759303, 338.72547381048184]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[245.6233711201567, 380.6442846277073]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[306.76438940009234, 357.6264323971813]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[462.59047228586667, 72.96101956937929]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[205.83904836373668, 47.81143494102307]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[212.97126269578672, 105.23307207196628]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[346.32354308750246, 456.9912022229646]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[56.670531774656496, 483.15359051355244]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[290.29024376695315, 255.8601625113026]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[112.82086612529775, 77.31247243805245]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[62.970217890216645, 122.65340152436812]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[483.30226814941216, 290.535999455057]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[351.0404404962335, 111.1093841080098]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.84937256100295, 247.65638141778754]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[33.606599522998835, 66.48781289022077]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[34.16420987157796, 338.5671580256849]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[245.31312560608842, 380.2977766509557]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[305.86677419268835, 356.9459298933732]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[462.2790082964543, 73.25587214602297]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[203.38864274757879, 48.026673272172076]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[213.52575390674178, 107.16763029685391]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[345.47795534062755, 456.7766023023562]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[57.1587650523228, 483.0876473176079]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[289.69346675863005, 255.46231117242053]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[113.49303991548696, 77.43077502512575]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[63.3977256720101, 122.99816586452413]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[483.0987777261769, 290.483713721309]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[350.61331337109897, 111.43471925472444]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.80827872389594, 247.50125218270853]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[33.73540664882022, 67.43380620772865]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[34.95578879556289, 338.4088422408879]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[245.00288009202015, 379.95126867420413]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[304.96915898528437, 356.2654273895651]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[461.967544307042, 73.55072472266664]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[200.9382371314209, 48.24191160332108]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[214.08024511769685, 109.10218852174155]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[344.63236759375263, 456.5620023817478]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[57.6469983299891, 483.02170412166333]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[289.09668975030695, 255.06445983353845]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[114.16521370567617, 77.54907761219906]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[63.82523345380355, 123.34293020468013]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[482.8952873029416, 290.43142798756105]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[350.18618624596445, 111.76005440143908]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.7671848867889, 247.3461229476295]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[33.86421377464161, 68.37979952523654]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[35.74736771954782, 338.25052645609094]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[244.69263457795188, 379.60476069745255]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[304.0715437778804, 355.584924885757]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[461.65608031762963, 73.84557729931032]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[198.487831515263, 48.45714993447008]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[214.6347363286519, 111.03674674662919]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[343.7867798468777, 456.3474024611394]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[58.135231607655406, 482.9557609257188]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[288.49991274198385, 254.66660849465637]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[114.83738749586537, 77.66738019927236]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[64.252741235597, 123.68769454483613]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[482.6917968797063, 290.3791422538131]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[349.75905912082993, 112.08538954815371]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.72609104968188, 247.1909937125505]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[33.993020900463, 69.32579284274442]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[36.538946643532746, 338.09221067129397]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[244.3823890638836, 379.25825272070097]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[303.1739285704764, 354.9044223819489]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[461.3446163282173, 74.140429875954]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[196.0374258991051, 48.67238826561909]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[215.18922753960697, 112.97130497151683]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[342.9411921000028, 456.132802540531]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[58.62346488532171, 482.8898177297742]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[287.90313573366075, 254.2687571557743]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[115.50956128605458, 77.78568278634566]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[64.68024901739045, 124.03245888499214]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[482.48830645647104, 290.3268565200651]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[349.3319319956954, 112.41072469486835]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.68499721257484, 247.03586447747148]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[34.12182802628439, 70.2717861602523]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[37.330525567517675, 337.933894886497]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[244.07214354981534, 378.9117447439494]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[302.2763133630724, 354.2239198781408]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[461.03315233880494, 74.43528245259768]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[193.5870202829472, 48.887626596768094]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[215.74371875056204, 114.90586319640447]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[342.0956043531279, 455.91820261992257]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[59.11169816298801, 482.82387453382967]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[287.30635872533765, 253.87090581689222]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[116.18173507624378, 77.90398537341896]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[65.1077567991839, 124.37722322514814]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[482.28481603323576, 290.27457078631716]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[348.9048048705609, 112.73605984158299]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.64390337546783, 246.88073524239246]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[34.25063515210578, 71.21777947776019]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[38.122104491502604, 337.77557910170003]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[243.76189803574707, 378.5652367671978]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[301.3786981556684, 353.5434173743327]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[460.7216883493926, 74.73013502924135]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[191.1366146667893, 49.1028649279171]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[216.2982099615171, 116.8404214212921]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[341.250016606253, 455.70360269931416]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[59.599931440654316, 482.7579313378851]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[286.70958171701454, 253.47305447801014]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[116.85390886643299, 78.02228796049226]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[65.53526458097735, 124.72198756530415]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[482.0813256100005, 290.2222850525692]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[348.4776777454264, 113.06139498829762]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.60280953836082, 246.72560600731344]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[34.37944227792717, 72.16377279526807]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[38.91368341548753, 337.61726331690306]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[243.4516525216788, 378.2187287904462]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[300.48108294826443, 352.8629148705246]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[460.41022435998025, 75.02498760588503]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[188.68620905063142, 49.318103259066106]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[216.85270117247217, 118.77497964617974]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[340.4044288593781, 455.48900277870575]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[60.08816471832062, 482.69198814194056]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[286.11280470869144, 253.07520313912806]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[117.5260826566222, 78.14059054756557]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[65.9627723627708, 125.06675190546015]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[481.8778351867652, 290.1699993188212]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[348.05055062029186, 113.38673013501226]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.56171570125377, 246.57047677223443]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[34.50824940374856, 73.10976611277596]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[39.70526233947246, 337.4589475321061]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[243.14140700761052, 377.87222081369464]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[299.58346774086044, 352.1824123667165]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[460.0987603705679, 75.31984018252871]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[186.23580343447352, 49.533341590215116]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[217.40719238342723, 120.70953787106738]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[339.55884111250316, 455.27440285809735]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[60.57639799598692, 482.626044945996]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[285.51602770036834, 252.677351800246]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[118.1982564468114, 78.25889313463887]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[66.39028014456426, 125.41151624561616]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[481.6743447635299, 290.11771358507326]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[347.62342349515734, 113.7120652817269]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.52062186414676, 246.4153475371554]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[34.637056529569946, 74.05575943028384]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[40.49684126345739, 337.3006317473091]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[242.83116149354225, 377.52571283694306]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[298.68585253345645, 351.5019098629084]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[459.78729638115556, 75.61469275917239]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[183.78539781831563, 49.74857992136412]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[217.9616835943823, 122.64409609595502]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[338.71325336562825, 455.05980293748894]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[61.06463127365323, 482.56010175005144]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[284.91925069204524, 252.2795004613639]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[118.8704302370006, 78.37719572171217]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[66.81778792635771, 125.75628058577216]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[481.47085434029464, 290.0654278513253]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[347.1962963700228, 114.03740042844153]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.47952802703975, 246.2602183020764]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[34.765863655391335, 75.00175274779173]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[41.28842018744232, 337.14231596251216]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[242.52091597947398, 377.1792048601915]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[297.78823732605247, 350.8214073591003]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[459.4758323917432, 75.90954533581606]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[181.33499220215774, 49.96381825251313]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[218.51617480533736, 124.57865432084266]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[337.86766561875334, 454.84520301688053]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[61.55286455131953, 482.4941585541069]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[284.32247368372214, 251.88164912248183]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[119.54260402718981, 78.49549830878547]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[67.24529570815116, 126.10104492592816]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[481.26736391705936, 290.01314211757733]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[346.7691692448883, 114.36273557515617]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.4384341899327, 246.10508906699738]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[34.894670781212724, 75.94774606529961]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[42.07999911142725, 336.9840001777152]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[242.2106704654057, 376.8326968834399]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[296.8906221186485, 350.1409048552922]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[459.16436840233087, 76.20439791245974]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[178.88458658599984, 50.17905658366213]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[219.07066601629242, 126.5132125457303]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[337.0220778718784, 454.6306030962721]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[62.04109782898583, 482.42821535816233]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[283.72569667539904, 251.48379778359975]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[120.21477781737902, 78.61380089585877]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[67.67280348994461, 126.44580926608417]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[481.0638734938241, 289.96085638382937]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[346.3420421197537, 114.6880707218708]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.3973403528257, 245.94995983191836]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[35.02347790703411, 76.8937393828075]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[42.87157803541218, 336.8256843929182]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[241.90042495133744, 376.4861889066883]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[295.9930069112445, 349.4604023514841]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[458.8529044129185, 76.49925048910342]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[176.43418096984195, 50.39429491481114]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[219.62515722724748, 128.44777077061795]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[336.1764901250035, 454.4160031756637]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[62.52933110665214, 482.3622721622178]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[283.12891966707593, 251.08594644471768]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[120.88695160756822, 78.73210348293208]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[68.10031127173806, 126.79057360624017]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[480.8603830705888, 289.9085706500814]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[345.91491499461915, 115.01340586858544]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.35624651571865, 245.79483059683935]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[35.1522850328555, 77.83973270031538]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[43.66315695939711, 336.66736860812125]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[241.59017943726917, 376.13968092993673]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[295.0953917038405, 348.779899847676]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[458.5414404235062, 76.7941030657471]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[173.98377535368405, 50.609533245960144]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[220.17964843820255, 130.3823289955056]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[335.3309023781286, 454.2014032550553]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[63.01756438431844, 482.2963289662732]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[282.53214265875283, 250.6880951058356]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[121.55912539775743, 78.85040607000538]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[68.52781905353152, 127.13533794639618]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[480.6568926473535, 289.85628491633344]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[345.48778786948463, 115.33874101530007]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.31515267861164, 245.63970136176033]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[35.28109215867689, 78.78572601782327]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[44.454735883382035, 336.5090528233243]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[241.2799339232009, 375.79317295318515]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[294.1977764964365, 348.0993973438679]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[458.2299764340938, 77.08895564239077]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[171.53336973752616, 50.82477157710915]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[220.7341396491576, 132.31688722039323]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[334.4853146312537, 453.9868033344469]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[63.505797661984744, 482.23038577032867]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[281.93536565042973, 250.29024376695352]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[122.23129918794663, 78.96870865707868]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[68.95532683532497, 127.48010228655218]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[480.45340222411824, 289.80399918258547]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[345.0606607443501, 115.66407616201471]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.27405884150463, 245.48457212668131]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[35.40989928449828, 79.73171933533115]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[45.246314807366964, 336.3507370385273]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[240.96968840913263, 375.44666497643357]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[293.30016128903253, 347.4188948400598]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[457.9185124446815, 77.38380821903445]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[169.08296412136826, 51.040009908258156]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[221.28863086011268, 134.25144544528086]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[333.6397268843788, 453.7722034138385]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[63.99403093965105, 482.1644425743841]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[281.33858864210663, 249.89239242807145]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[122.90347297813584, 79.08701124415198]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[69.38283461711842, 127.82486662670819]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[480.24991180088296, 289.7517134488375]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[344.63353361921554, 115.98941130872934]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.23296500439758, 245.3294428916023]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[35.53870641031967, 80.67771265283903]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[46.03789373135189, 336.19242125373034]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[240.65944289506436, 375.100156999682]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[292.40254608162854, 346.7383923362517]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[457.60704845526914, 77.67866079567813]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[166.63255850521037, 51.255248239407166]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[221.8431220710677, 136.1860036701685]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[332.79413913750386, 453.5576034932301]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[64.48226421731735, 482.09849937843956]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[280.7418116337835, 249.49454108918937]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[123.57564676832504, 79.20531383122528]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[69.81034239891187, 128.1696309668642]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[480.0464213776477, 289.69942771508954]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[344.20640649408097, 116.31474645544398]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.19187116729057, 245.17431365652328]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[35.66751353614106, 81.62370597034692]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[46.82947265533682, 336.0341054689334]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[240.3491973809961, 374.7536490229304]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[291.50493087422456, 346.0578898324436]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[457.2955844658568, 77.9735133723218]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[164.18215288905247, 51.47048657055617]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[222.39761328202275, 138.12056189505614]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[331.94855139062895, 453.3430035726217]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[64.97049749498365, 482.032556182495]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[280.1450346254604, 249.0966897503073]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[124.24782055851425, 79.32361641829858]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[70.23785018070532, 128.5143953070202]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[479.8429309544124, 289.6471419813416]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[343.7792793689464, 116.64008160215862]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.15077733018353, 245.01918442144427]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[35.79632066196245, 82.5696992878548]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[47.62105157932175, 335.8757896841364]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[240.03895186692782, 374.4071410461788]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[290.60731566682057, 345.3773873286355]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[456.98412047644445, 78.26836594896548]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[161.73174727289458, 51.68572490170518]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[222.9521044929778, 140.05512011994378]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[331.10296364375404, 453.1284036520133]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[65.45873077264994, 481.96661298655044]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[279.5482576171373, 248.6988384114252]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[124.91999434870345, 79.44191900537189]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[70.66535796249877, 128.85915964717623]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[479.6394405311771, 289.5948562475936]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[343.3521522438119, 116.96541674887325]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.10968349307652, 244.86405518636525]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[35.925127787783836, 83.51569260536269]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[48.41263050330668, 335.71747389933944]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[239.72870635285955, 374.06063306942724]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[289.7097004594166, 344.6968848248274]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[456.6726564870321, 78.56321852560916]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[159.28134165673669, 51.90096323285418]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[223.50659570393285, 141.98967834483142]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[330.2573758968791, 452.91380373140487]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[65.94696405031624, 481.9006697906059]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[278.9514806088142, 248.30098707254314]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[125.59216813889266, 79.56022159244519]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[71.09286574429223, 129.20392398733225]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[479.43595010794184, 289.54257051384565]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[342.92502511867735, 117.29075189558789]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.0685896559695, 244.70892595128623]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[36.053934913605225, 84.46168592287057]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[49.20420942729161, 335.55915811454247]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[239.41846083879128, 373.71412509267566]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[288.8120852520126, 344.0163823210193]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[456.36119249761975, 78.85807110225284]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[156.8309360405788, 52.11620156400319]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[224.0610869148879, 143.92423656971906]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[329.4117881500042, 452.69920381079646]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[66.43519732798254, 481.83472659466133]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[278.3547036004911, 247.90313573366106]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[126.26434192908187, 79.67852417951849]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[71.52037352608568, 129.54868832748826]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[479.23245968470655, 289.4902847800977]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[342.4978979935428, 117.61608704230252]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[195.02749581886246, 244.55379671620722]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[36.182742039426614, 85.40767924037846]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[49.99578835127654, 335.4008423297455]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[239.108215324723, 373.3676171159241]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[287.9144700446086, 343.3358798172112]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[456.0497285082074, 79.15292367889651]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[154.3805304244209, 52.331439895152194]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[224.61557812584294, 145.8587947946067]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[328.5662004031293, 452.48460389018805]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[66.92343060564883, 481.7687833987168]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[277.757926592168, 247.50528439477898]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[126.93651571927107, 79.79682676659179]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[71.94788130787913, 129.89345266764428]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[479.0289692614713, 289.4379990463497]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[342.0707708684082, 117.94142218901716]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.98640198175545, 244.3986674811282]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[36.311549165248, 86.35367255788634]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[50.78736727526147, 335.24252654494853]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[238.79796981065473, 373.0211091391725]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[287.0168548372046, 342.6553773134031]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[455.73826451879506, 79.44777625554019]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[151.930124808263, 52.5466782263012]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[225.170069336798, 147.79335301949433]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[327.7206126562544, 452.27000396957965]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[67.41166388331513, 481.7028402027722]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[277.1611495838449, 247.1074330558969]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[127.60868950946028, 79.9151293536651]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[72.37538908967258, 130.2382170078003]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[478.825478838236, 289.38571331260175]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[341.6436437432736, 118.2667573357318]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.94530814464844, 244.24353824604918]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[36.44035629106939, 87.29966587539423]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[51.578946199246396, 335.08421076015156]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[238.48772429658646, 372.6746011624209]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[286.11923962980063, 341.974874809595]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[455.4268005293827, 79.74262883218387]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[149.4797191921051, 52.761916557450206]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[225.72456054775304, 149.72791124438197]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[326.8750249093795, 452.05540404897124]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[67.89989716098142, 481.63689700682767]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[276.5643725755218, 246.70958171701483]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[128.2808632996495, 80.0334319407384]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[72.80289687146603, 130.58298134795632]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[478.6219884150007, 289.3334275788538]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[341.21651661813905, 118.59209248244643]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.9042143075414, 244.08840901097017]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[36.56916341689078, 88.24565919290211]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[52.370525123231324, 334.9258949753546]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[238.1774787825182, 372.32809318566933]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[285.22162442239664, 341.2943723057869]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[455.1153365399704, 80.03748140882755]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[147.0293135759472, 52.977154888599216]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[226.27905175870808, 151.6624694692696]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[326.02943716250456, 451.84080412836283]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[68.38813043864772, 481.5709538108831]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[275.9675955671987, 246.31173037813275]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[128.95303708983872, 80.1517345278117]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[73.23040465325948, 130.92774568811234]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[478.41849799176543, 289.2811418451058]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[340.7893894930045, 118.91742762916107]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.86312047043438, 243.93327977589115]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[36.69797054271217, 89.19165251041]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[53.16210404721625, 334.7675791905576]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[237.86723326844992, 371.98158520891775]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[284.32400921499266, 340.6138698019788]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[454.803872550558, 80.33233398547122]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[144.57890795978932, 53.19239321974822]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[226.83354296966314, 153.59702769415725]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[325.18384941562965, 451.6262042077544]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[68.87636371631402, 481.50501061493856]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[275.3708185588756, 245.91387903925067]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[129.62521088002794, 80.270037114885]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[73.65791243505294, 131.27251002826836]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[478.21500756853015, 289.22885611135786]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[340.3622623678699, 119.2427627758757]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.82202663332737, 243.77815054081213]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[36.82677766853356, 90.13764582791788]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[53.95368297120118, 334.60926340576066]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[237.55698775438165, 371.63507723216617]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[283.42639400758867, 339.9333672981707]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[454.4924085611457, 80.6271865621149]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[142.12850234363142, 53.40763155089723]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[227.38803418061818, 155.5315859190449]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[324.33826166875474, 451.411604287146]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[69.36459699398031, 481.439067418994]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[274.7740415505525, 245.5160277003686]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[130.29738467021716, 80.3883397019583]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[74.08542021684639, 131.61727436842438]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[478.0115171452949, 289.1765703776099]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[339.9351352427353, 119.56809792259034]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.78093279622033, 243.62302130573312]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[36.95558479435495, 91.08363914542576]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[54.74526189518611, 334.4509476209637]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[237.24674224031338, 371.2885692554146]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[282.5287788001847, 339.2528647943626]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[454.18094457173333, 80.92203913875858]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[139.67809672747353, 53.62286988204623]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[227.94252539157324, 157.46614414393252]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[323.4926739218798, 451.1970043665376]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[69.85283027164661, 481.37312422304944]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[274.1772645422294, 245.11817636148652]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[130.96955846040638, 80.5066422890316]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[74.51292799863984, 131.9620387085804]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[477.8080267220596, 289.1242846438619]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[339.5080081176008, 119.89343306930498]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.7398389591133, 243.4678920706541]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[37.08439192017634, 92.02963246293365]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[55.53684081917104, 334.2926318361667]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[236.9364967262451, 370.942061278663]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[281.6311635927807, 338.5723622905545]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[453.869480582321, 81.21689171540226]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[137.22769111131564, 53.83810821319524]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[228.49701660252828, 159.40070236882016]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[322.6470861750049, 450.9824044459292]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[70.3410635493129, 481.3071810271049]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[273.5804875339063, 244.72032502260444]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[131.6417322505956, 80.6249448761049]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[74.94043578043329, 132.3068030487364]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[477.6045362988243, 289.07199891011396]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[339.0808809924663, 120.21876821601961]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.6987451220063, 243.31276283557509]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[37.213199045997726, 92.97562578044153]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[56.32841974315597, 334.13431605136975]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[236.62625121217684, 370.5955533019114]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[280.7335483853767, 337.8918597867464]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[453.55801659290864, 81.51174429204593]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[134.77728549515774, 54.053346544344244]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[229.05150781348334, 161.3352605937078]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[321.80149842813, 450.7678045253208]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[70.8292968269792, 481.24123783116033]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[272.9837105255832, 244.32247368372236]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[132.31390604078481, 80.74324746317821]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[75.36794356222674, 132.65156738889243]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[477.40104587558903, 289.019713176366]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[338.6537538673317, 120.54410336273425]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.65765128489926, 243.15763360049607]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[37.342006171819115, 93.92161909794942]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[57.1199986671409, 333.9760002665728]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[236.31600569810857, 370.24904532515984]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[279.8359331779727, 337.2113572829383]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[453.2465526034963, 81.80659686868961]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[132.32687987899985, 54.268584875493254]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[229.60599902443838, 163.26981881859544]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[320.9559106812551, 450.5532046047124]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[71.3175301046455, 481.1752946352158]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[272.3869335172601, 243.9246223448403]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[132.98607983097403, 80.86155005025151]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[75.7954513440202, 132.99633172904845]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[477.19755545235375, 288.96742744261803]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[338.22662674219714, 120.86943850944888]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.61655744779222, 243.00250436541705]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[37.470813297640504, 94.8676124154573]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[57.91157759112583, 333.8176844817758]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[236.0057601840403, 369.90253734840826]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[278.93831797056873, 336.5308547791302]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[452.93508861408395, 82.10144944533329]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[129.87647426284195, 54.483823206642256]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[230.1604902353934, 165.20437704348308]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[320.1103229343802, 450.338604684104]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[71.8057633823118, 481.1093514392712]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[271.790156508937, 243.5267710059582]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[133.65825362116325, 80.97985263732481]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[76.22295912581365, 133.34109606920447]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[476.9940650291185, 288.91514170887007]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[337.7994996170626, 121.19477365616352]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.5754636106852, 242.84737513033804]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[37.59962042346189, 95.81360573296519]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[58.703156515110756, 333.65936869697885]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[235.69551466997203, 369.5560293716567]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[278.04070276316475, 335.8503522753221]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[452.6236246246716, 82.39630202197696]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[127.42606864668406, 54.69906153779126]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[230.71498144634847, 167.13893526837072]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[319.26473518750527, 450.1240047634956]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[72.29399665997809, 481.04340824332667]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[271.1933795006139, 243.12891966707613]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[134.33042741135247, 81.09815522439811]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[76.6504669076071, 133.6858604093605]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[476.7905746058832, 288.8628559751221]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[337.3723724919281, 121.52010880287816]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.5343697735782, 242.69224589525902]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[37.72842754928328, 96.75959905047307]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[59.494735439095685, 333.5010529121819]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[235.38526915590376, 369.2095213949051]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[277.14308755576076, 335.169849771514]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[452.31216063525926, 82.69115459862064]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[126.95176393234549, 57.11274135517595]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[231.2694726573035, 169.07349349325835]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[318.41914744063035, 449.90940484288717]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[72.78222993764439, 480.9774650473821]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[270.5966024922908, 242.73106832819406]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[135.0026012015417, 81.21645781147141]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[77.07797468940055, 134.0306247495165]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[476.5870841826479, 288.81057024137414]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[336.94524536679353, 121.84544394959279]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.49327593647115, 242.53711666018]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[37.85723467510467, 97.70559236798096]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[60.28631436308061, 333.3427371273849]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[235.0750236418355, 368.8630134181535]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[276.24547234835677, 334.4893472677059]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[452.0006966458469, 82.98600717526432]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[126.47745921800691, 59.52642117256064]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[231.82396386825857, 171.008051718146]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[317.57355969375544, 449.69480492227876]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[73.27046321531068, 480.91152185143756]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[269.9998254839677, 242.33321698931198]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[135.6747749917309, 81.33476039854472]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[77.505482471194, 134.37538908967252]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[476.38359375941263, 288.7582845076262]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[336.51811824165895, 122.17077909630743]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.45218209936414, 242.381987425101]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[37.98604180092606, 98.65158568548884]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[61.07789328706554, 333.18442134258794]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[234.76477812776722, 368.51650544140193]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[275.3478571409528, 333.8088447638978]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[451.68923265643457, 83.280859751908]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[126.00315450366834, 61.94010098994533]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[232.3784550792136, 172.94260994303363]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[316.72797194688053, 449.48020500167036]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[73.75869649297698, 480.845578655493]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[269.4030484756446, 241.9353656504299]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[136.34694878192013, 81.45306298561802]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[77.93299025298745, 134.72015342982854]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[476.18010333617735, 288.7059987738782]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[336.0909911165244, 122.49611424302206]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.41108826225712, 242.22685819002197]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[38.11484892674745, 99.59757900299672]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[61.86947221105047, 333.02610555779097]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[234.45453261369894, 368.16999746465035]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[274.4502419335488, 333.1283422600897]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[451.3777686670222, 83.57571232855167]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[125.52884978932977, 64.35378080733001]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[232.93294629016867, 174.87716816792127]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[315.8823842000056, 449.26560508106195]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[74.24692977064328, 480.77963545954844]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[268.8062714673215, 241.53751431154782]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[137.01912257210935, 81.57136557269132]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[78.3604980347809, 135.06491776998456]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[475.9766129129421, 288.65371304013024]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[335.6638639913898, 122.8214493897367]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.36999442515008, 242.07172895494296]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[38.24365605256884, 100.54357232050461]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[62.66105113503539, 332.867789772994]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[234.14428709963067, 367.82348948789877]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[273.5526267261448, 332.4478397562816]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[451.0663046776099, 83.87056490519535]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[125.0545450749912, 66.7674606247147]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[233.4874375011237, 176.8117263928089]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[315.0367964531307, 449.05100516045354]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[74.73516304830957, 480.7136922636039]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[268.2094944589984, 241.13966297266575]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[137.69129636229857, 81.68966815976462]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[78.78800581657435, 135.40968211014058]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[475.7731224897068, 288.6014273063823]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[335.2367368662552, 123.14678453645134]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.32890058804307, 241.91659971986394]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[38.37246317839022, 101.4895656380125]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[63.45263005902032, 332.70947398819703]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[233.8340415855624, 367.4769815111472]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[272.6550115187408, 331.7673372524735]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[450.75484068819753, 84.16541748183903]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[124.58024036065262, 69.18114044209939]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[234.04192871207874, 178.74628461769655]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[314.1912087062558, 448.83640523984513]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[75.22339632597587, 480.64774906765933]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[267.6127174506753, 240.74181163378367]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[138.3634701524878, 81.80797074683792]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[79.2155135983678, 135.7544464502966]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[475.5696320664715, 288.5491415726343]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[334.8096097411207, 123.47211968316597]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.28780675093606, 241.76147048478492]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[38.50127030421161, 102.43555895552038]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[64.24420898300525, 332.55115820340006]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[233.52379607149413, 367.1304735343956]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[271.75739631133683, 331.0868347486654]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[450.4433766987852, 84.4602700584827]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[124.10593564631405, 71.59482025948408]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[234.5964199230338, 180.68084284258418]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[313.3456209593809, 448.6218053192367]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[75.71162960364217, 480.5818058717148]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[267.0159404423522, 240.3439602949016]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[139.035643942677, 81.92627333391123]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[79.64302138016126, 136.09921079045262]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[475.36614164323623, 288.49685583888635]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[334.3824826159862, 123.7974548298806]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.24671291382901, 241.6063412497059]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[38.630077430033, 103.38155227302826]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[65.03578790699018, 332.3928424186031]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[233.21355055742586, 366.783965557644]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[270.85978110393285, 330.4063322448573]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[450.13191270937284, 84.75512263512638]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[123.63163093197548, 74.00850007686877]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[235.15091113398884, 182.61540106747182]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[312.50003321250597, 448.4072053986283]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[76.19986288130846, 480.5158626757702]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[266.4191634340291, 239.94610895601951]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[139.70781773286623, 82.04457592098453]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[80.07052916195471, 136.44397513060864]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[475.16265122000095, 288.4445701051384]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[333.9553554908516, 124.12278997659524]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.205619076722, 241.4512120146269]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[38.75888455585438, 104.32754559053615]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[65.82736683097511, 332.2345266338061]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[232.9033050433576, 366.43745758089244]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[269.96216589652886, 329.7258297410492]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[449.8204487199605, 85.04997521177006]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[123.1573262176369, 76.42217989425346]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[235.7054023449439, 184.54995929235946]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[311.65444546563106, 448.1926054780199]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[76.68809615897476, 480.44991947982567]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[265.822386425706, 239.54825761713744]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[140.37999152305545, 82.16287850805783]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[80.49803694374816, 136.78873947076465]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[474.9591607967657, 288.3922843713904]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[333.52822836571704, 124.44812512330988]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.164525239615, 241.29608277954787]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[38.88769168167577, 105.27353890804403]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[66.61894575496004, 332.07621084900916]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[232.59305952928932, 366.09094960414086]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[269.06455068912487, 329.0453272372411]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[449.50898473054815, 85.34482778841374]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[122.68302150329833, 78.83585971163815]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[236.25989355589894, 186.4845175172471]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[310.80885771875614, 447.9780055574115]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[77.17632943664105, 480.3839762838811]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[265.2256094173829, 239.15040627825536]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[141.05216531324467, 82.28118109513113]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[80.92554472554161, 137.13350381092067]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[474.7556703735304, 288.33999863764245]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[333.10110124058247, 124.77346027002451]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.12343140250795, 241.14095354446886]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[39.01649880749716, 106.21953222555192]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[67.41052467894497, 331.91789506421213]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[232.28281401522105, 365.7444416273893]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[268.1669354817209, 328.364824733433]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[449.1975207411358, 85.63968036505742]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[122.20871678895976, 81.24953952902284]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[236.814384766854, 188.41907574213474]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[309.96326997188123, 447.7634056368031]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[77.66456271430735, 480.31803308793656]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[264.6288324090598, 238.75255493937328]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[141.7243391034339, 82.39948368220443]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[81.35305250733506, 137.4782681510767]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[474.5521799502951, 288.2877129038945]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[332.6739741154479, 125.09879541673915]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.08233756540093, 240.98582430938984]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[39.14530593331854, 107.1655255430598]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[68.2021036029299, 331.75957927941516]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[231.97256850115278, 365.3979336506377]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[267.2693202743169, 327.6843222296249]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[448.88605675172346, 85.9345329417011]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[121.73441207462119, 83.66321934640753]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[237.36887597780904, 190.35363396702238]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[309.1176822250063, 447.5488057161947]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[78.15279599197365, 480.252089891992]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[264.0320554007367, 238.3547036004912]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[142.3965128936231, 82.51778626927774]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[81.78056028912852, 137.8230324912327]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[474.34868952705983, 288.2354271701465]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[332.2468469903134, 125.42413056345379]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.0412437282939, 240.83069507431082]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[39.27411305913992, 108.11151886056768]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[68.99368252691482, 331.60126349461814]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[231.6623229870845, 365.0514256738861]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[266.3717050669129, 327.0038197258168]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[448.5745927623111, 86.22938551834477]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[121.26010736028263, 86.07689916379222]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[237.9233671887641, 192.28819219191]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[308.2720944781314, 447.3342057955863]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[78.64102926963994, 480.18614669604744]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[263.4352783924136, 237.95685226160913]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[143.06868668381233, 82.63608885635104]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[82.20806807092197, 138.16779683138873]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[474.14519910382455, 288.18314143639856]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[331.81971986517885, 125.74946571016842]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[194.00014989118688, 240.6755658392318]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[39.40292018496131, 109.05751217807557]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[69.78526145089975, 331.44294770982117]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[231.35207747301624, 364.70491769713453]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[265.4740898595089, 326.3233172220087]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[448.26312877289877, 86.52423809498845]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[120.78580264594406, 88.49057898117691]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[238.47785839971914, 194.22275041679765]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[307.4265067312565, 447.1196058749779]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[79.12926254730624, 480.1202035001029]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[262.8385013840905, 237.55900092272705]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[143.74086047400155, 82.75439144342434]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[82.63557585271542, 138.51256117154475]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[473.9417086805893, 288.1308557026506]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[331.3925927400443, 126.07480085688306]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[193.95905605407984, 240.5204366041528]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[39.5317273107827, 110.00350549558345]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[70.57684037488468, 331.28463192502414]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[231.04183195894797, 364.35840972038295]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[264.57647465210493, 325.6428147182006]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[447.9516647834864, 86.81909067163213]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[120.31149793160549, 90.9042587985616]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[239.03234961067417, 196.1573086416853]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[306.5809189843816, 446.90500595436947]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[79.61749582497254, 480.05426030415833]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[262.2417243757674, 237.16114958384497]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[144.41303426419077, 82.87269403049764]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[83.06308363450887, 138.85732551170076]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[473.738218257354, 288.0785699689026]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[330.9654656149097, 126.4001360035977]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[193.91796221697282, 240.36530736907378]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[39.66053443660408, 110.94949881309134]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[71.36841929886961, 331.1263161402272]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[230.7315864448797, 364.01190174363137]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[263.67885944470095, 324.9623122143925]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[447.6402007940741, 87.1139432482758]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[119.83719321726693, 93.31793861594629]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[239.58684082162924, 198.09186686657293]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[305.73533123750667, 446.69040603376106]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[80.10572910263883, 479.9883171082138]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[261.6449473674443, 236.7632982449629]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[145.08520805438, 82.99099661757094]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[83.49059141630232, 139.20208985185678]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[473.5347278341187, 288.02628423515466]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[330.5383384897752, 126.72547115031233]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[193.8768683798658, 240.21017813399476]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[39.78934156242546, 111.89549213059922]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[72.15999822285454, 330.96800035543015]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[230.42134093081143, 363.6653937668798]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[262.78124423729696, 324.2818097105844]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[447.32873680466173, 87.40879582491948]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[119.36288850292837, 95.73161843333098]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[240.14133203258427, 200.02642509146057]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[304.88974349063176, 446.47580611315266]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[80.59396238030513, 479.9223739122692]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[261.0481703591212, 236.36544690608082]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[145.7573818445692, 83.10929920464424]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[83.91809919809577, 139.5468541920128]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[473.33123741088343, 287.9739985014067]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[330.11121136464067, 127.05080629702697]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[193.83577454275877, 240.05504889891574]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[39.91814868824685, 112.84148544810711]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[72.95157714683947, 330.8096845706332]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[230.11109541674315, 363.3188857901282]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[261.883629029893, 323.6013072067763]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[447.0172728152494, 87.70364840156316]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[118.88858378858981, 98.14529825071567]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[240.69582324353934, 201.9609833163482]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[304.04415574375685, 446.26120619254425]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[81.08219565797143, 479.85643071632467]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[260.45139335079807, 235.96759556719874]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[146.42955563475843, 83.22760179171755]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[84.34560697988923, 139.89161853216882]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[473.12774698764815, 287.92171276765873]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[329.68408423950615, 127.3761414437416]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[193.79468070565176, 239.89991966383673]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[40.04695581406824, 113.78747876561499]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[73.7431560708244, 330.65136878583615]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[229.80084990267488, 362.9723778133766]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[260.986013822489, 322.9208047029682]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[446.70580882583704, 87.99850097820683]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[118.41427907425125, 100.55897806810036]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[241.25031445449437, 203.89554154123584]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[303.19856799688193, 446.04660627193584]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[81.57042893563772, 479.7904875203801]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[259.85461634247497, 235.56974422831667]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[147.10172942494765, 83.34590437879085]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[84.77311476168268, 140.23638287232484]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[472.9242565644129, 287.86942703391077]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[329.2569571143716, 127.70147659045624]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[193.75358686854474, 239.7447904287577]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[40.17576293988962, 114.73347208312288]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[74.53473499480933, 330.4930530010392]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[229.4906043886066, 362.62586983662504]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[260.088398615085, 322.2403021991601]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[446.3943448364247, 88.29335355485051]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[117.93997435991268, 102.97265788548505]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[241.80480566544944, 205.83009976612348]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[302.352980250007, 445.83200635132744]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[82.05866221330402, 479.72454432443556]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[259.25783933415187, 235.1718928894346]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[147.77390321513687, 83.46420696586415]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[85.20062254347613, 140.58114721248086]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[472.7207661411776, 287.8171413001628]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[328.829829989237, 128.02681173717087]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[193.7124930314377, 239.5896611936787]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[40.30457006571101, 115.67946540063076]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[75.32631391879426, 330.33473721624216]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[229.18035887453834, 362.27936185987346]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[259.190783407681, 321.559799695352]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[446.08288084701235, 88.58820613149419]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[117.46566964557411, 105.38633770286974]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[242.35929687640447, 207.76465799101112]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[301.5073925031321, 445.61740643071903]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[82.54689549097031, 479.658601128491]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[258.66106232582877, 234.7740415505525]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[148.4460770053261, 83.58250955293745]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[85.62813032526958, 140.92591155263688]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[472.5172757179423, 287.76485556641484]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[328.4027028641025, 128.3521468838855]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[193.6713991943307, 239.43453195859968]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[40.4333771915324, 116.62545871813865]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[76.11789284277918, 330.1764214314452]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[228.87011336047007, 361.9328538831219]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[258.293168200277, 320.8792971915439]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[445.7714168576, 88.88305870813787]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[116.99136493123554, 107.80001752025443]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[240.99617926177186, 209.24516006706003]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[300.6618047562572, 445.4028065101106]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[83.03512876863661, 479.59265793254644]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[258.06428531750566, 234.37619021167043]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[149.1182507955153, 83.70081214001075]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[86.05563810706303, 141.2706758927929]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[472.31378529470703, 287.7125698326669]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[327.9755757389679, 128.67748203060012]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[193.63030535722368, 239.27940272352066]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[40.56218431735378, 117.57145203564653]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[76.90947176676411, 330.01810564664817]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[228.5598678464018, 361.5863459063703]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[257.39555299287304, 320.1987946877358]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[445.45995286818766, 89.17791128478154]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[116.51706021689697, 110.21369733763912]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[239.63306164713924, 210.72566214310893]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[299.8162170093823, 445.1882065895022]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[83.5233620463029, 479.5267147366019]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[257.46750830918256, 233.97833887278836]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[149.79042458570453, 83.81911472708406]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[86.48314588885648, 141.6154402329489]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[472.11029487147175, 287.6602840989189]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[327.5484486138334, 129.00281717731474]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[193.58921152011663, 239.12427348844164]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[40.690991443175164, 118.51744535315441]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[77.70105069074904, 329.8597898618512]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[228.24962233233353, 361.2398379296187]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[256.49793778546905, 319.5182921839277]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[445.1484888787753, 89.47276386142522]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[116.04275550255839, 112.62737715502381]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[238.26994403250663, 212.20616421915784]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[298.9706292625074, 444.9736066688938]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[84.0115953239692, 479.46077154065733]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[256.87073130085946, 233.58048753390628]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[150.46259837589375, 83.93741731415736]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[86.91065367064994, 141.96020457310493]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[471.90680444823647, 287.60799836517094]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[327.1213214886988, 129.32815232402936]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[193.54811768300962, 238.96914425336263]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[40.81979856899655, 119.4634386706623]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[78.49262961473397, 329.7014740770542]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[227.93937681826526, 360.89332995286713]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[255.60032257806506, 318.8377896801196]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[444.83702488936297, 89.7676164380689]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[115.56845078821983, 115.0410569724085]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[236.90682641787402, 213.68666629520675]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[298.12504151563246, 444.7590067482854]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[84.4998286016355, 479.3948283447128]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[256.27395429253636, 233.1826361950242]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[151.13477216608297, 84.05571990123066]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[87.33816145244339, 142.30496891326095]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[471.7033140250012, 287.555712631423]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[326.6941943635643, 129.65348747074398]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[193.50702384590258, 238.8140150182836]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[40.94860569481794, 120.40943198817018]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[79.2842085387189, 329.5431582922572]
+INFO:__main__:mongoupdated
+INFO:__main__:POSITION
+INFO:__main__:[227.629131304197, 360.54682197611555]
+INFO:__main__:mongoupdated

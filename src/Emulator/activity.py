@@ -2,22 +2,18 @@ import time
 
 import numpy as np
 
+from src.Emulator.site_object import SiteObject
 
-class Activity:
-    def __init__(self,pos,type,status,stime):
+
+class Activity(SiteObject):
+    def __init__(self, pos, _type, status, stime):
+        super(pos, [[-3.0, -3.0], [3.0, -3.0], [3.0, 3.0], [-3.0, 3.0]], "Activity_srn:" + hash(str(pos)))
         self.stime = stime
-        self.pos = pos
-        self.shape = [[-3.0,-3.0],[3.0,-3.0],[3.0,3.0],[-3.0,3.0]]
-        for i in range(4):
-            self.shape[i][0] += self.pos[0]
-            self.shape[i][1] += self.pos[1]
-        self.type = type
+        self.type = _type
         self.status = status
-        self.radius = np.sqrt(max(self.shape)[0] **2 + max(self.shape)[1]**2)
 
     def isActive(self):
-        if self.stime-time.time() < 0:
+        if self.stime - time.time() < 0:
             if "active" in self.status:
                 return True
         return False
-

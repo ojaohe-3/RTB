@@ -1,19 +1,13 @@
 import random
 import numpy as np
 
-class Structure:
-    def __init__(self, pointMap,pos):
-        self.pos = pos
-        if self.convexShapeTest(pointMap):
-            self.shape = pointMap
-        else:
-            #self.shape = [[0,0],[0,10],[10,10],[10,10]]
-            self.shape = self.generateConvexStructure(int(random.randrange(3, 12)), random.random() * 10)
+from src.Emulator.site_object import SiteObject
 
-        self.radius = np.sqrt(pow(max(self.shape)[0], 2) + pow(max(self.shape)[1], 2))
-        for i in range(len(self.shape)):
-            self.shape[i][0] += self.pos[0]
-            self.shape[i][1] += self.pos[1]
+
+class Structure(SiteObject):
+    def __init__(self,pos):
+        super(pos,  self.generateConvexStructure(int(random.randrange(3, 12)), random.random() * 10))
+
 
     def generateConvexStructure(self, edges,size):
         #generate random sample of x and y´s
@@ -25,9 +19,9 @@ class Structure:
         lx.sort()
         ly.sort()
 
-        #take the largest element and smallest.
+        #take the largest element and smallest. (first and end)
         mxX = lx.pop(0)
-        miX = lx.pop(len(lx)-1)
+        miX = lx.pop(-1)
 
         #chain them, and connect them
         lastTop = miX
@@ -45,7 +39,7 @@ class Structure:
 
         #do the same for y axis
         mxY = ly.pop(0)
-        miY = ly.pop(len(ly)-1)
+        miY = ly.pop(-1) 
 
         lastTop = miY
         lastBottom = miY
@@ -86,24 +80,24 @@ class Structure:
         # todo eventuall shift if needed
 
         return pointmap
-
-    def convexShapeTest(self,pointmap):
-        if pointmap is None:
-            return False
-        else:
-            #for every vector of a shape in a point map, the angle between them must be less than 90 degrees
-            for i in range(0,len(pointmap)):
-                point = pointmap[i]
-                x1 = point[0]
-                y1 = point[1]
-
-                point[(i+1)%len(pointmap)]
-                x2 = point[0]
-                y2 = point[0]
-                x = x2-x1
-                y = y2 - y1
-
-                if np.abs(np.arctan(y/x)) > np.pie/2 :
-                    return False
-
-        return True
+#depricated
+    # def convexShapeTest(self,pointmap):
+    #     if pointmap is None:
+    #         return False
+    #     else:
+    #         #for every vector of a shape in a point map, the angle between them must be less than 90 degrees
+    #         for i in range(0,len(pointmap)):
+    #             point = pointmap[i]
+    #             x1 = point[0]
+    #             y1 = point[1]
+    #
+    #             point[(i+1)%len(pointmap)]
+    #             x2 = point[0]
+    #             y2 = point[0]
+    #             x = x2-x1
+    #             y = y2 - y1
+    #
+    #             if np.abs(np.arctan(y/x)) > np.pie/2 :
+    #                 return False
+    #
+    #     return True

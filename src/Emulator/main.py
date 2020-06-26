@@ -69,13 +69,13 @@ class Emulator:
             ),
             routing_key=routing_key)
 
-    def get_sensor_data(self, actor):
+    def get_sensor_data(self, object):
         logger.info("Creating sensor data")
         cur_time = datetime.datetime.now().time()
         json_msg = {
             "time": str(cur_time),
-            "type": Actor.__name__,
-            "payload": actor.toJson()
+            "type": type(object).__name__,
+            "payload": object.toJson()
 
         }
         return json.dumps(json_msg)

@@ -1,7 +1,9 @@
+import asyncio
+
 from flask import Flask
 
 app = Flask(__name__)
-
+loop = asyncio.get_event_loop()
 
 @app.route('/')
 def index():

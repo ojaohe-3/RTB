@@ -2,7 +2,7 @@ from src.Consumer import Consumer
 import toml
 import asyncio
 from pymongo import MongoClient
-from quart import Quart
+from quart import Quart, jsonify
 from quart import render_template
 
 app = Quart(__name__)
@@ -27,9 +27,10 @@ async def sendRequesterData():
     # todo get data from socket if available
     # todo generate json and send to requester
     db = DB.get_connection()
-    msg = db.rtb.actors.find({"Name" : "worker1"})
-    return msg
+    collection = db["rtb"].get_collection("Actors").find({"Name":"worker1"})
+    msg =collection.next()
 
+    return str(msg)
 
 async def getData(conf, loop):
     return ''

@@ -2,27 +2,29 @@ let actors = new Map();
 
 //will be called via ajax
 function updateData(data){
-    // Json actor object
-    //    "name": self.name,
-    //    "position": self.pos,
-    //    "shape": self.shape
-    let actor = data["payload"];
 
-    // create object actor from json respons, if it already existed update
-    if (!actors.has(actor["name"])){
-        actors.set(actor["name"], new Actor(actor["positions"], actor["shape"]));
-    }else{
-         let a = actors.get(actor["name"]);
-         a.pos = actor["positions"];
-         a.shape = actor["shape"];
-         a.name = actor["name"];
-         actors.replace(actor["name"],a); //if this is even necessary
-    }
-    //update()
+
     return data
 }
-function update(ctx) {
+function update(layer)
+{
     actors.forEach((key , value)=>{
-        ctx.write
+        let poly = new Konva.Line({
+        points: [23, 20, 23, 160, 70, 93, 150, 109, 290, 139, 270, 93],
+        fill: '#00D2FF',
+        stroke: 'black',
+        strokeWidth: 5,
+        closed: true,
+      });
+        layer.add(poly)
     })
+    layer.draw();
 }
+let stage = new Konva.Stage({
+  container: 'container',   // id of container <div>
+  width: 500,
+  height: 500
+});
+let layer1 = new Konva.Layer();
+stage.add(layer1);
+update(layer1);

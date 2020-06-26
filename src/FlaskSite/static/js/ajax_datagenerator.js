@@ -5,8 +5,7 @@ function requestData() {
         url: '/data',
 
     }).done((data) => {
-        respons = updateData(data);
-        $('debug').innerText = respons;
+        $('#debug').text(data["Name"]);
     })
         .then(function () {
         setTimeout(requestData, 50) //call itself every 50ms

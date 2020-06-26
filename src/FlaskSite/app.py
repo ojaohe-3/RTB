@@ -32,9 +32,9 @@ async def sendRequesterData():
     for obj in iter(collection):
         temp = {}
         for value in obj:
-            if '_id' not in value:
+            if '_id' not in value and 'Name' not in value:
                 temp[value] = obj[value]
-        msg[str(obj['_id'])] = temp
+        msg[str(obj['Name'])] = temp
     return str(msg)
 
 

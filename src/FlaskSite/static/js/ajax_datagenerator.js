@@ -4,7 +4,11 @@ function requestData() {
         type : 'GET',
         url: '/data',
 
-    }).done((data) => updateData(data)).then(function () {
+    }).done((data) => {
+        respons = updateData(data);
+        $('debug').innerText = respons;
+    })
+        .then(function () {
         setTimeout(requestData, 50) //call itself every 50ms
     });
 }

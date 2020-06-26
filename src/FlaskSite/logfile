@@ -42,3 +42,1229 @@ Traceback (most recent call last):
     raise TypeError(
 TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a coroutine.
 INFO:werkzeug:127.0.0.1 - - [25/Jun/2020 16:15:01] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:50253 GET / 1.1 200 491 11965
+INFO:quart.serving:127.0.0.1:50253 GET /jquery-3.5.1.min.js 1.1 404 103 1994
+ERROR:quart.app:Exception on request GET /data
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1815, in handle_request
+    return await self.full_dispatch_request(request_context)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1837, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1077, in handle_user_exception
+    raise error
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1835, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1883, in dispatch_request
+    return await handler(**request_.view_args)
+  File "C:/Users/JohanLap/PycharmProjects/RTB/src/FlaskSite/app.py", line 21, in sendRequesterData
+    client = MongoClient("mongodb://{}:{}/".format(config["MongoDB"]["host"], config["MongoDB"]["port"]))
+NameError: name 'config' is not defined
+INFO:quart.serving:127.0.0.1:50253 GET /data 1.1 500 126 3989
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:51094 GET / 1.1 200 584 11968
+INFO:quart.serving:127.0.0.1:51094 GET /jquery-3.5.1.min.js 1.1 404 103 997
+ERROR:quart.app:Exception on request GET /data
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1815, in handle_request
+    return await self.full_dispatch_request(request_context)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1837, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1077, in handle_user_exception
+    raise error
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1835, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1883, in dispatch_request
+    return await handler(**request_.view_args)
+  File "C:/Users/JohanLap/PycharmProjects/RTB/src/FlaskSite/app.py", line 21, in sendRequesterData
+    client = MongoClient("mongodb://{}:{}/".format(config["MongoDB"]["host"], config["MongoDB"]["port"]))
+NameError: name 'config' is not defined
+INFO:quart.serving:127.0.0.1:51094 GET /data 1.1 500 126 2991
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:51144 GET / 1.1 200 584 13991
+INFO:quart.serving:127.0.0.1:51144 GET /jquery-3.5.1.min.js 1.1 404 103 2992
+ERROR:quart.app:Exception on request GET /data
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1815, in handle_request
+    return await self.full_dispatch_request(request_context)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1837, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1077, in handle_user_exception
+    raise error
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1835, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1883, in dispatch_request
+    return await handler(**request_.view_args)
+  File "C:/Users/JohanLap/PycharmProjects/RTB/src/FlaskSite/app.py", line 20, in sendRequesterData
+    client = MongoClient("mongodb://{}:{}/".format(config["MongoDB"]["host"], config["MongoDB"]["port"]))
+NameError: name 'config' is not defined
+INFO:quart.serving:127.0.0.1:51144 GET /data 1.1 500 126 4986
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:51165 GET / 1.1 200 584 11969
+INFO:quart.serving:127.0.0.1:51165 GET /jquery-3.5.1.min.js 1.1 404 103 1995
+ERROR:quart.serving:Error in ASGI Framework
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\hypercorn\asyncio\context.py", line 28, in _handle
+    await invoke_asgi(app, scope, receive, send)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\hypercorn\utils.py", line 219, in invoke_asgi
+    await app(scope, receive, send)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 2069, in __call__
+    await self.asgi_app(scope, receive, send)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 2092, in asgi_app
+    await asgi_handler(receive, send)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\asgi.py", line 31, in __call__
+    _raise_exceptions(done)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\asgi.py", line 234, in _raise_exceptions
+    raise task.exception()
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\asgi.py", line 79, in handle_request
+    await asyncio.wait_for(self._send_response(send, response), timeout=timeout)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\asyncio\tasks.py", line 416, in wait_for
+    return fut.result()
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\asgi.py", line 94, in _send_response
+    await send({"type": "http.response.body", "body": data, "more_body": True})
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\hypercorn\protocol\http_stream.py", line 148, in app_send
+    Body(stream_id=self.stream_id, data=bytes(message.get("body", b"")))
+TypeError: 'str' object cannot be interpreted as an integer
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:51187 GET / 1.1 200 584 11972
+INFO:quart.serving:127.0.0.1:51187 GET /jquery-3.5.1.min.js 1.1 404 103 1993
+ERROR:quart.serving:Error in ASGI Framework
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\hypercorn\asyncio\context.py", line 28, in _handle
+    await invoke_asgi(app, scope, receive, send)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\hypercorn\utils.py", line 219, in invoke_asgi
+    await app(scope, receive, send)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 2069, in __call__
+    await self.asgi_app(scope, receive, send)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 2092, in asgi_app
+    await asgi_handler(receive, send)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\asgi.py", line 31, in __call__
+    _raise_exceptions(done)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\asgi.py", line 234, in _raise_exceptions
+    raise task.exception()
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\asgi.py", line 79, in handle_request
+    await asyncio.wait_for(self._send_response(send, response), timeout=timeout)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\asyncio\tasks.py", line 416, in wait_for
+    return fut.result()
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\asgi.py", line 94, in _send_response
+    await send({"type": "http.response.body", "body": data, "more_body": True})
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\hypercorn\protocol\http_stream.py", line 148, in app_send
+    Body(stream_id=self.stream_id, data=bytes(message.get("body", b"")))
+TypeError: 'str' object cannot be interpreted as an integer
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:51216 GET / 1.1 200 584 25961
+INFO:quart.serving:127.0.0.1:51216 GET /jquery-3.5.1.min.js 1.1 404 103 4986
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:51532 GET / 1.1 200 584 20987
+INFO:quart.serving:127.0.0.1:51532 GET /jquery-3.5.1.min.js 1.1 404 103 3988
+ERROR:quart.app:Exception on request GET /data
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1815, in handle_request
+    return await self.full_dispatch_request(request_context)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1837, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1077, in handle_user_exception
+    raise error
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1835, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1883, in dispatch_request
+    return await handler(**request_.view_args)
+  File "C:/Users/JohanLap/PycharmProjects/RTB/src/FlaskSite/app.py", line 22, in sendRequesterData
+    db = client.get_database()
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\pymongo\mongo_client.py", line 2070, in get_database
+    raise ConfigurationError('No default database defined')
+pymongo.errors.ConfigurationError: No default database defined
+INFO:quart.serving:127.0.0.1:51532 GET /data 1.1 500 126 12954
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:51578 GET / 1.1 200 584 19978
+INFO:quart.serving:127.0.0.1:51578 GET /jquery-3.5.1.min.js 1.1 404 103 3991
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:51627 GET / 1.1 200 584 24933
+INFO:quart.serving:127.0.0.1:51627 GET /jquery-3.5.1.min.js 1.1 404 103 2991
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 31866
+INFO:quart.serving:127.0.0.1:51662 GET / 1.1 200 584 20941
+INFO:quart.serving:127.0.0.1:51662 GET /jquery-3.5.1.min.js 1.1 404 103 3989
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 20911
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 42885
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 31915
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 41038
+INFO:quart.serving:127.0.0.1:51663 GET /data 1.1 200 0 39894
+INFO:quart.serving:127.0.0.1:51663 GET /data 1.1 200 0 40890
+INFO:quart.serving:127.0.0.1:51663 GET /data 1.1 200 0 39918
+INFO:quart.serving:127.0.0.1:51663 GET /data 1.1 200 0 38924
+INFO:quart.serving:127.0.0.1:51663 GET /data 1.1 200 0 40895
+INFO:quart.serving:127.0.0.1:51663 GET /data 1.1 200 0 40129
+INFO:quart.serving:127.0.0.1:51663 GET /data 1.1 200 0 30941
+INFO:quart.serving:127.0.0.1:51663 GET /data 1.1 200 0 32937
+INFO:quart.serving:127.0.0.1:51663 GET /data 1.1 200 0 41102
+INFO:quart.serving:127.0.0.1:51663 GET /data 1.1 200 0 29118
+INFO:quart.serving:127.0.0.1:51663 GET /data 1.1 200 0 41887
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 37922
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 41909
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 40890
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 29920
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 31144
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 29919
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 40890
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 31914
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 38895
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 41886
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 41911
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 38950
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 46320
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 31120
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 42011
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 41117
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 40289
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 41146
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 28897
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 30939
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 39891
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 21941
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 40863
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 19947
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 39137
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 40235
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 41945
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 38920
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 40243
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 38315
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 40261
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 39088
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 40105
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 41887
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 39348
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 39892
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 39921
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 41887
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 31902
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 38242
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 40272
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 39892
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 38871
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 40863
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 40108
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 29536
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 38914
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 19976
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 42127
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 42254
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 32940
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 39893
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 30917
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 40891
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 40890
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 41110
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 42110
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 40890
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 39916
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 29919
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 39047
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 31156
+INFO:quart.serving:127.0.0.1:51662 GET /data 1.1 200 0 40060
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5951
+INFO:quart.serving:127.0.0.1:51968 GET / 1.1 200 584 23935
+INFO:quart.serving:127.0.0.1:51968 GET /jquery-3.5.1.min.js 1.1 404 103 2991
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 6980
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5984
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5984
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5982
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5990
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5984
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 6008
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 6019
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5983
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5982
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5985
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 4987
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5984
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5983
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5983
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5984
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5984
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 6008
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 6969
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5984
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5985
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5983
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5983
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5984
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5984
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5981
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5982
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 6013
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 6019
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5984
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5984
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5983
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 6024
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 6982
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5979
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 6007
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 6980
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5983
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5984
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5983
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 6010
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5974
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5984
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 6007
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 6003
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 6010
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 5955
+INFO:quart.serving:127.0.0.1:51968 GET /data 1.1 200 0 6015
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:52043 GET / 1.1 200 584 26956
+INFO:quart.serving:127.0.0.1:52043 GET /jquery-3.5.1.min.js 1.1 404 103 3989
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+ERROR:quart.app:Exception on request GET /data
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1815, in handle_request
+    return await self.full_dispatch_request(request_context)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1837, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1077, in handle_user_exception
+    raise error
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1835, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1883, in dispatch_request
+    return await handler(**request_.view_args)
+  File "C:/Users/JohanLap/PycharmProjects/RTB/src/FlaskSite/app.py", line 29, in sendRequesterData
+    with DB.get_connection().rtb.Actor as db:
+AttributeError: __enter__
+INFO:quart.serving:127.0.0.1:52076 GET /data 1.1 500 126 8975
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:52162 GET / 1.1 200 584 22967
+INFO:quart.serving:127.0.0.1:52162 GET /jquery-3.5.1.min.js 1.1 404 103 2992
+ERROR:quart.app:Exception on request GET /data
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1815, in handle_request
+    return await self.full_dispatch_request(request_context)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1837, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1077, in handle_user_exception
+    raise error
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1835, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1883, in dispatch_request
+    return await handler(**request_.view_args)
+  File "C:/Users/JohanLap/PycharmProjects/RTB/src/FlaskSite/app.py", line 29, in sendRequesterData
+    with DB.get_connection().rtb as rtb:
+AttributeError: __enter__
+INFO:quart.serving:127.0.0.1:52162 GET /data 1.1 500 126 10996
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:52195 GET / 1.1 200 584 24933
+INFO:quart.serving:127.0.0.1:52195 GET /jquery-3.5.1.min.js 1.1 404 103 3989
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:52330 GET / 1.1 200 584 21939
+INFO:quart.serving:127.0.0.1:52330 GET /jquery-3.5.1.min.js 1.1 404 103 3988
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:52366 GET / 1.1 200 584 22939
+INFO:quart.serving:127.0.0.1:52366 GET /jquery-3.5.1.min.js 1.1 404 103 3989
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 18903
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 37922
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 27924
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 27924
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 36058
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 36929
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 37897
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 27927
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 17987
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 38027
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 37062
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 39892
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 38896
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 26131
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 40184
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 28921
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 36939
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 37873
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 38902
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 39059
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 36131
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 38329
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 37901
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 38270
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 18980
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 27352
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 37122
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 36931
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 36904
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 36116
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 39105
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 35122
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 37067
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 37173
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 37933
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 36070
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 37071
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 28318
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 39119
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 27923
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 27928
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 26932
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 16957
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 38082
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 39893
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 37001
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 38896
+INFO:quart.serving:127.0.0.1:52497 GET /data 1.1 200 - 12981568
+INFO:quart.serving:127.0.0.1:52622 GET / 1.1 200 584 18948
+INFO:quart.serving:127.0.0.1:52622 GET /jquery-3.5.1.min.js 1.1 404 103 4960
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26961
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 17951
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37856
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37903
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37942
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38895
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 19945
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37982
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36905
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 41888
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36283
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37122
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39920
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28947
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28153
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27126
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37923
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37942
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37065
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38895
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39892
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36901
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38899
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36429
+INFO:quart.serving:127.0.0.1:52622 GET / 1.1 200 584 2992
+INFO:quart.serving:127.0.0.1:52622 GET /jquery-3.5.1.min.js 1.1 404 103 3993
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 29949
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38065
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 29004
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 89811
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37103
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37030
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38269
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37075
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36901
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37234
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27335
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26927
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36924
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28947
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39098
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36904
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 34933
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36250
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37918
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26927
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38872
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27928
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 40919
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37901
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38895
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39237
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 29068
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 45269
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27963
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36905
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36905
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 52858
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28923
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26932
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37899
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36903
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38046
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35907
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38084
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37035
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 18982
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36937
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37931
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26930
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38894
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36901
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37116
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36061
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36919
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38895
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36901
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38232
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36418
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36356
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37987
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36852
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37947
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35075
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37999
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38895
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37903
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26966
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37260
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36954
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38895
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36913
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39011
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27955
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39062
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 29016
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38921
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27068
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 30068
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36904
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38054
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28274
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37899
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37902
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36904
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39411
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28135
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39088
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38098
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 29920
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 19182
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38078
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35431
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 25035
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35070
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38921
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 69507
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36195
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 66359
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37902
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37922
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37482
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27924
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38896
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37243
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37923
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27964
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27110
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37052
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26982
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38047
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27988
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37089
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38252
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38061
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38113
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26954
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39893
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37064
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26927
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28922
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36924
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38045
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37120
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38896
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38895
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39034
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 29918
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28126
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28922
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35903
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37061
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36126
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37905
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38895
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36094
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26958
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37897
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36104
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28923
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38956
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28926
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 29086
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38049
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 29919
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38895
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28922
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39914
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38896
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37901
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38053
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36874
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27924
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38935
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38927
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37086
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 34950
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28921
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28923
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28922
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38060
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27983
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 34905
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38062
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39058
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37069
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37899
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28126
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28285
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36942
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37974
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35908
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35904
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37937
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37110
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39057
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39103
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36904
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38895
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35908
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36077
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36935
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37106
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26929
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39050
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37248
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 17951
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27246
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26963
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36278
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38896
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36080
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38245
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36078
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37075
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38082
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28955
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35878
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37211
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38099
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 25972
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27114
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39263
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37899
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 63853
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37338
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 40163
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28115
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35904
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27924
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37283
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38874
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27945
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38106
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37952
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35879
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36314
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37285
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38137
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37874
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35903
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36053
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35497
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36926
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36341
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28091
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36904
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38084
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38918
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37279
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37853
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36901
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39894
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 34906
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36977
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 44879
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 17950
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36875
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37142
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38111
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38931
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36906
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36905
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39067
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37066
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36304
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37142
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38313
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38058
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37897
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36006
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37866
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37091
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38557
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37902
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38040
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37087
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26093
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36869
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38896
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36134
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 40173
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37380
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36928
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36106
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27080
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39871
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27134
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37266
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37051
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38896
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 34905
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37256
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37252
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37114
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36901
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38895
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37629
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36074
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37435
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37930
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37044
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28077
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36341
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36905
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27092
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35434
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35871
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26965
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36250
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35059
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38388
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26931
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26926
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37051
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36066
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37061
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37927
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39894
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27336
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37284
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37903
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37100
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38895
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38930
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28924
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26927
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27014
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37103
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 102123
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38849
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 17951
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35087
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37258
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 29887
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37395
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37899
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35928
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26986
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36901
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36904
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 25987
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36955
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36460
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35151
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38127
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26980
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37105
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36070
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37267
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 40132
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37897
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26173
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38110
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37066
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26928
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39199
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26135
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35903
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38252
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37068
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26962
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36068
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38182
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35934
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36935
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35905
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26952
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27924
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35393
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26396
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35985
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37064
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37215
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28922
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36901
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38047
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38902
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27924
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37903
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37081
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27107
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37179
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36054
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35940
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38064
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35932
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37052
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36903
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36904
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39013
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35904
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39332
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37075
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38896
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38918
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37024
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38235
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26928
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38148
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35955
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38969
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38125
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36065
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38895
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28949
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35629
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27121
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36901
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36936
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39103
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35929
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27991
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27948
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38259
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28950
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37904
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27304
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37066
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26932
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37080
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 34874
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36255
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38092
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37930
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38896
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26979
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28090
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 25936
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36068
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38895
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37909
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 25933
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37050
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27214
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37872
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 100049
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38894
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26978
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38849
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26932
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26895
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 16954
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27963
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38100
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37899
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36069
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 16954
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 34908
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36067
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36901
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37063
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26928
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37113
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 17951
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36156
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36940
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38067
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36085
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37135
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37853
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36924
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36904
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37073
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36064
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38072
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37924
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35941
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37902
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27943
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38468
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26926
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37048
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38130
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27893
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37036
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38029
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36903
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38192
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27096
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35964
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36902
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37269
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38453
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36971
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38928
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37993
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28091
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 17952
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 58335
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36066
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35869
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37073
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38069
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38293
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27956
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38327
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35908
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 34884
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36068
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27958
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38034
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36071
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26928
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35871
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26081
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28947
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28937
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35028
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38157
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 20944
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27924
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36077
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39085
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35930
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38973
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38859
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28301
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38899
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26927
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 34882
+INFO:quart.serving:127.0.0.1:52622 GET / 1.1 200 584 3988
+INFO:quart.serving:127.0.0.1:52622 GET /jquery-3.5.1.min.js 1.1 404 103 4985
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39919
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 35904
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28923
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 28922
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37905
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38036
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38920
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36070
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37899
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27954
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 16954
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 37914
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 38899
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 26965
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 39095
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 91754
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36901
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 34906
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36924
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36878
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36901
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 27940
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 17949
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 36901
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 21941
+INFO:quart.serving:127.0.0.1:52622 GET /data 1.1 200 - 29898
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:54185 GET / 1.1 200 584 25927
+INFO:quart.serving:127.0.0.1:54185 GET /jquery-3.5.1.min.js 1.1 404 103 3989
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:54219 GET / 1.1 200 584 17984
+INFO:quart.serving:127.0.0.1:54219 GET /jquery-3.5.1.min.js 1.1 404 103 2967
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:54273 GET / 1.1 200 584 17951
+INFO:quart.serving:127.0.0.1:54273 GET /jquery-3.5.1.min.js 1.1 404 103 4033
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+ERROR:quart.app:Exception on request GET /data
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1815, in handle_request
+    return await self.full_dispatch_request(request_context)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1837, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1077, in handle_user_exception
+    raise error
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1835, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1883, in dispatch_request
+    return await handler(**request_.view_args)
+  File "C:/Users/JohanLap/PycharmProjects/RTB/src/FlaskSite/app.py", line 30, in sendRequesterData
+    msg = db["rtb"].find_one()
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\pymongo\collection.py", line 3339, in __call__
+    self.__name)
+TypeError: 'Collection' object is not callable. If you meant to call the 'find_one' method on a 'Database' object it is failing because no such method exists.
+INFO:quart.serving:127.0.0.1:54282 GET /data 1.1 500 126 10956
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:54314 GET / 1.1 200 584 16952
+INFO:quart.serving:127.0.0.1:54314 GET /jquery-3.5.1.min.js 1.1 404 103 1997
+ERROR:quart.app:Exception on request GET /data
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1815, in handle_request
+    return await self.full_dispatch_request(request_context)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1838, in full_dispatch_request
+    return await self.finalize_request(result, request_context)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1898, in finalize_request
+    response = await self.make_response(result)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1788, in make_response
+    raise TypeError("The response value returned by the view function cannot be None")
+TypeError: The response value returned by the view function cannot be None
+INFO:quart.serving:127.0.0.1:54314 GET /data 1.1 500 126 31914
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:54355 GET / 1.1 200 584 18948
+INFO:quart.serving:127.0.0.1:54355 GET /jquery-3.5.1.min.js 1.1 404 103 3988
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:54424 GET / 1.1 200 584 11970
+INFO:quart.serving:127.0.0.1:54424 GET /jquery-3.5.1.min.js 1.1 404 103 1994
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 16959
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 25931
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 24936
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 15957
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 33913
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 34906
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 34907
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 34159
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 31919
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 24933
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 34906
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 23129
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 34906
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 14961
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 43909
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 23939
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 24932
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 33966
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 35068
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 34906
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 24967
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 34906
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 33967
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 32922
+INFO:quart.serving:127.0.0.1:54424 GET /data 1.1 200 - 25930
+INFO:quart.serving:127.0.0.1:54425 GET / 1.1 200 584 2992
+INFO:quart.serving:127.0.0.1:54425 GET /jquery-3.5.1.min.js 1.1 404 103 1993
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 35902
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 34908
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 23970
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 37899
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 33965
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 34905
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 34110
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 33910
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 33947
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 34937
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 35880
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 38895
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 23935
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 33932
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 33906
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 24412
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 23076
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 34906
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 33910
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 24933
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 35229
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 33257
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 34906
+INFO:quart.serving:127.0.0.1:54425 GET /data 1.1 200 - 23936
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:54539 GET / 1.1 200 584 21939
+INFO:quart.serving:127.0.0.1:54539 GET /jquery-3.5.1.min.js 1.1 404 103 3988
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 39892
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37899
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 38894
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37900
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 27925
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37084
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 28921
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 38920
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37123
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37899
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 27924
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 38896
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 36933
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37135
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 17951
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 38895
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 39891
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37913
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 34930
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37899
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37897
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 38895
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 27922
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 38896
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37906
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 28962
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 36901
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 36902
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 28387
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 35218
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37921
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37924
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 29134
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 38305
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 87235
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 38133
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 38100
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37899
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 27929
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 39247
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 26928
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 35902
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 35861
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 35131
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 38897
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 36250
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 35927
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37897
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37958
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37988
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 39892
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 38291
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 39151
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 28945
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 36094
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 35955
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 36901
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37902
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 38934
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 38172
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 27911
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 35904
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 38104
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37922
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 27999
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 36903
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 36900
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 35926
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37397
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 26983
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 38237
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37898
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 17953
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 36901
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 36901
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 26972
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 38102
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 28963
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 26926
+INFO:quart.serving:127.0.0.1:54539 GET /data 1.1 200 - 37347
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:54721 GET / 1.1 200 584 16985
+INFO:quart.serving:127.0.0.1:54721 GET /jquery-3.5.1.min.js 1.1 404 103 4025
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:54850 GET / 1.1 200 584 21991
+INFO:quart.serving:127.0.0.1:54850 GET /jquery-3.5.1.min.js 1.1 404 103 4021
+ERROR:quart.app:Exception on request GET /data
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1815, in handle_request
+    return await self.full_dispatch_request(request_context)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1837, in full_dispatch_request
+    result = await self.handle_user_exception(error)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1077, in handle_user_exception
+    raise error
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1835, in full_dispatch_request
+    result = await self.dispatch_request(request_context)
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\quart\app.py", line 1883, in dispatch_request
+    return await handler(**request_.view_args)
+  File "C:/Users/JohanLap/PycharmProjects/RTB/src/FlaskSite/app.py", line 30, in sendRequesterData
+    msg = db.rtb.find({}).count()
+  File "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib\site-packages\pymongo\collection.py", line 3339, in __call__
+    self.__name)
+TypeError: 'Collection' object is not callable. If you meant to call the 'find' method on a 'Database' object it is failing because no such method exists.
+INFO:quart.serving:127.0.0.1:54850 GET /data 1.1 500 126 13961
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:54874 GET / 1.1 200 584 26958
+INFO:quart.serving:127.0.0.1:54874 GET /jquery-3.5.1.min.js 1.1 404 103 5010
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:Running on 127.0.0.1:5000 over http (CTRL + C to quit)
+INFO:quart.serving:127.0.0.1:54962 GET / 1.1 200 584 16988
+INFO:quart.serving:127.0.0.1:54962 GET /jquery-3.5.1.min.js 1.1 404 103 2991

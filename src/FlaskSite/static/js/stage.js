@@ -15,12 +15,14 @@ function updateData(data){
          let a = actors.get(actor["name"]);
          a.pos = actor["positions"];
          a.shape = actor["shape"];
+         a.name = actor["name"];
          actors.replace(actor["name"],a); //if this is even necessary
     }
-    update()
+    //update()
+    return data
 }
-function update() {
+function update(ctx) {
     actors.forEach((key , value)=>{
-
+        ctx.write
     })
 }

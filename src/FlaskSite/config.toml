@@ -6,3 +6,7 @@ sensor_exchange = "sensor_exchange"
 
 [log]
 filename = "logfile"
+
+[MongoDB]
+host = "130.240.5.138"
+port = "27017"

@@ -8,3 +8,6 @@
 
 
 
+src/Consumer/logfile
+src/Emulator/logfile
+src/FlaskSite/logfile

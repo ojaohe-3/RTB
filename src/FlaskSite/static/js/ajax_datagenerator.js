@@ -4,7 +4,7 @@ function requestData() {
     $.ajax({
         type : 'GET',
         url: '/data',
-        success :(data )=>{
+        success :(data) => {
             updateData(data);
             if(debug)
                 $('#debug').text(data)

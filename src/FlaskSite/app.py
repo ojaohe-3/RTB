@@ -28,13 +28,13 @@ async def sendRequesterData():
     # todo generate json and send to requester
     db = DB.get_connection()
     collection = db["rtb"].get_collection("Actors").find({})
-    msg = {}
+    msg = {"payload": []}
     for obj in iter(collection):
         temp = {}
         for key in obj:
-            if "_id" not in key and "Name" not in key:
+            if "_id" not in key:
                 temp[key] = obj[key]
-        msg[obj["Name"]] = temp
+        msg["payload"].append({"actor": temp})
     return jsonify(msg)
 
 

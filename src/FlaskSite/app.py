@@ -31,11 +31,11 @@ async def sendRequesterData():
     msg = {}
     for obj in iter(collection):
         temp = {}
-        for value in obj:
-            if '_id' not in value and 'Name' not in value:
-                temp[value] = obj[value]
-        msg[str(obj['Name'])] = temp
-    return str(msg)
+        for key in obj:
+            if "_id" not in key and "Name" not in key:
+                temp[key] = obj[key]
+        msg[obj["Name"]] = temp
+    return jsonify(msg)
 
 
 async def getData(conf, loop):

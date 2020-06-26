@@ -2,9 +2,9 @@ let actors = new Map();
 
 //will be called via ajax
 function updateData(data){
-
-
-    return data
+    data.forEach((v) => {
+        console.log(v);
+    })
 }
 function update(layer)
 {
@@ -22,8 +22,8 @@ function update(layer)
 }
 let stage = new Konva.Stage({
   container: 'container',   // id of container <div>
-  width: 500,
-  height: 500
+  width: 600,
+  height: 600
 });
 let layer1 = new Konva.Layer();
 stage.add(layer1);

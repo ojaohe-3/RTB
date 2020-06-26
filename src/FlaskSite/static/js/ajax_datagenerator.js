@@ -1,9 +1,14 @@
 // fetch data
+debug = false;
 function requestData() {
     $.ajax({
         type : 'GET',
         url: '/data',
-        success :(data )=>{$('#debug').text(data)}
+        success :(data )=>{
+            updateData(data);
+            if(debug)
+                $('#debug').text(data)
+        }
     })
         .then(function () {
         setTimeout(requestData, 50) //call itself every 50ms

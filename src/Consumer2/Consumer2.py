@@ -43,9 +43,8 @@ class Consumer():
         self.config['rabbitmq']['sensor_exchange'], aio_pika.ExchangeType.DIRECT, durable=True
         )
 
-        self._queue = await self._channel.declare_queue(self.config['rabbitmq']['queue'],exclusive=True)
+        self._queue = await self._channel.declare_queue("structures", exclusive=True)
         await self._queue.bind(self._exchange)
-
         logger.info("connected to RMQ")
 
     async def disconnect(self):
@@ -55,7 +54,6 @@ class Consumer():
         self._channel = None
         self._exchange = None
         self._running = False
-        self._queue = None;
 
     async def consume(self, mongo):
         async with self._queue.iterator() as queue_iter:
@@ -64,18 +62,18 @@ class Consumer():
                     #logger.info("Consuming")
                     #logger.info(message.body)
                     msg = json.loads(message.body)
-                    logger.info("POSITION")
-                    logger.info(msg['payload']['position'])
+                    #logger.info("POSITION")
+                    logger.info(msg)
 
-                    actor = msg['payload']['name']
-                    actorPosition = msg['payload']['position']
-                    actorShape = msg['payload']['shape']
+                    structureName = msg['payload']['name']
+                    structurePosition = msg['payload']['position']
+                    structureShape = msg['payload']['shape']
 
                     mongo.update(
-                        { "Name" : actor},
+                        { "Name" : structureName},
                             {
-                                "$set": {"position": actorPosition,
-                                         "shape": actorShape}
+                                "$set": {"position": structurePosition,
+                                         "shape": structureShape}
                             },
                             upsert=True
 
@@ -90,7 +88,7 @@ async def main():
     consumer = Consumer(config)
     client = MongoClient("mongodb://{}:{}/".format(config["MongoDB"]["host"],config["MongoDB"]["port"]))
     rtbDB = client['rtb']
-    actorCol = rtbDB['Actors']
+    actorCol = rtbDB['Structures']
 
     await consumer.connect()
     await consumer.consume(actorCol)

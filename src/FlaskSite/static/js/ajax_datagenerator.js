@@ -2,7 +2,7 @@
 debug = false;
 function requestData() {
     $.ajax({
-        type : 'GET',
+        type: 'GET',
         url: '/data',
         success :(data) => {
             updateData(data);

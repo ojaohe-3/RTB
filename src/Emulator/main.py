@@ -51,8 +51,10 @@ class Emulator:
         # Creates the channel on RabbitMQ
         self._channel = await self._connection.channel()
         # Declares the exchange on the channel on RabbitMQ
-        self._exchange = await self._channel.declare_exchange('sensor_exchange', aio_pika.ExchangeType.FANOUT,
+        self._exchange = await self._channel.declare_exchange('sim_exchange', aio_pika.ExchangeType.DIRECT,
                                                               durable=True)
+        #self._exchange = await self._channel.declare_exchange('sensor_exchange', aio_pika.ExchangeType.FANOUT,
+        #                                                      durable=True)
 
     async def disconnect(self):
         logger.info("Disconnecting from RMQ")
@@ -129,12 +131,18 @@ async def main(loop, actors, structures, activites):
     config = toml.load('config.toml')
     sim = Emulator(config, loop)
     await sim.connect()
+    for structure in structures:
+        structures_msg = sim.get_sensor_data(structure)
+
+        await sim.send_message(structures_msg, 'structures')
+    #await sim.send_message(structures_msg, 'structures')
 
     while True:
+        # await sim.send_message(structures_msg, 'sensor_exchange')
         for a in actors:
             moveActorTowards(a, a.activity.pos, structures, activites)
             msg = sim.get_sensor_data(a)
-            await sim.send_message(msg, 'sensor_exchange')
+            await sim.send_message(msg, 'actors')
 
         await asyncio.sleep(0.04)
 

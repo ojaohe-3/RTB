@@ -10,8 +10,6 @@ function init(){
     });
     layer1 = new Konva.Layer();
 
-
-
     actors.forEach((v,k)=>{
 
          let poly = new Konva.Line({
@@ -21,13 +19,12 @@ function init(){
             strokeWidth: 1,
             closed: true,
           });
-
          polyArray.set(k, poly);
-        layer1.add(poly);
-        poly.on('moveEvent', (evt) => {
+         layer1.add(poly);
+         poly.on('moveEvent', (evt) => {
             poly.attrs.points = konvaShape(evt);
             layer1.draw();
-        });
+         });
     });
     stage.add(layer1);
     //update(layer1);

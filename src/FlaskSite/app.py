@@ -1,4 +1,4 @@
-from src.Consumer import Consumer
+from src.ConsumerActor import ConsumerActor
 import toml
 import asyncio
 from pymongo import MongoClient
@@ -48,7 +48,7 @@ if __name__ == '__main__':
     loop = asyncio.get_event_loop()
     app.run()
     config = toml.load("config.toml")
-    consumer = Consumer(config)
+    consumer = ConsumerActor(config)
     loop = asyncio.get_event_loop()
     loop.run_until_complete(loop)
     loop.close()

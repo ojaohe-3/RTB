@@ -12,7 +12,7 @@ class DB(object):
     @staticmethod
     def get_connection():
         config = toml.load("config.toml")
-        return MongoClient(f"mongodb://{config['MongoDB']['host']}:{config['MongoDB']['port']}")
+        return MongoClient("mongodb://{config['MongoDB']['host']}:{config['MongoDB']['port']}")
 
 
 @app.route('/')
@@ -46,7 +46,7 @@ loop = asyncio.get_event_loop()
 
 if __name__ == '__main__':
     loop = asyncio.get_event_loop()
-    app.run()
+    app.run(debug=True, use_reloader=True)
     config = toml.load("config.toml")
     consumer = ConsumerActor(config)
     loop = asyncio.get_event_loop()

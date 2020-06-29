@@ -3,6 +3,7 @@ username = "rtb"
 password = "rtb123"
 host = "130.240.5.138"
 sensor_exchange = "sim_exchange"
+queue = "structures"
 
 [log]
 filename = "logfile"

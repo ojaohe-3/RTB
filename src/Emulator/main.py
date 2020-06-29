@@ -87,7 +87,7 @@ def moveActorTowards(actor, pos, structures, activites):
     actor.updatePos(pos)
     if(checkForCollisions(actor, structures, activites)):
         print(f"collision deteced, {actor.name} have collided at {str(actor.pos)}")
-        actor.updatePos([-1*x+random.random()*2 for x in pos])
+        #actor.updatePos([-1*x+random.random()*2 for x in pos])
 
 
 

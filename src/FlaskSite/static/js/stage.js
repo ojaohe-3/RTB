@@ -4,11 +4,60 @@ let layer1 = null;
 let polyArray = new Map();
 let camera = new Camera();
 function init(){
+
     stage = new Konva.Stage({
       container: 'container',   // id of container <div>
-      width: 1200,
-      height: 830
+      width: 1920,
+      height: 600
     });
+    var container = stage.container();
+      // make it focusable
+
+      container.tabIndex = 1;
+      // focus it
+      // also stage will be in focus on its click
+      container.focus();
+
+
+       container.addEventListener('keydown', function (e) {
+        switch (e.keyCode) {
+            case 82:
+                camera.zoom -= 0.1;
+                break;
+            case 70:
+                camera.zoom += 0.1;
+                break;
+            case 81:
+                  camera.theta+=0.01;
+                  break;
+            case 69:
+                  camera.theta-=0.01;
+                break;
+            case 37:
+            case 65:
+                camera.pos[0] -= 15;
+                break;
+            case 38:
+            case 87:
+                camera.pos[1] -= 15;
+                break;
+            case 39:
+            case 68:
+                camera.pos[0] += 15;
+                break;
+            case 40:
+            case 83:
+                camera.pos[1] += 15;
+                break;
+            default:
+                break;
+        }
+
+        camera.updateTranslation();
+        e.preventDefault();
+        layer1.batchDraw();
+      });
+
     layer1 = new Konva.Layer();
 
     actors.forEach((v,k)=>{
@@ -40,7 +89,7 @@ function updateData(data){
     let dataEntries = data["payload"];
 
     dataEntries.forEach((v)=>{
-        actor = v["actor"];
+        let actor = v["actor"];
         actors.set(actor["Name"], new Actor(actor["position"],actor["shape"],actor["Name"]));
     });
 
@@ -50,9 +99,13 @@ function updateData(data){
     }else{
         actors.forEach((v,k)=>{
             let poly = polyArray.get(k);
-            poly.fire('moveEvent',v.shape);
+            camera.updateTranslation();
+            let shape = camera.translate(v.shape);
 
-        })
+            poly.fire('moveEvent', shape);
+
+        });
+
         layer1.draw();
     }
 }

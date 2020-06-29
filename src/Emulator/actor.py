@@ -19,6 +19,7 @@ class Actor(SiteObject):
         x = npos[0] - self.pos[0]
         y = npos[1] - self.pos[1]
         magnitude = np.sqrt(x**2 + y**2)
+
         if(x == 0):
             return # is at destination.
         #generate velocity vector

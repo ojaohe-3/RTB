@@ -43,7 +43,7 @@ class Consumer():
         self.config['rabbitmq']['sensor_exchange'], aio_pika.ExchangeType.DIRECT, durable=True
         )
 
-        self._queue = await self._channel.declare_queue("structures", exclusive=True)
+        self._queue = await self._channel.declare_queue("structures")
         await self._queue.bind(self._exchange)
         logger.info("connected to RMQ")
 

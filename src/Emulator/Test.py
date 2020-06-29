@@ -21,7 +21,7 @@ def generateSim():
         obj = Actor([random.randrange(0, 500), random.randrange(0, 500)], "truck",  3*random.random()+1,
                     [[-2, -1], [-2, 1], [2, 1], [2, -1]], "truck" + str(i))
         t.append(obj)
-    for i in range(3):
+    for i in range(20):
         obj = Structure([random.randrange(0, 500), random.randrange(0, 500)])
         s.append(obj)
     for i in range(150):

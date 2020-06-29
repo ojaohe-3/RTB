@@ -62,7 +62,7 @@ class Emulator:
         self._running = False
 
     async def send_message(self, msg, routing_key):
-        logger.info("Sending message to RMQ")
+        #logger.info("Sending message to RMQ")
         await self._exchange.publish(
             aio_pika.Message(
                 body=msg.encode()
@@ -70,7 +70,7 @@ class Emulator:
             routing_key=routing_key)
 
     def get_sensor_data(self, object):
-        logger.info("Creating sensor data")
+        #logger.info("Creating sensor data")
         cur_time = datetime.datetime.now().time()
         json_msg = {
             "time": str(cur_time),
@@ -83,7 +83,10 @@ class Emulator:
 
 def moveActorTowards(actor, pos, structures, activites):
     actor.updatePos(pos)
-    checkForCollisions(actor, structures, activites)
+    if(checkForCollisions(actor, structures, activites)):
+        print(f"collision deteced, {actor.name} have collided at {str(actor.pos)}")
+        actor.updatePos([-1*x+random.random()*2 for x in pos])
+
 
 
 def checkForCollisions(actor, structures, activites):
@@ -91,6 +94,7 @@ def checkForCollisions(actor, structures, activites):
     # inside of map
     if (not separating_axis_theorem(mapbound, actor.shape)):
         print(f"\033[93m{actor.name} is out of bounds! {str(actor.pos)} \033[0m")
+        return True
 
     if (separating_axis_theorem(actor.activity.shape, actor.shape)):
         # logger.info(f"{actor.name} arrived at a activity {str(activity.pos)}, completeing it")
@@ -102,11 +106,16 @@ def checkForCollisions(actor, structures, activites):
         except:
             actor.activity = None
         finally:
-            actor.activity = activites[-1]
+            if(len(activites)>1):
+                actor.activity = activites[random.randrange(len(activites)-1)]
+            else:
+                exit(-1)
         print(f"\n\n\033[93m New Task Assigned! {len(activites)} tasks remains.\033[0m\n\n")
-    #todo displace actor if inside structure
-    #todo actor collision.
 
+    for structure in structures:
+        if (separating_axis_theorem(structure.shape,actor.shape)):
+            return True
+    return False
 
 
 async def actorsPos(actors):

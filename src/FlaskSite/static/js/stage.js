@@ -2,11 +2,12 @@ let actors = new Map();
 let stage = null;
 let layer1 = null;
 let polyArray = new Map();
+let camera = new Camera();
 function init(){
     stage = new Konva.Stage({
       container: 'container',   // id of container <div>
-      width: 600,
-      height: 600
+      width: 1200,
+      height: 830
     });
     layer1 = new Konva.Layer();
 

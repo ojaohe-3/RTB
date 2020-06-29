@@ -7,7 +7,7 @@ from src.Emulator.site_object import SiteObject
 class Structure(SiteObject):
 
     def __init__(self, pos):
-        shape = self.generateConvexStructure(int(random.randrange(3, 12)),random.random() * 10)
+        shape = self.generateConvexStructure(int(random.randrange(3, 12)),random.random() * 10+5)
         super().__init__(pos, shape, "none")
 
 

@@ -131,16 +131,21 @@ async def main(loop, actors, structures, activites):
     config = toml.load('config.toml')
     sim = Emulator(config, loop)
     await sim.connect()
+
+    #Collect all structures and send them to RMQ
     for structure in structures:
         structures_msg = sim.get_sensor_data(structure)
-
         await sim.send_message(structures_msg, 'structures')
-    #await sim.send_message(structures_msg, 'structures')
 
     while True:
-        # await sim.send_message(structures_msg, 'sensor_exchange')
         for a in actors:
             moveActorTowards(a, a.activity.pos, structures, activites)
+
+            #Send data about activities
+            msg_activity = sim.get_sensor_data(a.activity)
+            await sim.send_message(msg_activity,'events')
+
+            #Send data about actors
             msg = sim.get_sensor_data(a)
             await sim.send_message(msg, 'actors')
 

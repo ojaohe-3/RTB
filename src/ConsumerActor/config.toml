@@ -1,0 +1,13 @@
+[rabbitmq]
+username = "rtb"
+password = "rtb123"
+host = "130.240.5.138"
+exchange = "sim_exchange"
+queue = "actors"
+
+[log]
+filename = "logfile"
+
+[MongoDB]
+host = "130.240.5.138"
+port = "27017"

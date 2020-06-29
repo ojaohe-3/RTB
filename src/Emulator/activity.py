@@ -17,3 +17,12 @@ class Activity(SiteObject):
             if "active" in self.status:
                 return True
         return False
+
+    def toJson(self):
+        json_msg = {
+            "name": self.name,
+            "position": self.pos,
+            "shape": self.shape,
+            "status": self.status
+        }
+        return json_msg

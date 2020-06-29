@@ -14,5 +14,29 @@ function requestData() {
         setTimeout(requestData, 50) //call itself every 50ms
     });
 }
+function requestStructureData() {
+      $.ajax({
+        type: 'GET',
+        url: '/data/structure',
+        success :(data) => {
+            updateData(data);
+            if(debug)
+                $('#debug').text(data)
+        }
+    });
+}
+
+function requestStructureActivity() {
+      $.ajax({
+        type: 'GET',
+        url: '/data/activity',
+        success :(data) => {
+            updateData(data);
+            if(debug)
+                $('#debug').text(data)
+        }
+    });
+}
 
 requestData();
+requestStructureData();

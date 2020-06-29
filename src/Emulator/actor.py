@@ -40,11 +40,4 @@ class Actor(SiteObject):
             self.shape[i][0] += pos[0]
             self.shape[i][1] += pos[1]
 
-    def toJson(self):
-        json_msg = {
-            "name": self.name,
-            "position": self.pos,
-            "shape": self.shape
-        }
-        return json_msg
 

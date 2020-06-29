@@ -12,8 +12,19 @@ class DB(object):
     @staticmethod
     def get_connection():
         config = toml.load("config.toml")
-        return MongoClient("mongodb://{config['MongoDB']['host']}:{config['MongoDB']['port']}")
-
+        return MongoClient(f"mongodb://{config['MongoDB']['host']}:{config['MongoDB']['port']}")
+    @staticmethod
+    def getFromCollection(collection,type):
+        db = DB.get_connection()
+        collection = db["rtb"].get_collection(collection).find({})
+        msg = {"payload": []}
+        for obj in iter(collection):
+            temp = {}
+            for key in obj:
+                if "_id" not in key:
+                    temp[key] = obj[key]
+            msg["payload"].append({type: temp})
+        return msg
 
 @app.route('/')
 async def index():
@@ -26,15 +37,16 @@ async def sendRequesterData():
     # todo authentication
     # todo get data from socket if available
     # todo generate json and send to requester
-    db = DB.get_connection()
-    collection = db["rtb"].get_collection("Actors").find({})
-    msg = {"payload": []}
-    for obj in iter(collection):
-        temp = {}
-        for key in obj:
-            if "_id" not in key:
-                temp[key] = obj[key]
-        msg["payload"].append({"actor": temp})
+    # db = DB.get_connection()
+    # collection = db["rtb"].get_collection("Actors").find({})
+    # msg = {"payload": []}
+    # for obj in iter(collection):
+    #     temp = {}
+    #     for key in obj:
+    #         if "_id" not in key:
+    #             temp[key] = obj[key]
+    #     msg["payload"].append({"actor": temp})
+    msg = DB.getFromCollection("Actors", "actor")
     return jsonify(msg)
 
 

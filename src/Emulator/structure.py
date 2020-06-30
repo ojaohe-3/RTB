@@ -7,7 +7,8 @@ from src.Emulator.site_object import SiteObject
 class Structure(SiteObject):
 
     def __init__(self, pos, name):
-        shape = self.generateConvexStructure(int(random.randrange(3, 12)), random.random() * 100 + 15)
+        #shape = self.generateConvexStructure(int(random.randrange(3, 12)), random.random() * 100 + 15)
+        shape = self.generateSquareStructure(random.random() * 25 + 15)
         super().__init__(pos, shape, name)
 
     # Pavel Valtr. “Probability that an
@@ -15,8 +16,8 @@ class Structure(SiteObject):
     def generateConvexStructure(self, edges, size):
         # generate random sample of x and y´s
         pointmap = []
-        lx = [random.random() * size for _ in range(edges)]
-        ly = [random.random() * size for _ in range(edges)]
+        lx = [random.random() for _ in range(edges)]
+        ly = [random.random() for _ in range(edges)]
 
         lx.sort()
         ly.sort()
@@ -39,24 +40,37 @@ class Structure(SiteObject):
         vx.append(x1 - max_x)
         vx.append(max_x - x2)
 
-        vy.append(y1-max_y)
-        vy.append(max_y-y1)
+        vy.append(y1 - max_y)
+        vy.append(max_y - y1)
 
         random.shuffle(vx)
         random.shuffle(vy)
 
-        vex = [{'ang': np.arctan(y/x), "position": [x, y]} for x, y in zip(vx, vy)]
+        vex = [{'ang': np.arctan2(y, x), "position": [x, y]} for x, y in zip(vx, vy)]
         vex = sorted(vex, key=lambda i: i['ang'], reverse=True)
         pointmap = []
-        x,y = 0,0
-        minPol = 0
-        for pos in vex:
-            pointmap.append([x,y])
-            x, y = x+pos[0], y+pos[1]
-            minPol = min(minPol,pos)
-        shift = [min_x-minPol[0],min_y-minPol[1]]
-        
+        x, y = 0, 0
+        minPol = [0,0]
+
+        for v in vex:
+            pos = v["position"]
+            pointmap.append([x, y])
+            x, y = x + pos[0], y + pos[1]
+            minPol = min(minPol, [x, y])
+
+        shift = [min_x - minPol[0], min_y - minPol[1]]
+        for i in range(len(pointmap)):
+            pointmap[i][0] += shift[0]
+            pointmap[i][1] += shift[1]
+            pointmap[i][0] *= size
+            pointmap[i][1] *= size
         return pointmap
+    def generateSquareStructure(self,size):
+        shape = [[-1,-1],[-1,1],[1,1],[1,-1]]
+        for i in range(4):
+            shape[i][0] *= size
+            shape[i][1] *= size
+        return shape
 # depricated
 # def convexShapeTest(self,pointmap):
 #     if pointmap is None:

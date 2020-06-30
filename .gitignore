@@ -11,3 +11,6 @@
 src/Consumer/logfile
 src/Emulator/logfile
 src/FlaskSite/logfile
+/src/ConsumerActor/logfile
+/src/ConsumerEvents/logfile
+/src/ConsumerStructures/logfile

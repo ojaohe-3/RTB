@@ -46,11 +46,11 @@ class Emulator:
 
     async def connect(self):
         logger.info("Connecting to RMQ")
-        # creates the connection to RabbitMQ
+        # creates the connection to RabbitMQ.markdown
         self._connection = await self._create_connection()
-        # Creates the channel on RabbitMQ
+        # Creates the channel on RabbitMQ.markdown
         self._channel = await self._connection.channel()
-        # Declares the exchange on the channel on RabbitMQ
+        # Declares the exchange on the channel on RabbitMQ.markdown
         self._exchange = await self._channel.declare_exchange('sim_exchange', aio_pika.ExchangeType.DIRECT,
                                                               durable=True)
         #self._exchange = await self._channel.declare_exchange('sensor_exchange', aio_pika.ExchangeType.FANOUT,

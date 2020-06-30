@@ -1,8 +1,8 @@
 // fetch data
-debug = false;
+debug = true;
 
-function requestData() {
-    $.ajax({
+async function requestData() {
+     $.ajax({
         type: 'GET',
         url: '/data',
         success :(data) => {
@@ -15,10 +15,10 @@ function requestData() {
         setTimeout(requestData, 50) //call itself every 50ms
     });
 }
-function requestStructureData() {
+async function requestStructureData() {
       $.ajax({
         type: 'GET',
-        url: '/data/structure',
+        url: '/data/structures',
         success :(data) => {
             updateStructureData(data);
             if(debug)
@@ -27,17 +27,17 @@ function requestStructureData() {
     });
 }
 
-function requestActivity() {
+async function requestActivity() {
       $.ajax({
         type: 'GET',
-        url: '/data/activity',
+        url: '/data/events',
         success :(data) => {
             updateActivityData(data);
             if(debug)
                 $('#debug').text(data)
         }
     }).then(function () {
-          setTimeout(requestActivity,500);
+          setTimeout(requestActivity,500)
       });
 }
 requestData();

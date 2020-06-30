@@ -37,6 +37,18 @@ class Camera{
        return new_shape;
 
     }
+    translatePos(pos)
+    {
+        let T = this.transFormationMatrix;
+        let x = pos[0];
+        let y = pos[1];
+
+        let p = [x,y,1];
+        //todo make this matrix multiplication clearer
+        let Tp = [p[0]*T[0][0]+p[1]*T[0][1]+T[0][2],
+            p[0]*T[1][0]+p[1]*T[1][1]+T[1][2]];
+        return Tp;
+    }
 
     /***
      * Generate Transformation/View Matrix

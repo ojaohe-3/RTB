@@ -33,7 +33,7 @@ async def index():
 
 @app.route('/data')
 async def sendRequesterData():
-    print("got a data request")
+    #print("got a data request")
     # todo authentication
     # todo get data from socket if available
     # todo generate json and send to requester
@@ -55,7 +55,7 @@ async def sendStructures():
     msg = DB.getFromCollection('Structures', 'structure')
     return jsonify(msg)
 
-@app.route('/data/events/')
+@app.route('/data/events')
 async def sendEvents():
     print('got an event request')
     msg = DB.getFromCollection('Events', 'events')

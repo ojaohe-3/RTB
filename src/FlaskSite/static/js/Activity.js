@@ -3,7 +3,7 @@ class Activity{
         this.pos = pos;
         this.name = name;
         this.status = status === "complete" ? false: true;
-        this.radius = 8.5;
+        this.radius = 2.5;
     }
     setStatus(status){
         this.status = status === "complete" ? false: true;

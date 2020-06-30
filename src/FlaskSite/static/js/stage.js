@@ -3,13 +3,26 @@ let structures = new Map();
 let activites = new Map();
 let stage = null;
 let layer1 = null;
-let layer2 = null;
 let staticPoly = new Map();
 let polyArray = new Map();
 let camera = new Camera();
 
 let a_c,ac_c = false;
 let konvaInit = false;
+function updateStatic() {
+    camera.updateTranslation();
+    structures.forEach((v,k)=>{
+       let poly = staticPoly.get(k);
+       poly.fire("structureEvent", camera.translate((v.shape)));
+    });
+    activites.forEach((v,k)=>{
+       let poly = polyArray.get(k);
+       poly.fire("activityEvent", camera.translatePos(v.pos), v.status);
+    });
+
+    layer1.batchDraw();
+}
+
 /***
  *
  */
@@ -63,18 +76,15 @@ function initKonva() {
                 break;
         }
 
-        camera.updateTranslation();
+        updateStatic();
         e.preventDefault();
         layer1.batchDraw();
       });
 
     layer1 = new Konva.Layer();
-    layer2 = new Konva.Layer();
 
 
     stage.add(layer1);
-    stage.add(layer2);
-    layer2.moveToTop();
     console.log( "ready!" );
 }
 
@@ -121,11 +131,12 @@ function initStructures() {
             strokeWidth: 1,
             closed: true,
         });
-        layer2.add(poly)
+        layer1.add(poly)
         staticPoly.set(k, poly);
-        poly.on('structureCollision', (evt) => {
+        poly.on('structureEvent', (evt) => {
             poly.attrs.fill = '#e21d00';
-            layer2.draw();
+            poly.attrs.points = konvaShape(evt);
+            layer1.batchDraw();
         });
     });
 }
@@ -151,11 +162,10 @@ function initActivites(){
           });
          polyArray.set(k, poly);
          layer1.add(poly);
-         poly.on('activityComplete', (evt) => {
-            if(evt)
-                poly.attrs.fill = '#ff0000';
-            else
-                poly.attrs.fill = '#00d2ff';
+         poly.on('activityEvent', (pos,status) => {
+            poly.attrs.visible = status;
+            poly.x( pos[0]);
+            poly.y( pos[1]);
             layer1.batchDraw();
          });
     });
@@ -195,13 +205,10 @@ function updateData(data){
         let poly = polyArray.get(k);
         camera.updateTranslation();
         let shape = camera.translate(v.shape);
-
+        updateStatic();
         poly.fire('moveEvent', shape);
 
     });
-
-    layer1.batchDraw();
-
 }
 
 /***
@@ -213,7 +220,7 @@ function updateStructureData(data){
 
     dataEntries.forEach((v)=>{
         let structure = v["structure"];
-        structures.set(structure["Name"], new Structure(structure["position"],structure["shape"],structure["Name"]));
+        structures.set(structure["Name"], new Structure(structure["shape"],structure["position"],structure["Name"]));
     });
     initStructures();
 }
@@ -227,15 +234,14 @@ function updateActivityData(data) {
     let dataEntries = data["payload"];
     if(activites.size === 0){
         dataEntries.forEach((v)=>{
-            let activity = v["event"];
+            let activity = v["events"];
             activites.set(activity["Name"], new Activity(activity["position"],activity["Name"],activity["status"]));
         });
     }else{
         dataEntries.forEach((v)=>{
-            let k = v["event"];
-            let event = activites.get(activity["Name"])
+            let k = v["events"];
+            let event = activites.get(k["Name"])
             event.setStatus(k["status"]);
-            event.fire('activityComplete',event.status);
         });
     }
 
@@ -243,7 +249,13 @@ function updateActivityData(data) {
         initActivites();
         a_c = true
     }
+        activites.forEach((v,k)=>{
+            let poly = polyArray.get(k);
+            camera.updateTranslation();
+            let pos = camera.translatePos(v.pos);
+            poly.fire('activityEvent', pos, v.status);
 
+    });
 }
 
 /***
@@ -258,5 +270,3 @@ function konvaShape(vectorshape){
     }
     return shape
 }
-
-

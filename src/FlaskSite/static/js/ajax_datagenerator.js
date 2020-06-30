@@ -1,5 +1,6 @@
 // fetch data
-debug = true;
+debug = false;
+
 function requestData() {
     $.ajax({
         type: 'GET',
@@ -19,24 +20,26 @@ function requestStructureData() {
         type: 'GET',
         url: '/data/structure',
         success :(data) => {
-            updateData(data);
+            updateStructureData(data);
             if(debug)
                 $('#debug').text(data)
         }
     });
 }
 
-function requestStructureActivity() {
+function requestActivity() {
       $.ajax({
         type: 'GET',
         url: '/data/activity',
         success :(data) => {
-            updateData(data);
+            updateActivityData(data);
             if(debug)
                 $('#debug').text(data)
         }
-    });
+    }).then(function () {
+          setTimeout(requestActivity,500);
+      });
 }
-
 requestData();
 requestStructureData();
+requestActivity();

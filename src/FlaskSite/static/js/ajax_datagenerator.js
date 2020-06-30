@@ -1,5 +1,5 @@
 // fetch data
-debug = false;
+debug = true;
 function requestData() {
     $.ajax({
         type: 'GET',

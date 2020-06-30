@@ -49,6 +49,17 @@ async def sendRequesterData():
     msg = DB.getFromCollection("Actors", "actor")
     return jsonify(msg)
 
+@app.route('/data/structures')
+async def sendStructures():
+    print("got a structure request")
+    msg = DB.getFromCollection('Structures', 'structure')
+    return jsonify(msg)
+
+@app.route('/data/events/')
+async def sendEvents():
+    print('got an event request')
+    msg = DB.getFromCollection('Events', 'events')
+    return jsonify(msg)
 
 async def getData(conf, loop):
     return ''

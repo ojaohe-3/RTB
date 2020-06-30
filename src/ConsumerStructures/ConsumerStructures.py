@@ -55,6 +55,9 @@ class Consumer():
         self._exchange = None
         self._running = False
 
+    # Will go through the queue in RMQ and collect the messages.
+    # For every message received, the message will be inserted in
+    # MongoDB.
     async def consume(self, mongo):
         async with self._queue.iterator() as queue_iter:
             async for message in queue_iter:
@@ -65,22 +68,20 @@ class Consumer():
                     #logger.info("POSITION")
                     logger.info(msg)
 
-                    activityName = msg['payload']['name']
-                    activityPosition = msg['payload']['position']
-                    activityShape = msg['payload']['shape']
-                    activityStatus = msg['payload']['status']
+                    structureName = msg['payload']['name']
+                    structurePosition = msg['payload']['position']
+                    structureShape = msg['payload']['shape']
 
                     mongo.update(
-                        { "Name" : activityName},
+                        { "Name" : structureName},
                             {
-                                "$set": {"position": activityPosition,
-                                         "shape": activityShape,
-                                         "status": activityStatus}
+                                "$set": {"position": structurePosition,
+                                         "shape": structureShape}
                             },
                             upsert=True
 
                         )
-                    # logger.info('mongoupdated')
+                    logger.info('mongoupdated')
 
                     #await self.buffer.put(message.body.decode())
                     #if queue.name in message.body.decode():
@@ -90,7 +91,7 @@ async def main():
     consumer = Consumer(config)
     client = MongoClient("mongodb://{}:{}/".format(config["MongoDB"]["host"],config["MongoDB"]["port"]))
     rtbDB = client['rtb']
-    actorCol = rtbDB['Events']
+    actorCol = rtbDB['Structures']
 
     await consumer.connect()
     await consumer.consume(actorCol)

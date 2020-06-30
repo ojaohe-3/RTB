@@ -1,13 +1,16 @@
 {% extends "base_canvas.html" %}
 {% block head %}
+
+{% endblock %}
+
+{% block body %}
+{#    <div id="popup" style="display: none"><span class="popuptext">[][][]</span></div>#}
+
+    <div id="container"></div>
+
     <script src="https://unpkg.com/konva@6.0.0/konva.min.js"></script>
     <script src="{{ url_for('static', filename="js/Actor.js") }}"></script>
     <script src="{{ url_for('static', filename="js/Camera.js") }}"></script>
     <script src="{{ url_for('static', filename="js/stage.js") }}"></script>
     <script src="{{ url_for('static', filename="js/ajax_datagenerator.js") }}"></script>
-{% endblock %}
-
-{% block body %}
-<div id="popup" style="display: none"><span class="popuptext">[][][]</span></div>
-<div id="container" style="width: 100%;height: 100%"></div>
 {% endblock %}

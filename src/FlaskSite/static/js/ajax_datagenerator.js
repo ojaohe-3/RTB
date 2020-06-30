@@ -1,5 +1,6 @@
 // fetch data
 debug = false;
+
 function requestData() {
     $.ajax({
         type: 'GET',
@@ -36,10 +37,9 @@ function requestActivity() {
                 $('#debug').text(data)
         }
     }).then(function () {
-          setTimeout(requestActivity,1000);
+          setTimeout(requestActivity,500);
       });
 }
-init();
 requestData();
 requestStructureData();
 requestActivity();

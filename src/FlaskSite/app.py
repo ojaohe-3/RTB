@@ -58,7 +58,7 @@ loop = asyncio.get_event_loop()
 
 if __name__ == '__main__':
     loop = asyncio.get_event_loop()
-    app.run(debug=True, use_reloader=True)
+    app.run(debug=True)
     config = toml.load("config.toml")
     consumer = ConsumerActor(config)
     loop = asyncio.get_event_loop()

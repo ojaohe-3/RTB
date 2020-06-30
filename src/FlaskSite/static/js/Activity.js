@@ -5,4 +5,7 @@ class Activity{
         this.status = status === "complete" ? false: true;
         this.radius = 8.5;
     }
+    setStatus(status){
+        this.status = status === "complete" ? false: true;
+    }
 }

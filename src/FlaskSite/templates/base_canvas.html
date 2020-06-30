@@ -10,8 +10,25 @@
     {% endblock %}
 </head>
 <body>
-    <button class="sideButton">☰</button>
-    <div class="root">
+    <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <div id="mySidebar" class="sidebar">
+                <ul class="sidebarlist">
+                    <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+                    <li><a href="#">Actors</a>
+                        <a href="#" onclick="hideActors()">Hide</a>
+                        <a href="#" onclick="showActors()">Show</a>
+                    </li>
+                    <li><a href="#">Activities</a>
+                        <a href="#" onclick="hideActivities()">Hide</a>
+                        <a href="#" onclick="showActivities()">Show</a></li>
+                    {% for service in info.services %}
+
+                    {% endfor %}
+                </ul>
+    </div>
+
+
 
     {% block body %}
 
@@ -20,4 +37,21 @@
     <div id="debug"></div>
 {# todo flash messages #}
 </body>
+
+<script>
+    function openNav(){
+        $("#mySidebar").css("width", "250px");
+        $("#main").css("marginLeft", "250px");
+      // $("#mySidebar").style.width ="250px";
+      // $("#main").style.marginLeft = "250px";
+
+    }
+    function closeNav(){
+        $("#mySidebar").css("width", "0");
+        $("#main").css("marginLeft", "250px");
+
+        //$("#mySidebar").style.width ="0";
+        //$("#main").style.marginLeft = "0";
+    }
+</script>
 </html>

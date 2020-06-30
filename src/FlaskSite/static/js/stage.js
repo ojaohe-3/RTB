@@ -163,7 +163,12 @@ function initActivites(){
          polyArray.set(k, poly);
          layer1.add(poly);
          poly.on('activityEvent', (pos,status) => {
-            poly.attrs.visible = status;
+             if (status) {
+                 poly.hide();
+             }
+             else{
+                poly.show();
+            }
             poly.x( pos[0]);
             poly.y( pos[1]);
             layer1.batchDraw();
@@ -269,4 +274,46 @@ function konvaShape(vectorshape){
         shape = shape.concat(vectorshape[i]);
     }
     return shape
+}
+
+function hideActors(){
+    actors.forEach((v,k)=>{
+        polyArray.get(k).hide();
+
+    });
+
+}
+function showActors(){
+    actors.forEach((v,k)=>{
+        polyArray.get(k).show();
+    });
+
+}
+
+function hideStructures(){
+    structures.forEach((v,k)=>{
+        polyArray.get(k).hide();
+
+    });
+
+}
+function showStructures(){
+    structures.forEach((v,k)=>{
+        polyArray.get(k).show();
+    });
+
+}
+
+function hideActivities(){
+    activites.forEach((v,k)=>{
+        polyArray.get(k).hide();
+
+    });
+
+}
+function showActivities(){
+    activites.forEach((v,k)=>{
+        polyArray.get(k).show();
+    });
+
 }

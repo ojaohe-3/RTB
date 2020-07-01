@@ -13,8 +13,9 @@ class DB(object):
     def get_connection():
         config = toml.load("config.toml")
         return MongoClient(f"mongodb://{config['MongoDB']['host']}:{config['MongoDB']['port']}")
+
     @staticmethod
-    def getFromCollection(collection,type):
+    def getFromCollection(collection, type):
         db = DB.get_connection()
         collection = db["rtb"].get_collection(collection).find({})
         msg = {"payload": []}
@@ -26,14 +27,17 @@ class DB(object):
             msg["payload"].append({type: temp})
         return msg
 
+
 @app.route('/')
 async def index():
-    return await render_template("konva.html", info={"title": "Construction Test Site"})
+    return await render_template("konva.html", info={"title": "Construction Test Site",
+                                                     "services": [{"name": "Actors"}, {"name": "Activites"},
+                                                                  {"name": "Structures"}]})
 
 
 @app.route('/data')
 async def sendRequesterData():
-    #print("got a data request")
+    # print("got a data request")
     # todo authentication
     # todo get data from socket if available
     # todo generate json and send to requester
@@ -49,17 +53,20 @@ async def sendRequesterData():
     msg = DB.getFromCollection("Actors", "actor")
     return jsonify(msg)
 
+
 @app.route('/data/structures')
 async def sendStructures():
     print("got a structure request")
     msg = DB.getFromCollection('Structures', 'structure')
     return jsonify(msg)
 
+
 @app.route('/data/events')
 async def sendEvents():
     print('got an event request')
     msg = DB.getFromCollection('Events', 'events')
     return jsonify(msg)
+
 
 async def getData(conf, loop):
     return ''

@@ -31,9 +31,9 @@ class DB(object):
 @app.route('/')
 async def index():
     return await render_template("konva.html", info={"title": "Construction Test Site",
-                                                     "services": [{"name": "Actors", "id": 0},
-                                                                  {"name": "Activites", "id": 1},
-                                                                  {"name": "Structures", "id": 2}]})
+                                                     "services": [{"title": "Actors", "id": 0},
+                                                                  {"title": "Activites", "id": 1},
+                                                                  {"title": "Structures", "id": 2}]})
 
 
 @app.route('/data')

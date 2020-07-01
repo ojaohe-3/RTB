@@ -127,30 +127,39 @@ async def actorsPos(actors):
 
 
 async def main(loop, actors, structures, activites):
+    while True:
+        for a in actors:
+            moveActorTowards(a, a.activity.pos, structures, activites)
+        await asyncio.sleep(0.04)
+
+    await sim.disconnect()
+
+
+async def sendRutine(actors, activites, structures):
     config = toml.load('config.toml')
     sim = Emulator(config, loop)
     await sim.connect()
 
-    # Collect all structures and send them to RMQ
     for structure in structures:
         structures_msg = sim.get_sensor_data(structure)
         await sim.send_message(structures_msg, 'structures')
 
     while True:
-        for a in actors:
-            moveActorTowards(a, a.activity.pos, structures, activites)
-            # Send data about actors
-            msg = sim.get_sensor_data(a)
-            await sim.send_message(msg, 'actors')
-        for a in activites:
-            # Send data about activities
-            msg_activity = sim.get_sensor_data(a)
-            await sim.send_message(msg_activity, 'events')
         await asyncio.sleep(0.04)
+        await sendMsg(actors, activites, sim)
 
-        if len(activites) < 1:
-            break
-    await sim.disconnect()
+
+async def sendMsg(actors, activites, sim):
+    for a in actors:
+        # Send data about actors
+        print("sending actor data...")
+        msg = sim.get_sensor_data(a)
+        await sim.send_message(msg, 'actors')
+    for a in activites:
+        # Send data about activities
+        print("sending activity data...")
+        msg_activity = sim.get_sensor_data(a)
+        await sim.send_message(msg_activity, 'events')
 
 
 def init():
@@ -166,7 +175,8 @@ def init():
 
 
 async def multiTask(actors, structures, activites, loop):
-    await asyncio.gather(actorsPos(actors), main(loop, actors, structures, activites))
+    await asyncio.gather(actorsPos(actors), main(loop, actors, structures, activites),
+                         sendRutine(actors, activites, structures))
 
 
 if __name__ == "__main__":

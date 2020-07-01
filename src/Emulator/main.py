@@ -107,7 +107,7 @@ def checkForCollisions(actor, structures, activites):
         except:
             actor.activity = None
         finally:
-            if (len(activites) > 0):
+            if (len(activites) > 1):
                 actor.activity = activites[random.randrange(len(activites) - 1)]
             else:
                 exit(-1)
@@ -145,7 +145,7 @@ async def sendRutine(actors, activites, structures):
         await sim.send_message(structures_msg, 'structures')
 
     while True:
-        await asyncio.sleep(0.04)
+        await asyncio.sleep(0.05)
         await sendMsg(actors, activites, sim)
 
 
@@ -155,11 +155,11 @@ async def sendMsg(actors, activites, sim):
         print("sending actor data...")
         msg = sim.get_sensor_data(a)
         await sim.send_message(msg, 'actors')
-    for a in activites:
-        # Send data about activities
-        print("sending activity data...")
-        msg_activity = sim.get_sensor_data(a)
-        await sim.send_message(msg_activity, 'events')
+    # for a in activites:
+    #     # Send data about activities
+    #     print("sending activity data...")
+    #     msg_activity = sim.get_sensor_data(a)
+    #     await sim.send_message(msg_activity, 'events')
 
 
 def init():

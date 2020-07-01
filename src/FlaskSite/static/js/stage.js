@@ -34,8 +34,8 @@ function initKonva() {
 
     stage = new Konva.Stage({
       container: 'container',  // id of container <div>
-        width: 1000,
-        height: 1000
+        width: window.innerWidth,
+        height: window.innerHeight
     });
     var container = stage.container();
       // make it focusable
@@ -62,19 +62,19 @@ function initKonva() {
                 break;
             case 37:
             case 65:
-                camera.pos[0] -= 15;
+                camera.pos[0] -= 50;
                 break;
             case 38:
             case 87:
-                camera.pos[1] -= 15;
+                camera.pos[1] -= 50;
                 break;
             case 39:
             case 68:
-                camera.pos[0] += 15;
+                camera.pos[0] += 50;
                 break;
             case 40:
             case 83:
-                camera.pos[1] += 15;
+                camera.pos[1] += 50;
                 break;
             default:
                 break;
@@ -271,44 +271,39 @@ function konvaShape(vectorshape){
     return shape
 }
 
-function hideActors(){
-    actors.forEach((v,k)=>{
-        polyArray.get(k).hide();
-
-    });
-
-}
-function showActors(){
-    actors.forEach((v,k)=>{
-        polyArray.get(k).show();
-    });
-
-}
-
-function hideStructures(){
-    structures.forEach((v,k)=>{
-        polyArray.get(k).hide();
-
-    });
-
-}
-function showStructures(){
-    structures.forEach((v,k)=>{
-        polyArray.get(k).show();
+function setActors(attr){
+     actors.forEach((v,k)=>{
+        let poly = polyArray.get(k);
+          if(!attr){
+            poly.hide();
+        }else{
+            poly.show();
+        }
     });
 
 }
 
-function hideActivities(){
+
+function setActivites(attr){
     activites.forEach((v,k)=>{
-        polyArray.get(k).hide();
-
+        let poly = polyArray.get(k);
+          if(!attr){
+            poly.hide();
+        }else{
+            poly.show();
+        }
     });
 
 }
-function showActivities(){
-    activites.forEach((v,k)=>{
-        polyArray.get(k).show();
+
+function setStructures(attr){
+    structures.forEach((v,k)=>{
+        let poly = staticPoly.get(k);
+        if(!attr){
+            poly.hide();
+        }else{
+            poly.show();
+        }
     });
 
 }

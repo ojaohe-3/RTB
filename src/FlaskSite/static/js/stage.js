@@ -21,7 +21,6 @@ function updateStatic() {
     });
     activites.forEach((v,k)=>{
        let poly = polyArray.get(k);
-       v.pos = camera.translatePos(v.pos);
        poly.fire("activityEvent", v);
     });
 
@@ -50,10 +49,10 @@ function initKonva() {
        container.addEventListener('keydown', function (e) {
         switch (e.keyCode) {
             case 82:
-                camera.zoom -= 0.1;
+                camera.zoom *= camera.zoom < 1.005 ? 1 : 0.9;
                 break;
             case 70:
-                camera.zoom += 0.1;
+                camera.zoom *= 1.1;
                 break;
             case 81:
                   camera.theta+=0.01;
@@ -169,13 +168,8 @@ function initActivites(){
          layer1.add(poly);
          poly.on('activityEvent', (evt) => {
              let status = evt.status;
-             let pos = evt.pos;
-             if (status) {
-                 poly.hide();
-             }
-             else{
-                poly.show();
-            }
+             let pos = camera.translatePos(evt.pos);
+
             poly.x( pos[0]);
             poly.y( pos[1]);
             layer1.batchDraw();
@@ -264,9 +258,7 @@ function updateActivityData(data) {
         activites.forEach((v,k)=>{
             let poly = polyArray.get(k);
             camera.updateTranslation();
-            let pos = camera.translatePos(v.pos);
-            v.pos = pos;
-            //poly.fire('activityEvent', v);
+            poly.fire('activityEvent', v);
 
     });
 }

@@ -39,24 +39,6 @@
             </div>
         </div>
     </nav>
-{#
-            <ul class="nav">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">CheckBox</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Searchbox</a></li>
-            </ul>#}
-            <button class="openbtn" onclick="openNav()">☰</button>
-            <div id="mySidebar" class="sidebar">
-                <ul class="sidebarlist list-group">
-                {% for service in info.services %}
-                    <li class="list-group-item" style="padding: 0">
-                    <div class="row">
-                         <div style="color: honeydew; text-align: start" class="">{{ service.title }}<input type="checkbox" id="serviceCheck{{ service.id }}"></div>
-
-                        </div>
-                    </li>
-                    {% endfor %}
-                </ul>
     </div>
 
     <button class="openbtn" onclick="openNav()">☰</button>

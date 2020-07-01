@@ -38,7 +38,7 @@ def generateSim():
         s.append(obj)
     for i in range(150):
         obj = Activity([random.randrange(0, 500), random.randrange(0, 500)], "do work here", "active",
-                       time.time() + i * random.randrange(1, 1000))
+                       time.time() + i * random.randrange(1, 1000),i)
         cond = True
         while cond:
             cond = False
@@ -46,7 +46,7 @@ def generateSim():
                 if separating_axis_theorem(e.shape, obj.shape):
                     cond = True
                     obj = Activity([random.randrange(0, 500), random.randrange(0, 500)], "do work here", "active",
-                                   time.time() + i * random.randrange(1, 1000))
+                                   time.time() + i * random.randrange(1, 1000),i)
 
         a.append(obj)
 

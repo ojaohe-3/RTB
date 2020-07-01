@@ -196,7 +196,7 @@ function updateData(data){
                 actors.set(k["Name"], new Actor(k["position"],k["shape"],k["Name"]));
             }
         });
-    }
+
 
     if(!ac_c){
         initActors();
@@ -237,7 +237,7 @@ function updateActivityData(data) {
     let dataEntries = data["payload"];
         dataEntries.forEach((v)=>{
             let k = v["events"];
-            if(activity.has(k)){
+            if(activites.has(k["Name"])){
                 let activity = activites.get(k["Name"]);
 
                 activity.setStatus(k["status"]);
@@ -245,7 +245,6 @@ function updateActivityData(data) {
                 activites.set(k["Name"], new Activity(k["position"],k["Name"],k["status"]));
             }
         });
-    }
 
     if(!a_c){
         initActivites();

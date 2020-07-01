@@ -55,7 +55,7 @@ class Consumer():
         self._channel = None
         self._exchange = None
         self._running = False
-        self._queue = None;
+        self._queue = None
 
     async def consume(self, mongo):
         async with self._queue.iterator() as queue_iter:
@@ -72,12 +72,11 @@ class Consumer():
                     actorShape = msg['payload']['shape']
 
                     mongo.update(
-                        { "Name" : actor},
-                            {
-                                "$set": {"position": actorPosition,
-                                         "shape": actorShape}
-                            },
-                            upsert=True
+                        {"Name": actor},
+                        {"$set":
+                             {"position": actorPosition,
+                              "shape": actorShape}
+                        }, upsert=True
 
                         )
                     logger.info('mongoupdated')

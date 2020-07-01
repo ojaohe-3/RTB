@@ -39,3 +39,7 @@
   transition: 0.3s;
 }
 
+.navbar ul {
+    list-style-type: none;
+}
+

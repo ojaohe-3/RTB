@@ -2,11 +2,14 @@
 /src/FlaskSite/.idea/*
 /src/Emulator/sim.dat
 /src/Emulator/logfile
-/src/Emulator/__pychace__*
+/src/Emulator/__pychace__
+/src/__pychace__
+.idea/
 
-
-
-
+**/.DS_Store
+.DS_Store
+*/.DS_Store
+__pychace__/
 
 src/Consumer/logfile
 src/Emulator/logfile

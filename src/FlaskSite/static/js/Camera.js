@@ -37,6 +37,12 @@ class Camera{
        return new_shape;
 
     }
+
+    /***
+     *
+     * @param pos
+     * @returns {*[]}
+     */
     translatePos(pos)
     {
         let T = this.transFormationMatrix;

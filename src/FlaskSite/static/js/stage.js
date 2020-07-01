@@ -9,6 +9,10 @@ let camera = new Camera();
 
 let a_c,ac_c = false;
 let konvaInit = false;
+
+/***
+ *
+ */
 function updateStatic() {
     camera.updateTranslation();
     structures.forEach((v,k)=>{
@@ -17,7 +21,8 @@ function updateStatic() {
     });
     activites.forEach((v,k)=>{
        let poly = polyArray.get(k);
-       poly.fire("activityEvent", camera.translatePos(v.pos), v.status);
+       v.pos = camera.translatePos(v.pos);
+       poly.fire("activityEvent", v);
     });
 
     layer1.batchDraw();
@@ -162,7 +167,9 @@ function initActivites(){
           });
          polyArray.set(k, poly);
          layer1.add(poly);
-         poly.on('activityEvent', (pos,status) => {
+         poly.on('activityEvent', (evt) => {
+             let status = evt.status;
+             let pos = evt.pos;
              if (status) {
                  poly.hide();
              }
@@ -258,7 +265,8 @@ function updateActivityData(data) {
             let poly = polyArray.get(k);
             camera.updateTranslation();
             let pos = camera.translatePos(v.pos);
-            poly.fire('activityEvent', pos, v.status);
+            v.pos = pos;
+            //poly.fire('activityEvent', v);
 
     });
 }

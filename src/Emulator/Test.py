@@ -17,12 +17,12 @@ def generateSim():
     s = []
     for i in range(10):
         obj = Actor([random.randrange(0, 500), random.randrange(0, 500)], "worker", random.random() + 1,
-                    [[-1, -1], [1, -1], [1, 1], [-1, 1]], "worker" + str(i))
+                    [[-5, -5], [5, -5], [5, 5], [-5, 5]], "worker" + str(i))
         w.append(obj)
 
     for i in range(5):
         obj = Actor([random.randrange(0, 500), random.randrange(0, 500)], "truck", 3 * random.random() + 1,
-                    [[-2, -1], [-2, 1], [2, 1], [2, -1]], "truck" + str(i))
+                    [[-10, -5], [-10, 5], [10, 5], [10, -5]], "truck" + str(i))
         t.append(obj)
     acc = 0
     for i in range(5):

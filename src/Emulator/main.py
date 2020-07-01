@@ -53,7 +53,7 @@ class Emulator:
         # Declares the exchange on the channel on RabbitMQ.markdown
         self._exchange = await self._channel.declare_exchange('sim_exchange', aio_pika.ExchangeType.DIRECT,
                                                               durable=True)
-        #self._exchange = await self._channel.declare_exchange('sensor_exchange', aio_pika.ExchangeType.FANOUT,
+        # self._exchange = await self._channel.declare_exchange('sensor_exchange', aio_pika.ExchangeType.FANOUT,
         #                                                      durable=True)
 
     async def disconnect(self):
@@ -64,7 +64,7 @@ class Emulator:
         self._running = False
 
     async def send_message(self, msg, routing_key):
-        #logger.info("Sending message to RMQ")
+        # logger.info("Sending message to RMQ")
         await self._exchange.publish(
             aio_pika.Message(
                 body=msg.encode()
@@ -72,7 +72,7 @@ class Emulator:
             routing_key=routing_key)
 
     def get_sensor_data(self, object):
-        #logger.info("Creating sensor data")
+        # logger.info("Creating sensor data")
         cur_time = datetime.datetime.now().time()
         json_msg = {
             "time": str(cur_time),
@@ -85,10 +85,9 @@ class Emulator:
 
 def moveActorTowards(actor, pos, structures, activites):
     actor.updatePos(pos)
-    if(checkForCollisions(actor, structures, activites)):
+    if (checkForCollisions(actor, structures, activites)):
         print(f"collision deteced, {actor.name} have collided at {str(actor.pos)}")
-        #actor.updatePos([-1*x+random.random()*2 for x in pos])
-
+        # actor.updatePos([-1*x+random.random()*2 for x in pos])
 
 
 def checkForCollisions(actor, structures, activites):
@@ -108,14 +107,14 @@ def checkForCollisions(actor, structures, activites):
         except:
             actor.activity = None
         finally:
-            if(len(activites)>1):
-                actor.activity = activites[random.randrange(len(activites)-1)]
+            if (len(activites) > 0):
+                actor.activity = activites[random.randrange(len(activites) - 1)]
             else:
                 exit(-1)
         print(f"\n\n\033[93m New Task Assigned! {len(activites)} tasks remains.\033[0m\n\n")
 
     for structure in structures:
-        if (separating_axis_theorem(structure.shape,actor.shape)):
+        if (separating_axis_theorem(structure.shape, actor.shape)):
             return True
     return False
 
@@ -132,7 +131,7 @@ async def main(loop, actors, structures, activites):
     sim = Emulator(config, loop)
     await sim.connect()
 
-    #Collect all structures and send them to RMQ
+    # Collect all structures and send them to RMQ
     for structure in structures:
         structures_msg = sim.get_sensor_data(structure)
         await sim.send_message(structures_msg, 'structures')
@@ -140,15 +139,13 @@ async def main(loop, actors, structures, activites):
     while True:
         for a in actors:
             moveActorTowards(a, a.activity.pos, structures, activites)
-
-            #Send data about activities
-            msg_activity = sim.get_sensor_data(a.activity)
-            await sim.send_message(msg_activity,'events')
-
-            #Send data about actors
+            # Send data about actors
             msg = sim.get_sensor_data(a)
             await sim.send_message(msg, 'actors')
-
+        for a in activites:
+            # Send data about activities
+            msg_activity = sim.get_sensor_data(a)
+            await sim.send_message(msg_activity, 'events')
         await asyncio.sleep(0.04)
 
         if len(activites) < 1:
@@ -167,12 +164,13 @@ def init():
 
     return actors, structures, activites
 
-async def multiTask(actors, structures, activites,loop):
-    await asyncio.gather(actorsPos(actors),main(loop,actors, structures, activites))
+
+async def multiTask(actors, structures, activites, loop):
+    await asyncio.gather(actorsPos(actors), main(loop, actors, structures, activites))
 
 
 if __name__ == "__main__":
     a, b, c = init()
     loop = asyncio.get_event_loop()
-    loop.run_until_complete(multiTask(a,b,c,loop))
+    loop.run_until_complete(multiTask(a, b, c, loop))
     loop.close()

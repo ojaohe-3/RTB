@@ -18,7 +18,8 @@
             <div id="mySidebar" class="sidebar">
                 <ul class="sidebarlist">
                 {% for service in info.services %}
-                    <li><p class="title servicebar">{{ service.title }}</p>
+                    <li><p style="color: honeydew" class="title servicebar">{{ service.title }}</p>
+                        <input type="checkbox" id="serviceCheck{{ service.id }}">
                     </li>
                     {% endfor %}
                 </ul>
@@ -38,16 +39,12 @@
     function openNav(){
         $("#mySidebar").css("width", "250px");
         $("#main").css("marginLeft", "250px");
-      // $("#mySidebar").style.width ="250px";
-      // $("#main").style.marginLeft = "250px";
 
     }
     function closeNav(){
         $("#mySidebar").css("width", "0");
         $("#main").css("marginLeft", "250px");
 
-        //$("#mySidebar").style.width ="0";
-        //$("#main").style.marginLeft = "0";
     }
 </script>
 </html>

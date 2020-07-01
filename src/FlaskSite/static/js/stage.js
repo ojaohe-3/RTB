@@ -186,18 +186,15 @@ function initActivites(){
  */
 function updateData(data){
     let dataEntries = data["payload"];
-
-    if(actors.size === 0){
-        dataEntries.forEach((v)=>{
-            let actor = v["actor"];
-            actors.set(actor["Name"], new Actor(actor["position"],actor["shape"],actor["Name"]));
-        });
-    }else {
         dataEntries.forEach((v)=>{
             let k = v["actor"];
+            if(actors.has(k["Name"])){
             let actor = actors.get(k["Name"]);
             actor.pos = k["position"];
             actor.shape = k["shape"];
+            }else{
+                actors.set(k["Name"], new Actor(k["position"],k["shape"],k["Name"]));
+            }
         });
     }
 
@@ -238,16 +235,15 @@ function updateStructureData(data){
  */
 function updateActivityData(data) {
     let dataEntries = data["payload"];
-    if(activites.size === 0){
-        dataEntries.forEach((v)=>{
-            let activity = v["events"];
-            activites.set(activity["Name"], new Activity(activity["position"],activity["Name"],activity["status"]));
-        });
-    }else{
         dataEntries.forEach((v)=>{
             let k = v["events"];
-            let event = activites.get(k["Name"])
-            event.setStatus(k["status"]);
+            if(activity.has(k)){
+                let activity = activites.get(k["Name"]);
+
+                activity.setStatus(k["status"]);
+            }else{
+                activites.set(k["Name"], new Activity(k["position"],k["Name"],k["status"]));
+            }
         });
     }
 

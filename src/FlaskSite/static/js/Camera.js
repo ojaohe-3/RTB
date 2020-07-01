@@ -3,7 +3,7 @@ class Camera{
     constructor(){
         this.pos = [0,0];
         this.theta = 0;
-        this.zoom = 1;
+        this.zoom = 1.005;
         this.transFormationMatrix = this.generateTransformationMatrix();
     }
 
@@ -62,7 +62,7 @@ class Camera{
      */
     generateTransformationMatrix() {
         let translation = [[1,0,0],[0,1,0],[0,0,1]];
-        translation[0] = [Math.cos(this.theta)*this.zoom, -Math.sin(this.theta)*this.zoom, -this.zoom*this.pos[0] + this.pos[0]];
+        translation[0] = [Math.cos(this.theta)*this.zoom, -Math.sin(this.theta)*this.zoom,  + this.pos[0]];
         translation[1] = [Math.sin(this.theta)*this.zoom, Math.cos(this.theta)*this.zoom, -this.zoom*this.pos[1] + this.pos[1]];
         return translation;
     }

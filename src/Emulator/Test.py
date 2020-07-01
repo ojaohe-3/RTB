@@ -18,15 +18,15 @@ def generateSim():
     a = []
     s = []
     for i in range(10):
-        obj = Actor([random.randrange(0, 500), random.randrange(0, 500)], "worker", 10*random.random() + 1,
+        obj = Actor([random.randrange(0, 500), random.randrange(0, 500)], "worker", 1*random.random() + 1,
                     [[-5, -5], [5, -5], [5, 5], [-5, 5]], "worker" + str(i))
         w.append(obj)
 
     for i in range(5):
-        obj = Actor([random.randrange(0, 500), random.randrange(0, 500)], "truck", 30 * random.random() + 1,
+        obj = Actor([random.randrange(0, 500), random.randrange(0, 500)], "truck", 3 * random.random() + 1,
                     [[-10, -5], [-10, 5], [10, 5], [10, -5]], "truck" + str(i))
         t.append(obj)
-    acc = 0
+
     for i in range(5):
         obj = Structure([random.randrange(0, 500), random.randrange(0, 500)], "structure" + str(i))
         cond = True

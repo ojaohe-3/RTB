@@ -61,6 +61,15 @@ example:
 ```
 ## Stage.js and Globals
 Globals is utillized to poll data from the backend and to print the new data on the screen. Polling was achived by ajax and simply request every 50ms for actors, 1000ms for activites though this feature is legacy for now.
+
+attributes:
+* actors : Map(string, Actor)
+* activites: Map(string, Activites)
+* structures: Map(string, Structures)
+* polyArray: Map(string, Konva.shape)
+* polyStatic: Map(string, Konva.shape)
+* camera: Camera()
+there is additional variables that are simply there for functional purposes. 
 ### Methods
 #### Update Methods
 Update is called from ajax and is continous for every actor and activity, updating the Map with respective class type as value.  

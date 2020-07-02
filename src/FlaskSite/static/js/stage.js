@@ -62,15 +62,15 @@ function initKonva() {
                 break;
             case 37:
             case 65:
-                camera.pos[0] -= 50;
+                camera.pos[0] += 50;
                 break;
             case 38:
             case 87:
-                camera.pos[1] -= 50;
+                camera.pos[1] += 50;
                 break;
             case 39:
             case 68:
-                camera.pos[0] += 50;
+                camera.pos[0] -= 50;
                 break;
             case 40:
             case 83:

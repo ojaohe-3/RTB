@@ -62,11 +62,11 @@ async def sendStructures():
     return jsonify(msg)
 
 
-@app.route('/data/events')
-async def sendEvents():
-    print('got an event request')
-    msg = DB.getFromCollection('Events', 'events')
-    return jsonify(msg)
+# @app.route('/data/events')
+# async def sendEvents():
+#     print('got an event request')
+#     msg = DB.getFromCollection('Events', 'events')
+#     return jsonify(msg)
 
 
 async def getData(conf, loop):

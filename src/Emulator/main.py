@@ -13,7 +13,7 @@ import json
 import logging
 import sys
 import toml
-
+import time
 from functools import wraps
 
 config = toml.load('config.toml')
@@ -83,59 +83,57 @@ class Emulator:
         return json.dumps(json_msg)
 
 
-def moveActorTowards(actor, pos, structures, activites):
+def moveActorTowards(actor, pos, structures):
     actor.updatePos(pos)
-    if (checkForCollisions(actor, structures, activites)):
+    if checkForCollisions(actor, structures):
         print(f"collision deteced, {actor.name} have collided at {str(actor.pos)}")
         # actor.updatePos([-1*x+random.random()*2 for x in pos])
 
 
-def checkForCollisions(actor, structures, activites):
+def checkForCollisions(actor, structures):
     mapbound = Map().shape
     # inside of map
-    if (not separating_axis_theorem(mapbound, actor.shape)):
+    if not separating_axis_theorem(mapbound, actor.shape):
         print(f"\033[93m{actor.name} is out of bounds! {str(actor.pos)} \033[0m")
         return True
 
-    if (separating_axis_theorem(actor.activity.shape, actor.shape)):
+    if separating_axis_theorem(actor.activity.shape, actor.shape):
         # logger.info(f"{actor.name} arrived at a activity {str(activity.pos)}, completeing it")
-        print(f"\n\n\033[92m{actor.name} arrived at a activity {str(actor.activity.pos)}, completeing it \033[0m\n\n")
-        actor.activity.status = 'completed'
-        try:
-            activites.pop(activites.index(actor.activity))
-
-        except:
-            actor.activity = None
-        finally:
-            if (len(activites) > 1):
-                actor.activity = activites[random.randrange(len(activites) - 1)]
-            else:
-                exit(-1)
-        print(f"\n\n\033[93m New Task Assigned! {len(activites)} tasks remains.\033[0m\n\n")
+        print(f"\n\n\033[92m{actor.name} arrived at a activity {str(actor.activity.pos)}, Doing Work \033[0m")
+        print(f"{actor.activity.end_time - time.time()}s left!\n\n")
+        actor.activity.status = 'Processing'
+        if actor.activity.end_time - time.time() < 0:
+            actor.setNextActivity()
 
     for structure in structures:
-        if (separating_axis_theorem(structure.shape, actor.shape)):
+        if separating_axis_theorem(structure.shape, actor.shape):
             return True
     return False
 
 
 async def actorsPos(actors):
     for a in actors:
-        print(f"\033[33m{a.name} is at pos {str(a.pos)} moving towards {str(a.activity.pos)}\033[0m")
+        if a.activity is not None:
+            print(f"\033[33m{a.name} is at pos {str(a.pos)} moving towards {str(a.activity.pos)}\033[0m")
+        else:
+            print(f"\033[33m{a.name} is at pos {str(a.pos)} idling \033[0m")
     await asyncio.sleep(5)
     return await actorsPos(actors)
 
 
-async def main(loop, actors, structures, activites):
+async def main(actors, structures):
     while True:
         for a in actors:
-            moveActorTowards(a, a.activity.pos, structures, activites)
+            if a.activity is not None:
+                moveActorTowards(a, a.activity.pos, structures)
+            else:
+                a.setNextActivity()
         await asyncio.sleep(0.04)
 
     await sim.disconnect()
 
 
-async def sendRutine(actors, activites, structures):
+async def sendRutine(actors, structures, loop):
     config = toml.load('config.toml')
     sim = Emulator(config, loop)
     await sim.connect()
@@ -146,13 +144,13 @@ async def sendRutine(actors, activites, structures):
 
     while True:
         await asyncio.sleep(0.05)
-        await sendMsg(actors, activites, sim)
+        await sendMsg(actors, sim)
 
 
-async def sendMsg(actors, activites, sim):
+async def sendMsg(actors, sim):
     for a in actors:
         # Send data about actors
-        print("sending actor data...")
+        #print("sending actor data...")
         msg = sim.get_sensor_data(a)
         await sim.send_message(msg, 'actors')
     # for a in activites:
@@ -167,20 +165,22 @@ def init():
         data = pickle.load(f)
         actors = data["actors"]
         structures = data["structures"]
-        activites = data["activites"]
+
+
     for a in actors:
-        a.activity = activites[random.randrange(len(activites) - 1)]
+        a.setSchedule(3_00, random.randrange(5, 8))
+        a.setNextActivity()
 
-    return actors, structures, activites
+    return actors, structures
 
 
-async def multiTask(actors, structures, activites, loop):
-    await asyncio.gather(actorsPos(actors), main(loop, actors, structures, activites),
-                         sendRutine(actors, activites, structures))
+async def multiTask(actors, structures, loop):
+    await asyncio.gather(actorsPos(actors), main(actors, structures),
+                         sendRutine(actors, structures, loop))
 
 
 if __name__ == "__main__":
-    a, b, c = init()
+    a, b = init()
     loop = asyncio.get_event_loop()
-    loop.run_until_complete(multiTask(a, b, c, loop))
+    loop.run_until_complete(multiTask(a, b, loop))
     loop.close()

@@ -15,15 +15,14 @@ _map = Map()
 def generateSim():
     w = []
     t = []
-    a = []
     s = []
     for i in range(10):
-        obj = Actor([random.randrange(0, 500), random.randrange(0, 500)], "worker", 1*random.random() + 1,
+        obj = Actor([random.randrange(0, 500), random.randrange(0, 500)], "worker", 0.1 * random.random() + 1,
                     [[-5, -5], [5, -5], [5, 5], [-5, 5]], "worker" + str(i))
         w.append(obj)
 
     for i in range(5):
-        obj = Actor([random.randrange(0, 500), random.randrange(0, 500)], "truck", 3 * random.random() + 1,
+        obj = Actor([random.randrange(0, 500), random.randrange(0, 500)], "truck", 1.5 * random.random() + 1,
                     [[-10, -5], [-10, 5], [10, 5], [10, -5]], "truck" + str(i))
         t.append(obj)
 
@@ -38,21 +37,24 @@ def generateSim():
                     obj = Structure([random.randrange(0, 500), random.randrange(0, 500)], "structure" + str(i))
 
         s.append(obj)
-    for i in range(150):
-        obj = Activity([random.randrange(0, 500), random.randrange(0, 500)], "do work here", "active",
-                      0, i)
-        cond = True
-        while cond:
-            cond = False
-            for e in s:
-                if separating_axis_theorem(e.shape, obj.shape):
-                    cond = True
-                    obj = Activity([random.randrange(0, 500), random.randrange(0, 500)], "do work here", "active",
-                                  0, i)
 
-        a.append(obj)
 
-    data = {"activites": a, "actors": w + t, "structures": s}
+
+        # for i in range(150):
+        #     obj = Activity([random.randrange(0, 500), random.randrange(0, 500)], "do work here", "active",
+        #                   0, i)
+        #     cond = True
+        #     while cond:
+        #         cond = False
+        #         for e in s:
+        #             if separating_axis_theorem(e.shape, obj.shape):
+        #                 cond = True
+        #                 obj = Activity([random.randrange(0, 500), random.randrange(0, 500)], "do work here", "active",
+        #                               0, i)
+
+        #  a.append(obj)
+
+    data = {"actors": w + t, "structures": s}
     with open("sim.dat", "wb") as f:
         pickle.dump(data, f)
 

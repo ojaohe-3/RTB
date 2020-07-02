@@ -70,12 +70,14 @@ class Consumer():
                     actor = msg['payload']['name']
                     actorPosition = msg['payload']['position']
                     actorShape = msg['payload']['shape']
+                    actorColor = msg['payload']['color']
 
                     mongo.update(
                         {"Name": actor},
                         {"$set":
                              {"position": actorPosition,
-                              "shape": actorShape}
+                              "shape": actorShape,
+                              "color": actorColor}
                         }, upsert=True
 
                         )

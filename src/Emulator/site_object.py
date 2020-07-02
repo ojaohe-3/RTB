@@ -7,6 +7,7 @@ class SiteObject:
         self.shape = shape
         self.name = name
         self.radius = np.sqrt(pow(max(self.shape)[0], 2) + pow(max(self.shape)[1], 2))
+        self.color = None
 
         for i in range(len(shape)): #align the shape with its pos
             self.shape[i][0] += self.pos[0]

@@ -16,6 +16,12 @@ class Actor(SiteObject):
         self.activity = None
         self.activities = []
         self.start_time = time.time()
+        if (self.type == "worker"):
+            self.color = "#00D2FF"
+        else:
+            self.color = "#0ca307"
+
+
 
     # Move towards a pos
     def updatePos(self, npos):
@@ -67,3 +73,11 @@ class Actor(SiteObject):
                 temp = [a for a in self.activities if a.isActive(time.time())]
                 self.activity = temp.pop(0) if len(temp) > 0 else None
 
+    def toJson(self):
+        json_msg = {
+            "name": self.name,
+            "position": self.pos,
+            "shape": self.shape,
+            "color": self.color
+        }
+        return json_msg

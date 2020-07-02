@@ -102,10 +102,10 @@ function initActors() {
     }
     //generate polygons from actor
     actors.forEach((v, k) => {
-
         let poly = new Konva.Line({
             points: konvaShape(v.shape),
-            fill: '#00D2FF',
+           //fill: '#00D2FF',
+            fill: v.color,
             stroke: 'black',
             strokeWidth: 1,
             closed: true,
@@ -192,8 +192,9 @@ function updateData(data){
             let actor = actors.get(k["Name"]);
             actor.pos = k["position"];
             actor.shape = k["shape"];
+            actor.color = k["color"]
             }else{
-                actors.set(k["Name"], new Actor(k["position"],k["shape"],k["Name"]));
+                actors.set(k["Name"], new Actor(k["position"],k["shape"],k["Name"],k["color"]));
             }
         });
 

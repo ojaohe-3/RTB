@@ -59,6 +59,60 @@ example:
  poly.attr.shape = shape;
  draw();
 ```
+## Stage.js and Globals
+Globals is utillized to poll data from the backend and to print the new data on the screen. Polling was achived by ajax and simply request every 50ms for actors, 1000ms for activites though this feature is legacy for now.
+### Methods
+#### Update Methods
+Update is called from ajax and is continous for every actor and activity, updating the Map with respective class type as value.  
+Structures does not update only initilazies first time it is sent, to keep it concurent with transformation when camera is moving we need to transform the motion through updateStatic.
+```javascript
+function updateStatic()
+```
+```javascript
+function updateData(data)
+```
+```javascript
+function updateActivityData(data)
+```
+```javascript
+function updateStructureData(data)
+```
+#### init methods
+During the first run, a lot of initilazion need to take place, first the stage objects need to be created with its layer. Secondly once one update have been done in 
+Actor, Activity or structure is completed it need to be transformed to konva object to be drawn.
+```javascript
+function initKonva()
+```
 
-   
-  
+```javascript
+function initActors() 
+```
+```javascript
+function initStructures()
+```
+```javascript
+function initActivites()
+```
+
+#### helper functions
+Konva do not have an 2d array of points to represent points, instead its in the format x1,y1,x2,y2... etc. This converts the 2d array to konva compatible format.
+```javascript
+function konvaShape(vectorshape)
+```
+
+These are css related and simply on a buttom press from the main html toggle the objects visability on the screen. Implemented to support a checkbox and jquery.
+
+```javascript
+function setActors(attr)
+```
+
+
+```javascript
+function setActivites(attr)
+```
+
+
+```javascript
+function setStructures(attr)
+```
+

@@ -1,6 +1,11 @@
 .sideButton{
 
 }
+.openbtn{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
 .sidebarlist{
     list-style-type: none;
 }

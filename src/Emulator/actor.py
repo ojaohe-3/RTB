@@ -21,8 +21,6 @@ class Actor(SiteObject):
         else:
             self.color = "#0ca307"
 
-
-
     # Move towards a pos
     def updatePos(self, npos):
         x = npos[0] - self.pos[0]
@@ -53,13 +51,13 @@ class Actor(SiteObject):
         self.activities = []
         self.start_time = time.time()
         st_time = self.start_time
-        end_time = self.start_time + (life_time / (nr_activites+1)) * random.random()
+        end_time = self.start_time + (life_time / (nr_activites + 1)) * random.random()
         for i in range(nr_activites):
             self.activities.append(Activity([random.randrange(0, 600), random.randrange(0, 600)], "Work",
                                             "rest", st_time, end_time, i))
 
-            st_time = end_time + random.random() * 100
-            end_time = st_time + (life_time / (nr_activites+1)) * random.random()
+            st_time = end_time + np.random.normal(10, 5)
+            end_time = st_time + (life_time / (nr_activites + 1)) * random.random()
             if i == nr_activites - 1:
                 end_time = life_time
 

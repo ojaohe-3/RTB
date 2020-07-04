@@ -1,12 +1,12 @@
 [rabbitmq]
-username = "rtb"
-password = "rtb123"
-host = "130.240.5.138"
+username = "guest"
+password = "guest"
+host = "127.0.0.1"
 sensor_exchange = "sensor_exchange"
 
 [log]
 filename = "logfile"
 
 [MongoDB]
-host = "130.240.5.138"
+host = "127.0.0.1"
 port = "27017"

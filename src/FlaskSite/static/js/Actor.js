@@ -1,4 +1,4 @@
-class Actor{
+   class Actor{
     constructor(pos, shape, name, color) {
         this.shape = shape;
         this.pos = pos;

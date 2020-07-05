@@ -4,7 +4,7 @@ debug = true;
 async function requestData() {
      $.ajax({
         type: 'GET',
-        url: '/data',
+        url: 'http://127.0.0.1:5001/get-actor-data',
         success :(data) => {
             updateData(data);
             if(debug)

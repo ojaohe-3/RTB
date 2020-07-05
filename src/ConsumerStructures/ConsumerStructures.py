@@ -16,10 +16,11 @@ out_handler = logging.StreamHandler(sys.stdout)
 out_handler.setLevel(logging.DEBUG)
 logger.addHandler(out_handler)
 
+
 class Consumer():
     def __init__(self, config):
         self.config = config
-        #self.loop = loop
+        # self.loop = loop
 
         self._connection = None
         self._channel = None
@@ -27,20 +28,21 @@ class Consumer():
         self._queue = None
 
     async def _create_connection(self):
-        #logger.info("Creating connection")
+        # logger.info("Creating connection")
         return await aio_pika.connect_robust(
-                "amqp://{}:{}@{}".format(
-                    self.config['rabbitmq']['username'],
-                    self.config['rabbitmq']['password'],
-                    self.config['rabbitmq']['host'],
-                )
+            "amqp://{}:{}@{}".format(
+                self.config['rabbitmq']['username'],
+                self.config['rabbitmq']['password'],
+                self.config['rabbitmq']['host'],
+            )
         )
+
     async def connect(self):
-        #logger.info("Connecting to RMQ")
+        # logger.info("Connecting to RMQ")
         self._connection = await self._create_connection()
         self._channel = await self._connection.channel()
         self._exchange = await self._channel.declare_exchange(
-        self.config['rabbitmq']['exchange'], aio_pika.ExchangeType.DIRECT, durable=True
+            self.config['rabbitmq']['exchange'], aio_pika.ExchangeType.DIRECT, durable=True
         )
 
         self._queue = await self._channel.declare_queue(self.config['rabbitmq']['queue'])
@@ -62,39 +64,42 @@ class Consumer():
         async with self._queue.iterator() as queue_iter:
             async for message in queue_iter:
                 async with message.process():
-                    #logger.info("Consuming")
-                    #logger.info(message.body)
+                    # logger.info("Consuming")
+                    # logger.info(message.body)
                     msg = json.loads(message.body)
-                    #logger.info("POSITION")
+                    # logger.info("POSITION")
                     logger.info(msg)
 
                     structureName = msg['payload']['name']
                     structurePosition = msg['payload']['position']
                     structureShape = msg['payload']['shape']
 
-                    mongo.update(
-                        { "Name" : structureName},
-                            {
-                                "$set": {"position": structurePosition,
-                                         "shape": structureShape}
-                            },
-                            upsert=True
+                    mongo.update_one(
+                        {"Name": structureName},
+                        {
+                            "$set": {"position": structurePosition,
+                                     "shape": structureShape}
+                        },
+                        upsert=True
 
-                        )
+                    )
                     logger.info('mongoupdated')
 
-                    #await self.buffer.put(message.body.decode())
-                    #if queue.name in message.body.decode():
-                     #   break
+                    # await self.buffer.put(message.body.decode())
+                    # if queue.name in message.body.decode():
+                    #   break
+
+
 async def main():
     config = toml.load("config.toml")
     consumer = Consumer(config)
-    client = MongoClient("mongodb://{}:{}/".format(config["MongoDB"]["host"],config["MongoDB"]["port"]))
+    client = MongoClient("mongodb://{}:{}/".format(config["MongoDB"]["host"], config["MongoDB"]["port"]))
     rtbDB = client['rtb']
     actorCol = rtbDB['Structures']
 
     await consumer.connect()
     await consumer.consume(actorCol)
+
 
 if __name__ == "__main__":
     asyncio.get_event_loop().run_until_complete(main())

@@ -1,0 +1,12 @@
+[rabbitmq]
+username = "guest"
+password = "guest"
+host = "127.0.0.1"
+sensor_exchange = "sensor_exchange"
+
+[log]
+filename = "logfile"
+
+[MongoDB]
+host = "127.0.0.1"
+port = "27017"

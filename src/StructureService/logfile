@@ -1,0 +1,104 @@
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 282-012-734
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:07:32] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:07:37] "[35m[1mGET /data HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:07:37] "[37mGET /data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:07:37] "[37mGET /data?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:07:37] "[37mGET /data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:07:38] "[37mGET /data?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:07:38] "[37mGET /data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:07:38] "[37mGET /data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\andre\\OneDrive\\Dokument\\RTB\\src\\ActorService\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 282-012-734
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:07:57] "[35m[1mGET /data HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:07:57] "[37mGET /data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:07:58] "[37mGET /data?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:07:58] "[37mGET /data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:07:58] "[37mGET /data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:07:58] "[37mGET /data?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:07:58] "[37mGET /data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\andre\\OneDrive\\Dokument\\RTB\\src\\ActorService\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 282-012-734
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:08:08] "[37mGET /data HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\andre\\OneDrive\\Dokument\\RTB\\src\\ActorService\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 282-012-734
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\andre\\OneDrive\\Dokument\\RTB\\src\\ActorService\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 282-012-734
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:08:49] "[35m[1mGET /data HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:08:49] "[37mGET /data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:08:49] "[37mGET /data?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:08:49] "[37mGET /data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:08:49] "[37mGET /data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:08:50] "[37mGET /data?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:08:50] "[37mGET /data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\andre\\OneDrive\\Dokument\\RTB\\src\\ActorService\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 282-012-734
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:08:58] "[35m[1mGET /data HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:08:59] "[37mGET /data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:08:59] "[37mGET /data?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:08:59] "[37mGET /data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:08:59] "[37mGET /data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:08:59] "[37mGET /data?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:08:59] "[37mGET /data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\andre\\OneDrive\\Dokument\\RTB\\src\\ActorService\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 282-012-734
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:09:24] "[37mGET /data HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\andre\\OneDrive\\Dokument\\RTB\\src\\ActorService\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 282-012-734
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:10:47] "[37mGET /data HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\andre\\OneDrive\\Dokument\\RTB\\src\\ActorService\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 282-012-734
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:11:23] "[33mGET /data HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:11:31] "[37mGET /get-actor-data HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\andre\\OneDrive\\Dokument\\RTB\\src\\ActorService\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 282-012-734
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\andre\\OneDrive\\Dokument\\RTB\\src\\ActorService\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 282-012-734
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'C:\\Users\\andre\\OneDrive\\Dokument\\RTB\\src\\ActorService\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 282-012-734
+INFO:werkzeug: * Running on http://localhost:5001/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 282-012-734
+INFO:werkzeug: * Running on http://localhost:5001/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:24:14] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:24:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [04/Jul/2020 10:24:26] "[37mGET /get-actor-data HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 282-012-734
+INFO:werkzeug: * Running on http://localhost:5002/ (Press CTRL+C to quit)

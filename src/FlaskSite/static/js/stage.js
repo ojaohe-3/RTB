@@ -185,18 +185,16 @@ function initActivites(){
  * @param data
  */
 function updateData(data){
-    let dataEntries = data["payload"];
-        dataEntries.forEach((v)=>{
-            let k = v["actor"];
-            if(actors.has(k["Name"])){
-            let actor = actors.get(k["Name"]);
-            actor.pos = k["position"];
-            actor.shape = k["shape"];
-            actor.color = k["color"]
-            }else{
-                actors.set(k["Name"], new Actor(k["position"],k["shape"],k["Name"],k["color"]));
-            }
-        });
+            data.forEach((v)=> {
+                if (actors.has(v["Name"])) {
+                    let actor = actors.get(v["Name"]);
+                    actor.pos = v["Position"];
+                    actor.shape = v["Shape"];
+                    actor.color = v["Color"]
+                } else {
+                    actors.set(v["Name"], new Actor(v["Position"], v["Shape"], v["Name"], v["Color"]));
+                }
+            });
 
 
     if(!ac_c){
@@ -220,7 +218,7 @@ function updateData(data){
  * @param data
  */
 function updateStructureData(data){
-    let dataEntries = data["payload"];
+    let dataEntries = data;
 
     dataEntries.forEach((v)=>{
         let structure = v["structure"];

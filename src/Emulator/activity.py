@@ -1,6 +1,6 @@
 import numpy as np
 
-from src.Emulator.site_object import SiteObject
+from Emulator.site_object import SiteObject
 
 
 class Activity(SiteObject):

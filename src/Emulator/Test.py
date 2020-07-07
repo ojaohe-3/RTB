@@ -1,11 +1,11 @@
 import random
 import unittest
 import toml
-from src.Emulator.activity import Activity
-from src.Emulator.actor import Actor
-from src.Emulator.collision import separating_axis_theorem
-from src.Emulator.map import Map
-from src.Emulator.structure import Structure
+from Emulator.activity import Activity
+from Emulator.actor import Actor
+from Emulator.collision import separating_axis_theorem
+from Emulator.map import Map
+from Emulator.structure import Structure
 import time
 import pickle
 

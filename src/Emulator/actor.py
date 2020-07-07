@@ -1,9 +1,9 @@
 import random
 import time
-from src.Emulator.activity import Activity
+from Emulator.activity import Activity
 import numpy as np
 
-from src.Emulator.site_object import SiteObject
+from Emulator.site_object import SiteObject
 
 
 class Actor(SiteObject):

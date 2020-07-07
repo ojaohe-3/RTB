@@ -1,4 +1,4 @@
-from src.ConsumerActor import ConsumerActor
+from ConsumerActor import ConsumerActor
 import toml
 import asyncio
 from pymongo import MongoClient
